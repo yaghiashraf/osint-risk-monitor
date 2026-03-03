@@ -1,15 +1,12 @@
 "use client";
 
-import React, { useState, useCallback } from "react";
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  Marker,
-  ZoomableGroup,
-} from "react-simple-maps";
+import React, { useState, useEffect, useRef } from "react";
+import { geoNaturalEarth1, geoPath, type GeoProjection } from "d3-geo";
+import { feature } from "topojson-client";
+import type { Topology } from "topojson-specification";
+import type { FeatureCollection, Geometry } from "geojson";
 
-const geoUrl = "https://unpkg.com/world-atlas@2.0.2/countries-110m.json";
+const GEO_URL = "https://unpkg.com/world-atlas@2.0.2/countries-110m.json";
 
 interface Article {
   title: string;
@@ -29,36 +26,63 @@ interface WorldMapProps {
   onMarkerClick?: (article: Article) => void;
 }
 
+function getMarkerColor(category: string) {
+  switch (category) {
+    case "Cyber Attack":
+      return "#ef4444";
+    case "Supply Chain":
+      return "#f59e0b";
+    case "Geopolitics":
+      return "#3b82f6";
+    default:
+      return "#6b7280";
+  }
+}
+
+function getMarkerSize(severity?: string) {
+  switch (severity) {
+    case "critical":
+      return 7;
+    case "high":
+      return 5.5;
+    case "medium":
+      return 4.5;
+    default:
+      return 3.5;
+  }
+}
+
 export default function WorldMap({ articles, onMarkerClick }: WorldMapProps) {
   const [tooltip, setTooltip] = useState<Article | null>(null);
+  const [geoData, setGeoData] = useState<FeatureCollection<Geometry> | null>(null);
+  const [hoveredGeo, setHoveredGeo] = useState<string | null>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
+
+  const width = 900;
+  const height = 460;
+
+  const projection: GeoProjection = geoNaturalEarth1()
+    .scale(155)
+    .translate([width / 2, height / 2 + 20]);
+
+  const pathGenerator = geoPath().projection(projection);
+
+  useEffect(() => {
+    fetch(GEO_URL)
+      .then((res) => res.json())
+      .then((topo: Topology) => {
+        const countries = feature(
+          topo,
+          topo.objects.countries
+        ) as FeatureCollection<Geometry>;
+        setGeoData(countries);
+      })
+      .catch(console.error);
+  }, []);
 
   const mapMarkers = articles.filter((a) => a.lat !== 0 && a.lng !== 0);
 
-  const getMarkerColor = useCallback((category: string) => {
-    switch (category) {
-      case "Cyber Attack":
-        return "#ef4444";
-      case "Supply Chain":
-        return "#f59e0b";
-      case "Geopolitics":
-        return "#3b82f6";
-      default:
-        return "#6b7280";
-    }
-  }, []);
-
-  const getMarkerSize = useCallback((severity?: string) => {
-    switch (severity) {
-      case "critical":
-        return 8;
-      case "high":
-        return 6;
-      case "medium":
-        return 5;
-      default:
-        return 4;
-    }
-  }, []);
+  const projectPoint = (lng: number, lat: number) => projection([lng, lat]);
 
   return (
     <div className="w-full bg-slate-900/50 rounded-2xl overflow-hidden relative ring-1 ring-slate-800/50 backdrop-blur-sm">
@@ -92,69 +116,86 @@ export default function WorldMap({ articles, onMarkerClick }: WorldMapProps) {
         </div>
       )}
 
-      <ComposableMap
-        projection="geoNaturalEarth1"
-        projectionConfig={{ scale: 140, center: [10, 10] }}
-        width={800}
-        height={420}
-        style={{ width: "100%", height: "auto" }}
+      <svg
+        ref={svgRef}
+        viewBox={`0 0 ${width} ${height}`}
+        className="w-full h-auto"
+        style={{ background: "transparent" }}
       >
-        <ZoomableGroup zoom={1} maxZoom={6} minZoom={1}>
-          <Geographies geography={geoUrl}>
-            {({ geographies }) =>
-              geographies.map((geo) => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  fill="#1e293b"
-                  stroke="#0f172a"
-                  strokeWidth={0.5}
-                  style={{
-                    default: { outline: "none" },
-                    hover: { fill: "#283548", outline: "none" },
-                    pressed: { outline: "none" },
-                  }}
-                />
-              ))
-            }
-          </Geographies>
+        {/* Country geometries */}
+        {geoData?.features.map((geo, i) => {
+          const d = pathGenerator(geo);
+          if (!d) return null;
+          const id = String(geo.id ?? i);
+          return (
+            <path
+              key={id}
+              d={d}
+              fill={hoveredGeo === id ? "#283548" : "#1e293b"}
+              stroke="#0f172a"
+              strokeWidth={0.5}
+              onMouseEnter={() => setHoveredGeo(id)}
+              onMouseLeave={() => setHoveredGeo(null)}
+            />
+          );
+        })}
 
-          {mapMarkers.map((marker, index) => {
-            const color = getMarkerColor(marker.category);
-            const size = getMarkerSize(marker.severity);
-            return (
-              <Marker
-                key={index}
-                coordinates={[marker.lng, marker.lat]}
-                onMouseEnter={() => setTooltip(marker)}
-                onMouseLeave={() => setTooltip(null)}
-                onClick={() => onMarkerClick?.(marker)}
-              >
-                {/* Outer pulse ring */}
-                <circle
-                  r={size + 4}
-                  fill={color}
-                  opacity={0.15}
-                  className="animate-ping"
-                  style={{ animationDuration: "3s" }}
+        {/* Markers */}
+        {mapMarkers.map((marker, index) => {
+          const point = projectPoint(marker.lng, marker.lat);
+          if (!point) return null;
+          const [x, y] = point;
+          const color = getMarkerColor(marker.category);
+          const size = getMarkerSize(marker.severity);
+
+          return (
+            <g
+              key={index}
+              transform={`translate(${x},${y})`}
+              onMouseEnter={() => setTooltip(marker)}
+              onMouseLeave={() => setTooltip(null)}
+              onClick={() => onMarkerClick?.(marker)}
+              className="cursor-pointer"
+            >
+              {/* Pulse ring */}
+              <circle r={size + 4} fill={color} opacity={0.12}>
+                <animate
+                  attributeName="r"
+                  from={String(size + 2)}
+                  to={String(size + 10)}
+                  dur="2.5s"
+                  repeatCount="indefinite"
                 />
-                {/* Main marker */}
-                <circle
-                  r={size}
-                  fill={color}
-                  opacity={0.8}
-                  className="cursor-pointer"
-                  stroke={color}
-                  strokeWidth={1}
-                  strokeOpacity={0.3}
+                <animate
+                  attributeName="opacity"
+                  from="0.2"
+                  to="0"
+                  dur="2.5s"
+                  repeatCount="indefinite"
                 />
-                {/* Center dot */}
-                <circle r={size * 0.4} fill="#ffffff" opacity={0.9} />
-              </Marker>
-            );
-          })}
-        </ZoomableGroup>
-      </ComposableMap>
+              </circle>
+              {/* Main dot */}
+              <circle
+                r={size}
+                fill={color}
+                opacity={0.85}
+                stroke={color}
+                strokeWidth={1}
+                strokeOpacity={0.3}
+              />
+              {/* Center highlight */}
+              <circle r={size * 0.35} fill="#ffffff" opacity={0.9} />
+            </g>
+          );
+        })}
+      </svg>
+
+      {/* Loading state for map data */}
+      {!geoData && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-6 h-6 border-2 border-slate-700 border-t-blue-500 rounded-full animate-spin" />
+        </div>
+      )}
 
       {/* Legend */}
       <div className="absolute bottom-3 left-3 bg-slate-900/90 backdrop-blur-sm px-3 py-2.5 rounded-xl border border-slate-800/50 flex gap-4">
@@ -168,11 +209,6 @@ export default function WorldMap({ articles, onMarkerClick }: WorldMapProps) {
             <span className="text-[11px] text-slate-400">{label}</span>
           </div>
         ))}
-      </div>
-
-      {/* Zoom hint */}
-      <div className="absolute bottom-3 right-3 text-[10px] text-slate-600">
-        Scroll to zoom &middot; Drag to pan
       </div>
     </div>
   );
