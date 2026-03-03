@@ -38,7 +38,7 @@ Snippet: ${contentSnippet || "No snippet available."}
   
   try {
     const res = await hf.chatCompletion({
-      model: "google/gemma-2-2b-it",
+      model: "mistralai/Mistral-7B-Instruct-v0.3",
       messages: [{ role: "user", content: prompt }],
       max_tokens: 250,
       temperature: 0.1
