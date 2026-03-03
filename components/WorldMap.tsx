@@ -1,10 +1,7 @@
+"use no memo";
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
-import { geoNaturalEarth1, geoPath, type GeoProjection } from "d3-geo";
-import { feature } from "topojson-client";
-import type { Topology } from "topojson-specification";
-import type { FeatureCollection, Geometry } from "geojson";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 
 const GEO_URL = "https://unpkg.com/world-atlas@2.0.2/countries-110m.json";
 
@@ -24,6 +21,16 @@ interface Article {
 interface WorldMapProps {
   articles: Article[];
   onMarkerClick?: (article: Article) => void;
+}
+
+interface GeoFeature {
+  type: string;
+  id?: string | number;
+  properties: Record<string, unknown>;
+  geometry: {
+    type: string;
+    coordinates: number[] | number[][] | number[][][] | number[][][][];
+  };
 }
 
 function getMarkerColor(category: string) {
@@ -52,37 +59,95 @@ function getMarkerSize(severity?: string) {
   }
 }
 
+// Simple Mercator-like projection (no external dependency)
+function projectMercator(
+  lng: number,
+  lat: number,
+  width: number,
+  height: number,
+): [number, number] {
+  const x = ((lng + 180) / 360) * width;
+  const latRad = (lat * Math.PI) / 180;
+  const mercN = Math.log(Math.tan(Math.PI / 4 + latRad / 2));
+  const y = height / 2 - (mercN / Math.PI) * (height / 2);
+  return [x, Math.max(0, Math.min(height, y))];
+}
+
 export default function WorldMap({ articles, onMarkerClick }: WorldMapProps) {
   const [tooltip, setTooltip] = useState<Article | null>(null);
-  const [geoData, setGeoData] = useState<FeatureCollection<Geometry> | null>(null);
+  const [geoData, setGeoData] = useState<GeoFeature[] | null>(null);
   const [hoveredGeo, setHoveredGeo] = useState<string | null>(null);
+  const [d3Modules, setD3Modules] = useState<{
+    geoNaturalEarth1: typeof import("d3-geo").geoNaturalEarth1;
+    geoPath: typeof import("d3-geo").geoPath;
+    feature: typeof import("topojson-client").feature;
+  } | null>(null);
   const svgRef = useRef<SVGSVGElement>(null);
 
   const width = 900;
   const height = 460;
 
-  const projection: GeoProjection = geoNaturalEarth1()
-    .scale(155)
-    .translate([width / 2, height / 2 + 20]);
-
-  const pathGenerator = geoPath().projection(projection);
-
+  // Dynamically import d3-geo and topojson-client on client side only
   useEffect(() => {
-    fetch(GEO_URL)
-      .then((res) => res.json())
-      .then((topo: Topology) => {
-        const countries = feature(
-          topo,
-          topo.objects.countries
-        ) as FeatureCollection<Geometry>;
-        setGeoData(countries);
+    Promise.all([import("d3-geo"), import("topojson-client")])
+      .then(([d3Geo, topoClient]) => {
+        setD3Modules({
+          geoNaturalEarth1: d3Geo.geoNaturalEarth1,
+          geoPath: d3Geo.geoPath,
+          feature: topoClient.feature,
+        });
       })
       .catch(console.error);
   }, []);
 
+  // Load geo data after d3 modules are ready
+  useEffect(() => {
+    if (!d3Modules) return;
+    fetch(GEO_URL)
+      .then((res) => res.json())
+      .then((topo) => {
+        const countries = d3Modules.feature(topo, topo.objects.countries);
+        if ("features" in countries) {
+          setGeoData(countries.features as GeoFeature[]);
+        }
+      })
+      .catch(console.error);
+  }, [d3Modules]);
+
   const mapMarkers = articles.filter((a) => a.lat !== 0 && a.lng !== 0);
 
-  const projectPoint = (lng: number, lat: number) => projection([lng, lat]);
+  // Build paths and projected points only when we have data + modules
+  const paths = useMemo(() => {
+    if (!d3Modules || !geoData) return [];
+    const projection = d3Modules
+      .geoNaturalEarth1()
+      .scale(155)
+      .translate([width / 2, height / 2 + 20]);
+    const pathGen = d3Modules.geoPath().projection(projection);
+    return geoData.map((geo, i) => ({
+      id: String(geo.id ?? i),
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      d: pathGen(geo as any) || "",
+    }));
+  }, [d3Modules, geoData, width, height]);
+
+  const projectedMarkers = useMemo(() => {
+    if (!d3Modules) {
+      // Fallback: simple mercator
+      return mapMarkers.map((m) => ({
+        ...m,
+        point: projectMercator(m.lng, m.lat, width, height),
+      }));
+    }
+    const projection = d3Modules
+      .geoNaturalEarth1()
+      .scale(155)
+      .translate([width / 2, height / 2 + 20]);
+    return mapMarkers.map((m) => ({
+      ...m,
+      point: projection([m.lng, m.lat]) as [number, number] | null,
+    }));
+  }, [d3Modules, mapMarkers, width, height]);
 
   return (
     <div className="w-full bg-slate-900/50 rounded-2xl overflow-hidden relative ring-1 ring-slate-800/50 backdrop-blur-sm">
@@ -123,28 +188,22 @@ export default function WorldMap({ articles, onMarkerClick }: WorldMapProps) {
         style={{ background: "transparent" }}
       >
         {/* Country geometries */}
-        {geoData?.features.map((geo, i) => {
-          const d = pathGenerator(geo);
-          if (!d) return null;
-          const id = String(geo.id ?? i);
-          return (
-            <path
-              key={id}
-              d={d}
-              fill={hoveredGeo === id ? "#283548" : "#1e293b"}
-              stroke="#0f172a"
-              strokeWidth={0.5}
-              onMouseEnter={() => setHoveredGeo(id)}
-              onMouseLeave={() => setHoveredGeo(null)}
-            />
-          );
-        })}
+        {paths.map(({ id, d }) => (
+          <path
+            key={id}
+            d={d}
+            fill={hoveredGeo === id ? "#283548" : "#1e293b"}
+            stroke="#0f172a"
+            strokeWidth={0.5}
+            onMouseEnter={() => setHoveredGeo(id)}
+            onMouseLeave={() => setHoveredGeo(null)}
+          />
+        ))}
 
         {/* Markers */}
-        {mapMarkers.map((marker, index) => {
-          const point = projectPoint(marker.lng, marker.lat);
-          if (!point) return null;
-          const [x, y] = point;
+        {projectedMarkers.map((marker, index) => {
+          if (!marker.point) return null;
+          const [x, y] = marker.point;
           const color = getMarkerColor(marker.category);
           const size = getMarkerSize(marker.severity);
 
@@ -190,9 +249,9 @@ export default function WorldMap({ articles, onMarkerClick }: WorldMapProps) {
         })}
       </svg>
 
-      {/* Loading state for map data */}
+      {/* Loading state */}
       {!geoData && (
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center bg-slate-900/30">
           <div className="w-6 h-6 border-2 border-slate-700 border-t-blue-500 rounded-full animate-spin" />
         </div>
       )}

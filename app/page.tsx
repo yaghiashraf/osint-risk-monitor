@@ -1,7 +1,16 @@
 "use client";
 
 import { useEffect, useState, useMemo } from "react";
-import WorldMap from "../components/WorldMap";
+import dynamic from "next/dynamic";
+
+const WorldMap = dynamic(() => import("../components/WorldMap"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-[460px] bg-slate-900/50 rounded-2xl ring-1 ring-slate-800/50 flex items-center justify-center">
+      <div className="w-6 h-6 border-2 border-slate-700 border-t-blue-500 rounded-full animate-spin" />
+    </div>
+  ),
+});
 import {
   AlertTriangle,
   Clock,
