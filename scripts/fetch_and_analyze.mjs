@@ -38,7 +38,7 @@ Snippet: ${contentSnippet || "No snippet available."}
   
   try {
     const res = await hf.chatCompletion({
-      model: "Qwen/Qwen2.5-7B-Instruct",
+      model: "meta-llama/Llama-3.2-1B-Instruct",
       messages: [{ role: "user", content: prompt }],
       max_tokens: 250,
       temperature: 0.1
