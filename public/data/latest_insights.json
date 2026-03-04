@@ -1,22 +1,73 @@
 {
-  "lastUpdated": "2026-03-04T06:38:59.689Z",
+  "lastUpdated": "2026-03-04T12:40:26.875Z",
   "articles": [
     {
-      "title": "Iran Live Updates: Israel Begins ‘Broad Wave of Strikes’ on Iran’s Infrastructure",
-      "link": "https://www.nytimes.com/live/2026/03/03/world/iran-war-israel-lebanon-trump",
-      "date": "Wed, 04 Mar 2026 06:12:46 +0000",
+      "title": "Live Updates: Turkey Says NATO Shot Down Iranian Missile Heading to Turkish Airspace",
+      "link": "https://www.nytimes.com/live/2026/03/04/world/iran-war-israel-lebanon-trump",
+      "date": "Wed, 04 Mar 2026 12:35:40 +0000",
       "source": "NY Times World",
-      "summary": "Escalation of tensions between US and Iran may lead to global instability, with potential for cyberattacks and supply chain disruptions.",
+      "summary": "Escalation in Iran-US conflict could lead to global instability, NATO involvement, and potential attacks on critical infrastructure.",
+      "category": "Geopolitics",
+      "severity": "critical",
+      "region": "Turkey, Iran",
+      "lat": 38.581,
+      "lng": 41.893
+    },
+    {
+      "title": "Spain's Pedro Sánchez hits back at Trump threat to sever trade saying 'no to war'",
+      "link": "https://www.bbc.com/news/articles/c93wwq1n542o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 04 Mar 2026 12:30:50 GMT",
+      "source": "BBC World",
+      "summary": "Trump's threat may escalate tensions between US and Spain, potentially affecting trade and diplomatic relations.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Europe",
+      "lat": 40.4168,
+      "lng": -3.7038
+    },
+    {
+      "title": "Global Leaders Brace for the Fallout From a Fast Metastasizing War",
+      "link": "https://www.nytimes.com/2026/03/04/world/europe/iran-trump-world-reaction.html",
+      "date": "Wed, 04 Mar 2026 11:37:22 +0000",
+      "source": "NY Times World",
+      "summary": "Escalating regional conflict in the Middle East could lead to higher energy prices, political instability, and a potential new wave of refugees, posing a critical threat to global stability.",
       "category": "Geopolitics",
       "severity": "critical",
       "region": "Middle East",
-      "lat": 32.86,
-      "lng": 35.2
+      "lat": 31.75,
+      "lng": 35.25
     },
     {
-      "title": "CISA Adds Actively Exploited VMware Aria Operations Flaw CVE-2026-22719 to KEV Catalog",
-      "link": "https://thehackernews.com/2026/03/cisa-adds-actively-exploited-vmware.html",
-      "date": "Wed, 04 Mar 2026 10:05:00 +0530",
+      "title": "New RFP Template for AI Usage Control and AI Governance ",
+      "link": "https://thehackernews.com/2026/03/new-rfp-template-for-ai-usage-control.html",
+      "date": "Wed, 04 Mar 2026 17:00:00 +0530",
+      "source": "The Hacker News",
+      "summary": "AI Governance template addresses security leaders' need for AI control and governance, mitigating the risk of unsecured AI usage.",
+      "category": "Cyber Attack",
+      "severity": "critical",
+      "region": "United States",
+      "lat": 38.8977,
+      "lng": -77.0365
+    },
+    {
+      "title": "Fake Laravel Packages on Packagist Deploy RAT on Windows, macOS, and Linux",
+      "link": "https://thehackernews.com/2026/03/fake-laravel-packages-on-packagist.html",
+      "date": "Wed, 04 Mar 2026 15:07:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Malicious Laravel packages on Packagist deploy RAT on multiple platforms, posing a critical threat to users.",
+      "category": "Cyber Attack",
+      "severity": "critical",
+      "region": {
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      "lat": 37.7749,
+      "lng": -122.4194
+    },
+    {
+      "title": "APT41-Linked Silver Dragon Targets Governments Using Cobalt Strike and Google Drive C2",
+      "link": "https://thehackernews.com/2026/03/apt41-linked-silver-dragon-targets.html",
+      "date": "Wed, 04 Mar 2026 13:44:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
@@ -38,40 +89,28 @@
       "lng": -78.5
     },
     {
-      "title": "Israel Seizes Chance to Crush Hezbollah and Remake Mideast Amid Iran War",
-      "link": "https://www.nytimes.com/2026/03/03/world/middleeast/israel-iran-hezbollah.html",
-      "date": "Wed, 04 Mar 2026 03:46:33 +0000",
+      "title": "Ayatollah Ali Khamenei’s Son Emerges as Leading Choice to Be His Successor",
+      "link": "https://www.nytimes.com/2026/03/03/world/middleeast/iran-mojtaba-khamenei-successor.html",
+      "date": "Wed, 04 Mar 2026 01:54:23 +0000",
       "source": "NY Times World",
-      "summary": "Israel's actions against Hezbollah may escalate regional tensions and impact global stability, potentially drawing in other countries.",
-      "category": "Geopolitics",
-      "severity": "high",
-      "region": "Middle East",
-      "lat": 32,
-      "lng": 35
-    },
-    {
-      "title": "U.S. Hunts for Militants as the Nigerian Military Is Accused of Inaction",
-      "link": "https://www.nytimes.com/2026/03/03/world/africa/nigeria-security-forces-us-intervention.html",
-      "date": "Wed, 04 Mar 2026 03:41:10 +0000",
-      "source": "NY Times World",
-      "summary": "U.S. involvement in Nigeria's security efforts may escalate due to the Nigerian military's inaction, posing a critical threat to regional stability.",
-      "category": "Geopolitics",
-      "severity": "critical",
-      "region": "Nigeria",
-      "lat": 9,
-      "lng": 8
-    },
-    {
-      "title": "What to know about the 'two sessions',  China's biggest political meeting",
-      "link": "https://www.bbc.com/news/articles/c2lrxyke7kro?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 04 Mar 2026 01:04:48 GMT",
-      "source": "BBC World",
-      "summary": "The 'two sessions' meetings in China signal priorities for the world's second-largest economy, with geopolitical implications for global trade and security.",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
-      "region": "China",
-      "lat": 30,
-      "lng": 114
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "'All red lines have been crossed': Gulf states weigh response to Iranian strikes",
+      "link": "https://www.bbc.com/news/articles/cjrqqd8lw2wo?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 04 Mar 2026 00:24:05 GMT",
+      "source": "BBC Middle East",
+      "summary": "Retaliatory Iranian strikes on Gulf states have raised concerns about regional stability and safety, potentially impacting global energy markets and trade routes.",
+      "category": "Geopolitics",
+      "severity": "critical",
+      "region": "Middle East",
+      "lat": 26.2,
+      "lng": 54.4
     },
     {
       "title": "China is set to kick off its big policy meeting. What will be the key announcements?",
@@ -80,7 +119,7 @@
       "source": "CNBC Finance",
       "summary": "China's economic targets and policies may impact global supply chains, potentially leading to trade disruptions and increased security risks.",
       "category": "Supply Chain",
-      "severity": "high",
+      "severity": "medium",
       "region": "China",
       "lat": 30,
       "lng": 114
@@ -90,87 +129,48 @@
       "link": "https://www.bbc.com/news/articles/cr5lz0vgy52o?at_medium=RSS&at_campaign=rss",
       "date": "Tue, 03 Mar 2026 21:44:31 GMT",
       "source": "BBC World",
-      "summary": "Global gas and oil prices surge amid escalating Middle East conflict, potentially disrupting global energy markets and impacting economies.",
+      "summary": "Escalating conflict in the Middle East is causing a surge in gas and oil prices, negatively impacting global markets.",
       "category": "Geopolitics",
-      "severity": "high",
+      "severity": "critical",
       "region": "Middle East",
-      "lat": 31.5,
+      "lat": 30,
       "lng": 35
+    },
+    {
+      "title": "Funerals held for students and staff after strike on Iran school",
+      "link": "https://www.bbc.com/news/articles/c98qpz144nvo?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 03 Mar 2026 21:30:49 GMT",
+      "source": "BBC Middle East",
+      "summary": "US-Israeli strike on Iran school leads to deaths of students and staff, escalating tensions in the region.",
+      "category": "Geopolitics",
+      "severity": "critical",
+      "region": "Iran",
+      "lat": 32.85,
+      "lng": 54.95
     },
     {
       "title": "Wall Street playbook says buy when war breaks out. How this time could be different",
       "link": "https://www.cnbc.com/2026/03/03/wall-street-usually-says-buy-when-war-starts-this-time-may-be-different.html",
       "date": "Tue, 03 Mar 2026 20:47:29 GMT",
       "source": "CNBC Finance",
-      "summary": "Oil price surge could exacerbate supply chain disruptions and economic instability, potentially leading to a prolonged conflict impact.",
+      "summary": "Oil price surge could exacerbate supply chain disruptions and impact global growth, potentially leading to a prolonged economic downturn.",
       "category": "Supply Chain",
       "severity": "critical",
       "region": "Middle East",
       "lat": 31.5,
-      "lng": 35.4
-    },
-    {
-      "title": "Fears over food shortages in Tehran as residents worry about length of war",
-      "link": "https://www.bbc.com/news/articles/cdr2ep48r33o?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 03 Mar 2026 18:01:45 GMT",
-      "source": "BBC Middle East",
-      "summary": "Food shortages and price increases in Tehran due to ongoing strikes pose a critical threat to local residents, potentially exacerbating humanitarian issues.",
-      "category": "Geopolitics",
-      "severity": "critical",
-      "region": "Iran",
-      "lat": 35.6895,
-      "lng": 51.5204
+      "lng": 35
     },
     {
       "title": "Stocks making the biggest moves midday: MongoDB, Pinterest, NRG Energy, Kontoor Brands & more",
       "link": "https://www.cnbc.com/2026/03/03/stocks-making-the-biggest-moves-midday-mdb-pins-nrg-ktb-more.html",
       "date": "Tue, 03 Mar 2026 17:25:18 GMT",
       "source": "CNBC Finance",
-      "summary": "Supply chain disruptions and stock price fluctuations indicate potential vulnerabilities in global logistics and trade networks.",
+      "summary": "Supply chain disruptions could impact global markets, with potential shortages and price increases.",
       "category": "Supply Chain",
       "severity": "medium",
       "region": "Asia",
       "lat": 20,
       "lng": 0
-    },
-    {
-      "title": "Fake Tech Support Spam Deploys Customized Havoc C2 Across Organizations",
-      "link": "https://thehackernews.com/2026/03/fake-tech-support-spam-deploys.html",
-      "date": "Tue, 03 Mar 2026 22:45:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Fake IT support phishing campaign delivers Havoc C2 framework, posing critical risk to organizations",
-      "category": "Cyber Attack",
-      "severity": "critical",
-      "region": {
-        "lat": 37.7749,
-        "lng": -122.4194
-      },
-      "lat": 37.7749,
-      "lng": -122.4194
-    },
-    {
-      "title": "Battered and isolated, Hezbollah drags Lebanon into another war",
-      "link": "https://www.bbc.com/news/articles/c4gq3ykg7pvo?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 03 Mar 2026 15:42:28 GMT",
-      "source": "BBC Middle East",
-      "summary": "Escalation of conflict between Hezbollah and Israel may lead to regional instability and humanitarian crises, affecting Lebanon and the Middle East.",
-      "category": "Geopolitics",
-      "severity": "critical",
-      "region": "Lebanon",
-      "lat": 33.9,
-      "lng": 35.5
-    },
-    {
-      "title": "Building a High-Impact Tier 1: The 3 Steps CISOs Must Follow",
-      "link": "https://thehackernews.com/2026/03/building-high-impact-tier-1-3-steps.html",
-      "date": "Tue, 03 Mar 2026 20:00:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Inexperienced Tier 1 analysts are vulnerable to cognitive and organizational pressures, eroding SOC performance.",
-      "category": "Cyber Attack",
-      "severity": "high",
-      "region": "North America",
-      "lat": 40.7128,
-      "lng": -74.006
     },
     {
       "title": "We still have no idea where this war is heading",
@@ -180,21 +180,21 @@
       "summary": "Ongoing conflict in the region may lead to global instability and economic disruption, with potential for humanitarian crises.",
       "category": "Geopolitics",
       "severity": "critical",
-      "region": "Ukraine",
-      "lat": 48.2,
-      "lng": 32.5
+      "region": "Middle East",
+      "lat": 32,
+      "lng": 35
     },
     {
       "title": "Mobiliti e-mobi.hu",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-062-06",
       "date": "Tue, 03 Mar 26 12:00:00 +0000",
       "source": "CISA Advisories",
-      "summary": "Successful exploitation of these vulnerabilities could enable attackers to gain unauthorized administrative control or disrupt charging services through denial-of-service attacks. Mobiliti e-mobi.hu versions are affected, posing a critical risk to users. Immediate patching is recommended.",
+      "summary": "Successful exploitation of these vulnerabilities could lead to unauthorized administrative control or denial-of-service attacks on Mobiliti e-mobi.hu, potentially impacting charging services globally.",
       "category": "Cyber Attack",
       "severity": "critical",
-      "region": "Hungary",
-      "lat": 47.49726,
-      "lng": 19.04051
+      "region": "Europe",
+      "lat": 47.6067,
+      "lng": 12.2474
     },
     {
       "title": "Hitachi Energy RTU500 Product",
