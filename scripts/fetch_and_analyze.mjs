@@ -132,7 +132,8 @@ For lat/lng: use approximate coordinates of the primary affected region. If glob
         ? parsed.category : feedType,
       severity: ['critical', 'high', 'medium'].includes(parsed.severity)
         ? parsed.severity : 'medium',
-      region: parsed.region || "Global",
+      // Ensure region is always a string (AI sometimes returns {lat,lng} object)
+      region: typeof parsed.region === 'string' ? parsed.region : "Global",
       lat: lat || 0,
       lng: lng || 0,
     };

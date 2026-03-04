@@ -2,20 +2,8 @@
 
 import { useEffect, useState, useMemo } from "react";
 import dynamic from "next/dynamic";
-
-const WorldMap = dynamic(() => import("../components/WorldMap"), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-[460px] bg-slate-900/50 rounded-2xl ring-1 ring-slate-800/50 flex items-center justify-center">
-      <div className="w-6 h-6 border-2 border-slate-700 border-t-blue-500 rounded-full animate-spin" />
-    </div>
-  ),
-});
 import {
-  AlertTriangle,
-  Clock,
   ExternalLink,
-  Filter,
   Globe,
   MapPin,
   Search,
@@ -23,8 +11,34 @@ import {
   Truck,
   X,
   Activity,
-  TrendingUp,
+  AlertTriangle,
+  Radio,
+  Clock,
 } from "lucide-react";
+import type { Article as MapArticle } from "../components/WorldMap";
+
+const DEFAULT_COLOR = "#4b5563";
+
+const WorldMap = dynamic(() => import("../components/WorldMap"), {
+  ssr: false,
+  loading: () => (
+    <div
+      style={{
+        background: "var(--map-ocean)",
+        height: "min(65vh, 520px)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        fontFamily: "var(--font-mono)",
+        fontSize: 11,
+        color: "var(--text-muted)",
+        letterSpacing: "0.12em",
+      }}
+    >
+      INITIALISING MAP ENGINE...
+    </div>
+  ),
+});
 
 interface Article {
   title: string;
@@ -34,7 +48,7 @@ interface Article {
   summary: string;
   category: string;
   severity?: string;
-  region: string;
+  region: unknown;
   lat: number;
   lng: number;
 }
@@ -47,463 +61,472 @@ interface Data {
 type CategoryFilter = "all" | "Cyber Attack" | "Supply Chain" | "Geopolitics";
 type SeverityFilter = "all" | "critical" | "high" | "medium";
 
+function regionStr(r: unknown): string {
+  if (typeof r === "string") return r;
+  return "Global";
+}
+
+const CATEGORY_COLOR: Record<string, string> = {
+  "Cyber Attack": "var(--cyber)",
+  "Supply Chain": "var(--supply)",
+  "Geopolitics":  "var(--geo)",
+};
+const SEVERITY_COLOR: Record<string, string> = {
+  critical: "#ef4444",
+  high:     "#f97316",
+  medium:   "#eab308",
+};
+
+function CategoryIcon({ cat, size = 13 }: { cat: string; size?: number }) {
+  const s = { width: size, height: size };
+  if (cat === "Cyber Attack")  return <ShieldAlert style={s} />;
+  if (cat === "Supply Chain")  return <Truck       style={s} />;
+  if (cat === "Geopolitics")   return <Globe       style={s} />;
+  return <AlertTriangle style={s} />;
+}
+
+function formatRelative(dateStr: string, now: number): string {
+  const diff  = now - new Date(dateStr).getTime();
+  const m     = Math.floor(diff / 60000);
+  const h     = Math.floor(m / 60);
+  const d     = Math.floor(h / 24);
+  if (d > 0)  return `${d}d ago`;
+  if (h > 0)  return `${h}h ago`;
+  if (m > 0)  return `${m}m ago`;
+  return "just now";
+}
+
+// ─── Ticker ─────────────────────────────────────────────────────────────────
+function Ticker({ articles }: { articles: Article[] }) {
+  if (articles.length === 0) return null;
+  const items = [...articles, ...articles]; // duplicate for seamless loop
+  return (
+    <div
+      style={{
+        height: 28,
+        borderBottom: "1px solid var(--border-subtle)",
+        background: "var(--bg-surface)",
+        overflow: "hidden",
+        display: "flex",
+        alignItems: "center",
+        position: "relative",
+      }}
+    >
+      <div style={{
+        position: "absolute", left: 0, top: 0, bottom: 0,
+        width: 60, zIndex: 2,
+        background: "linear-gradient(to right, var(--bg-surface), transparent)",
+      }} />
+      <div className="ticker-inner">
+        {items.map((a, i) => {
+          const col = CATEGORY_COLOR[a.category] ?? "var(--text-muted)";
+          return (
+            <span key={i} style={{ display: "flex", alignItems: "center", gap: 8, paddingRight: 40, whiteSpace: "nowrap", fontSize: 10, color: "var(--text-secondary)" }}>
+              <span style={{ color: col, fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em" }}>{a.category}</span>
+              <span style={{ color: "var(--text-muted)" }}>›</span>
+              <span style={{ color: "var(--text-primary)" }}>{a.title}</span>
+              {regionStr(a.region) && (
+                <>
+                  <span style={{ color: "var(--text-muted)" }}>·</span>
+                  <span>{regionStr(a.region)}</span>
+                </>
+              )}
+            </span>
+          );
+        })}
+      </div>
+      <div style={{
+        position: "absolute", right: 0, top: 0, bottom: 0,
+        width: 40, zIndex: 2,
+        background: "linear-gradient(to left, var(--bg-surface), transparent)",
+      }} />
+    </div>
+  );
+}
+
+// ─── Stat Pill ───────────────────────────────────────────────────────────────
+function StatPill({
+  label, count, color, active, onClick,
+}: {
+  label: string; count: number; color: string; active: boolean; onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        display: "flex", alignItems: "center", gap: 6,
+        padding: "3px 10px",
+        borderRadius: 2,
+        border: `1px solid ${active ? color : "var(--border)"}`,
+        background: active ? `${color}18` : "transparent",
+        cursor: "pointer",
+        fontFamily: "var(--font-mono)",
+        fontSize: 11,
+        transition: "all 0.15s",
+      }}
+    >
+      <span style={{ color, fontWeight: 600 }} className="tabular">{count}</span>
+      <span style={{ color: active ? "var(--text-primary)" : "var(--text-secondary)", textTransform: "uppercase", letterSpacing: "0.06em" }}>
+        {label}
+      </span>
+    </button>
+  );
+}
+
+// ─── Main Page ───────────────────────────────────────────────────────────────
 export default function Home() {
-  const [data, setData] = useState<Data | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>("all");
-  const [severityFilter, setSeverityFilter] = useState<SeverityFilter>("all");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
-  const [now, setNow] = useState(() => Date.now());
+  const [data,          setData]         = useState<Data | null>(null);
+  const [loading,       setLoading]      = useState(true);
+  const [categoryFilter,setCategoryFilter] = useState<CategoryFilter>("all");
+  const [severityFilter,setSeverityFilter] = useState<SeverityFilter>("all");
+  const [searchQuery,   setSearchQuery]  = useState("");
+  const [now,           setNow]          = useState(() =>
+    typeof window !== "undefined" ? Date.now() : 0,
+  );
 
   useEffect(() => {
-    // Update "now" every minute for relative time display
-    const interval = setInterval(() => setNow(Date.now()), 60000);
-    return () => clearInterval(interval);
+    const id = setInterval(() => setNow(Date.now()), 30000);
+    return () => clearInterval(id);
   }, []);
 
   useEffect(() => {
     fetch("/data/latest_insights.json")
-      .then((res) => res.json())
-      .then((json) => {
-        setData(json);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Failed to load insights:", err);
-        setLoading(false);
-      });
+      .then((r) => r.json())
+      .then((j: Data) => { setData(j); setLoading(false); })
+      .catch(() => setLoading(false));
   }, []);
 
-  const filteredArticles = useMemo(() => {
+  const articles = useMemo(() => {
     if (!data?.articles) return [];
-    return data.articles.filter((article) => {
-      if (categoryFilter !== "all" && article.category !== categoryFilter)
-        return false;
-      if (
-        severityFilter !== "all" &&
-        (article.severity || "medium") !== severityFilter
-      )
-        return false;
+    return data.articles.map((a) => ({ ...a, region: regionStr(a.region) }));
+  }, [data]);
+
+  const filtered = useMemo(() => {
+    return articles.filter((a) => {
+      if (categoryFilter !== "all" && a.category !== categoryFilter) return false;
+      if (severityFilter !== "all" && (a.severity ?? "medium") !== severityFilter) return false;
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
         return (
-          article.title.toLowerCase().includes(q) ||
-          article.summary.toLowerCase().includes(q) ||
-          article.region.toLowerCase().includes(q) ||
-          article.source.toLowerCase().includes(q)
+          a.title.toLowerCase().includes(q) ||
+          a.summary.toLowerCase().includes(q) ||
+          regionStr(a.region).toLowerCase().includes(q) ||
+          a.source.toLowerCase().includes(q)
         );
       }
       return true;
     });
-  }, [data, categoryFilter, severityFilter, searchQuery]);
+  }, [articles, categoryFilter, severityFilter, searchQuery]);
 
-  const stats = useMemo(() => {
-    if (!data?.articles) return { cyber: 0, supply: 0, geo: 0, critical: 0 };
-    return {
-      cyber: data.articles.filter((a) => a.category === "Cyber Attack").length,
-      supply: data.articles.filter((a) => a.category === "Supply Chain").length,
-      geo: data.articles.filter((a) => a.category === "Geopolitics").length,
-      critical: data.articles.filter((a) => a.severity === "critical").length,
-    };
-  }, [data]);
-
-  const hasActiveFilters =
-    categoryFilter !== "all" || severityFilter !== "all" || searchQuery !== "";
+  const stats = useMemo(() => ({
+    cyber:    articles.filter((a) => a.category === "Cyber Attack").length,
+    supply:   articles.filter((a) => a.category === "Supply Chain").length,
+    geo:      articles.filter((a) => a.category === "Geopolitics").length,
+    critical: articles.filter((a) => a.severity  === "critical").length,
+  }), [articles]);
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-950 flex items-center justify-center">
-        <div className="flex flex-col items-center gap-5">
-          <div className="relative">
-            <div className="w-12 h-12 border-[3px] border-slate-800 rounded-full" />
-            <div className="w-12 h-12 border-[3px] border-blue-500 border-t-transparent rounded-full animate-spin absolute inset-0" />
-          </div>
-          <div className="text-center">
-            <p className="text-slate-300 font-medium">
-              Loading Intelligence Feed
-            </p>
-            <p className="text-sm text-slate-500 mt-1">
-              Fetching latest threat data...
-            </p>
-          </div>
-        </div>
+      <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-mono)", gap: 16 }}>
+        <Activity style={{ color: "var(--accent)", width: 22, height: 22 }} />
+        <div style={{ color: "var(--text-primary)", letterSpacing: "0.12em", fontSize: 12 }}>LOADING INTELLIGENCE FEED</div>
+        <div style={{ color: "var(--text-muted)", fontSize: 10 }}>Fetching threat data...</div>
       </div>
     );
   }
 
-  const getCategoryIcon = (category: string, size = "w-4 h-4") => {
-    switch (category) {
-      case "Cyber Attack":
-        return <ShieldAlert className={`${size} text-red-400`} />;
-      case "Supply Chain":
-        return <Truck className={`${size} text-amber-400`} />;
-      case "Geopolitics":
-        return <Globe className={`${size} text-blue-400`} />;
-      default:
-        return <AlertTriangle className={`${size} text-slate-400`} />;
-    }
-  };
-
-  const getCategoryStyle = (category: string) => {
-    switch (category) {
-      case "Cyber Attack":
-        return "bg-red-500/10 text-red-400 ring-red-500/20";
-      case "Supply Chain":
-        return "bg-amber-500/10 text-amber-400 ring-amber-500/20";
-      case "Geopolitics":
-        return "bg-blue-500/10 text-blue-400 ring-blue-500/20";
-      default:
-        return "bg-slate-500/10 text-slate-400 ring-slate-500/20";
-    }
-  };
-
-  const getSeverityStyle = (severity?: string) => {
-    switch (severity) {
-      case "critical":
-        return "bg-red-500/15 text-red-400 border-red-500/30";
-      case "high":
-        return "bg-orange-500/15 text-orange-400 border-orange-500/30";
-      case "medium":
-        return "bg-yellow-500/15 text-yellow-400 border-yellow-500/30";
-      default:
-        return "bg-slate-500/15 text-slate-400 border-slate-500/30";
-    }
-  };
-
-  const getRelativeTime = (dateStr: string) => {
-    const diff = now - new Date(dateStr).getTime();
-    const hours = Math.floor(diff / (1000 * 60 * 60));
-    const days = Math.floor(hours / 24);
-    if (days > 0) return `${days}d ago`;
-    if (hours > 0) return `${hours}h ago`;
-    return "Just now";
-  };
-
-  const clearFilters = () => {
-    setCategoryFilter("all");
-    setSeverityFilter("all");
-    setSearchQuery("");
-  };
+  const clearFilters = () => { setCategoryFilter("all"); setSeverityFilter("all"); setSearchQuery(""); };
+  const hasFilters = categoryFilter !== "all" || severityFilter !== "all" || searchQuery !== "";
 
   return (
-    <div className="min-h-screen bg-slate-950 font-sans text-slate-200 selection:bg-blue-500/30">
-      {/* Header */}
-      <header className="bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50 py-4 sticky top-0 z-30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
-              <Activity className="w-5 h-5 text-blue-400" />
-            </div>
-            <div>
-              <h1 className="text-lg sm:text-xl font-bold tracking-tight text-white">
-                OSINT Risk Monitor
-              </h1>
-              <p className="text-xs text-slate-500">
-                AI-Powered Threat Intelligence
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="text-xs text-slate-500 hidden sm:block">
-              {data?.lastUpdated
-                ? `Updated ${getRelativeTime(data.lastUpdated)}`
-                : ""}
-            </span>
-            <div className="flex items-center gap-2 bg-emerald-500/10 px-3 py-1.5 rounded-lg border border-emerald-500/20">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-              </span>
-              <span className="text-xs font-medium text-emerald-400">Live</span>
-            </div>
+    <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
+
+      {/* ── HEADER ─────────────────────────────────────── */}
+      <header style={{
+        height: 40, flexShrink: 0,
+        background: "var(--bg-surface)",
+        borderBottom: "1px solid var(--border)",
+        display: "flex", alignItems: "center", justifyContent: "space-between",
+        padding: "0 14px",
+        position: "sticky", top: 0, zIndex: 50,
+      }}>
+        {/* Left: branding */}
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <div className="live-dot" />
+          <span style={{ fontWeight: 600, fontSize: 12, letterSpacing: "0.12em", color: "var(--text-primary)", textTransform: "uppercase" }}>
+            OSINT Risk Monitor
+          </span>
+          <span style={{ color: "var(--border)", userSelect: "none" }}>|</span>
+          <span style={{ fontSize: 10, color: "var(--text-muted)", letterSpacing: "0.06em" }}>
+            {data?.lastUpdated
+              ? `UPDATED ${formatRelative(data.lastUpdated, now).toUpperCase()}`
+              : "NO DATA"}
+          </span>
+        </div>
+
+        {/* Right: stat pills */}
+        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+          <StatPill label="Cyber"    count={stats.cyber}    color="var(--cyber)"   active={categoryFilter === "Cyber Attack"} onClick={() => setCategoryFilter(categoryFilter === "Cyber Attack" ? "all" : "Cyber Attack")} />
+          <StatPill label="Geo"      count={stats.geo}      color="var(--geo)"     active={categoryFilter === "Geopolitics"}  onClick={() => setCategoryFilter(categoryFilter === "Geopolitics"  ? "all" : "Geopolitics")} />
+          <StatPill label="Supply"   count={stats.supply}   color="var(--supply)"  active={categoryFilter === "Supply Chain"} onClick={() => setCategoryFilter(categoryFilter === "Supply Chain" ? "all" : "Supply Chain")} />
+          <StatPill label="Critical" count={stats.critical} color="#ef4444"        active={severityFilter === "critical"}     onClick={() => setSeverityFilter(severityFilter === "critical"     ? "all" : "critical")} />
+          <div style={{ display: "flex", alignItems: "center", gap: 5, marginLeft: 8, color: "var(--live)", fontSize: 10, fontWeight: 600, letterSpacing: "0.1em" }}>
+            <Radio size={11} />
+            LIVE
           </div>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
-        {/* Stats Cards */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-          <button
-            onClick={() =>
-              setCategoryFilter(
-                categoryFilter === "Cyber Attack" ? "all" : "Cyber Attack",
-              )
-            }
-            className={`group relative overflow-hidden rounded-xl p-4 text-left transition-all ${
-              categoryFilter === "Cyber Attack"
-                ? "bg-red-500/15 ring-2 ring-red-500/40"
-                : "bg-slate-900/50 ring-1 ring-slate-800/50 hover:ring-slate-700/50"
-            }`}
-          >
-            <div className="flex items-center justify-between mb-2">
-              <ShieldAlert className="w-5 h-5 text-red-400" />
-              <span className="text-2xl font-bold text-white">
-                {stats.cyber}
-              </span>
-            </div>
-            <p className="text-xs text-slate-400">Cyber Attacks</p>
-            <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-          </button>
+      {/* ── TICKER ─────────────────────────────────────── */}
+      <Ticker articles={articles} />
 
-          <button
-            onClick={() =>
-              setCategoryFilter(
-                categoryFilter === "Supply Chain" ? "all" : "Supply Chain",
-              )
-            }
-            className={`group relative overflow-hidden rounded-xl p-4 text-left transition-all ${
-              categoryFilter === "Supply Chain"
-                ? "bg-amber-500/15 ring-2 ring-amber-500/40"
-                : "bg-slate-900/50 ring-1 ring-slate-800/50 hover:ring-slate-700/50"
-            }`}
-          >
-            <div className="flex items-center justify-between mb-2">
-              <Truck className="w-5 h-5 text-amber-400" />
-              <span className="text-2xl font-bold text-white">
-                {stats.supply}
-              </span>
-            </div>
-            <p className="text-xs text-slate-400">Supply Chain</p>
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-          </button>
-
-          <button
-            onClick={() =>
-              setCategoryFilter(
-                categoryFilter === "Geopolitics" ? "all" : "Geopolitics",
-              )
-            }
-            className={`group relative overflow-hidden rounded-xl p-4 text-left transition-all ${
-              categoryFilter === "Geopolitics"
-                ? "bg-blue-500/15 ring-2 ring-blue-500/40"
-                : "bg-slate-900/50 ring-1 ring-slate-800/50 hover:ring-slate-700/50"
-            }`}
-          >
-            <div className="flex items-center justify-between mb-2">
-              <Globe className="w-5 h-5 text-blue-400" />
-              <span className="text-2xl font-bold text-white">
-                {stats.geo}
-              </span>
-            </div>
-            <p className="text-xs text-slate-400">Geopolitical</p>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-          </button>
-
-          <button
-            onClick={() =>
-              setSeverityFilter(
-                severityFilter === "critical" ? "all" : "critical",
-              )
-            }
-            className={`group relative overflow-hidden rounded-xl p-4 text-left transition-all ${
-              severityFilter === "critical"
-                ? "bg-red-500/15 ring-2 ring-red-500/40"
-                : "bg-slate-900/50 ring-1 ring-slate-800/50 hover:ring-slate-700/50"
-            }`}
-          >
-            <div className="flex items-center justify-between mb-2">
-              <TrendingUp className="w-5 h-5 text-red-400" />
-              <span className="text-2xl font-bold text-white">
-                {stats.critical}
-              </span>
-            </div>
-            <p className="text-xs text-slate-400">Critical Severity</p>
-            <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-          </button>
-        </div>
-
-        {/* Map Section */}
-        <section className="animate-fade-in">
-          <WorldMap
-            articles={filteredArticles}
-            onMarkerClick={(article) => setSelectedArticle(article)}
-          />
-        </section>
-
-        {/* Filters Bar */}
-        <section className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-          <div className="relative flex-1 w-full sm:max-w-sm">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500" />
-            <input
-              type="text"
-              placeholder="Search threats, regions, sources..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-4 py-2.5 bg-slate-900/50 ring-1 ring-slate-800/50 rounded-xl text-sm text-slate-200 placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500/40 transition-all"
-            />
-            {searchQuery && (
+      {/* ── MAP SECTION ────────────────────────────────── */}
+      <div style={{ position: "relative", borderBottom: "1px solid var(--border)" }}>
+        {/* Map toolbar */}
+        <div style={{
+          position: "absolute", top: 0, left: 0, right: 0, zIndex: 10,
+          height: 34,
+          background: "rgba(7,9,12,0.92)",
+          borderBottom: "1px solid var(--border-subtle)",
+          display: "flex", alignItems: "center",
+          padding: "0 12px", gap: 8,
+          backdropFilter: "blur(8px)",
+        }}>
+          <span style={{ fontSize: 10, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginRight: 6 }}>Layer</span>
+          {(["all", "Cyber Attack", "Supply Chain", "Geopolitics"] as const).map((cat) => {
+            const label = cat === "all" ? "All" : cat.replace(" ", "\u00A0");
+            const active = categoryFilter === cat;
+            const col = cat === "all" ? "var(--text-secondary)" : CATEGORY_COLOR[cat];
+            return (
               <button
-                onClick={() => setSearchQuery("")}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300"
+                key={cat}
+                onClick={() => setCategoryFilter(active && cat !== "all" ? "all" : cat)}
+                style={{
+                  padding: "2px 9px", borderRadius: 2, fontSize: 10, fontWeight: 500,
+                  fontFamily: "var(--font-mono)", cursor: "pointer",
+                  background: active ? `${col}22` : "transparent",
+                  border: `1px solid ${active ? col : "var(--border-subtle)"}`,
+                  color: active ? "var(--text-primary)" : "var(--text-muted)",
+                  letterSpacing: "0.05em", textTransform: "uppercase",
+                  transition: "all 0.15s",
+                }}
               >
-                <X className="w-4 h-4" />
+                {label}
               </button>
-            )}
-          </div>
+            );
+          })}
 
-          <div className="flex items-center gap-2 flex-wrap">
-            <Filter className="w-4 h-4 text-slate-500" />
-            {(["all", "critical", "high", "medium"] as SeverityFilter[]).map(
-              (sev) => (
+          <div style={{ marginLeft: "auto", display: "flex", gap: 6 }}>
+            <span style={{ fontSize: 10, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Severity</span>
+            {(["all", "critical", "high", "medium"] as SeverityFilter[]).map((sev) => {
+              const active = severityFilter === sev;
+              const col = sev === "all" ? "var(--text-secondary)" : SEVERITY_COLOR[sev];
+              return (
                 <button
                   key={sev}
-                  onClick={() => setSeverityFilter(sev)}
-                  className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-all ${
-                    severityFilter === sev
-                      ? "bg-slate-700 text-white ring-1 ring-slate-600"
-                      : "bg-slate-900/50 text-slate-500 ring-1 ring-slate-800/50 hover:text-slate-300"
-                  }`}
+                  onClick={() => setSeverityFilter(active && sev !== "all" ? "all" : sev)}
+                  style={{
+                    padding: "2px 8px", borderRadius: 2, fontSize: 10, fontFamily: "var(--font-mono)", cursor: "pointer",
+                    background: active ? `${col}22` : "transparent",
+                    border: `1px solid ${active ? col : "var(--border-subtle)"}`,
+                    color: active ? (sev === "all" ? "var(--text-primary)" : col) : "var(--text-muted)",
+                    textTransform: "uppercase", letterSpacing: "0.05em",
+                    transition: "all 0.15s",
+                  }}
                 >
-                  {sev === "all" ? "All Severity" : sev.charAt(0).toUpperCase() + sev.slice(1)}
+                  {sev === "all" ? "All" : sev}
                 </button>
-              ),
-            )}
+              );
+            })}
+          </div>
+        </div>
 
-            {hasActiveFilters && (
-              <button
-                onClick={clearFilters}
-                className="flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-lg bg-blue-500/10 text-blue-400 ring-1 ring-blue-500/20 hover:bg-blue-500/20 transition-all"
+        {/* The map itself (toolbar height offset) */}
+        <div style={{ paddingTop: 34 }}>
+          <WorldMap
+            articles={filtered as MapArticle[]}
+            activeCategory={categoryFilter}
+          />
+        </div>
+      </div>
+
+      {/* ── FEED TOOLBAR ───────────────────────────────── */}
+      <div style={{
+        background: "var(--bg-surface)",
+        borderBottom: "1px solid var(--border)",
+        padding: "8px 14px",
+        display: "flex", alignItems: "center", gap: 10,
+        flexWrap: "wrap",
+        flexShrink: 0,
+      }}>
+        {/* Search */}
+        <div style={{ position: "relative", flex: 1, minWidth: 180, maxWidth: 320 }}>
+          <Search size={12} style={{ position: "absolute", left: 9, top: "50%", transform: "translateY(-50%)", color: "var(--text-muted)", pointerEvents: "none" }} />
+          <input
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search threats, regions..."
+            style={{
+              width: "100%", paddingLeft: 28, paddingRight: searchQuery ? 28 : 10,
+              height: 28, background: "var(--bg)", border: "1px solid var(--border)",
+              borderRadius: 2, fontFamily: "var(--font-mono)", fontSize: 11,
+              color: "var(--text-primary)", outline: "none",
+            }}
+          />
+          {searchQuery && (
+            <button onClick={() => setSearchQuery("")} style={{ position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", color: "var(--text-muted)", display: "flex" }}>
+              <X size={12} />
+            </button>
+          )}
+        </div>
+
+        {/* Result count */}
+        <span style={{ fontSize: 10, color: "var(--text-muted)", letterSpacing: "0.06em" }}>
+          {filtered.length} <span style={{ textTransform: "uppercase" }}>REPORTS</span>
+        </span>
+
+        {hasFilters && (
+          <button
+            onClick={clearFilters}
+            style={{ display: "flex", alignItems: "center", gap: 4, padding: "3px 8px", border: "1px solid var(--border)", borderRadius: 2, background: "transparent", cursor: "pointer", fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--text-secondary)" }}
+          >
+            <X size={10} /> Clear filters
+          </button>
+        )}
+      </div>
+
+      {/* ── INTELLIGENCE GRID ──────────────────────────── */}
+      <main style={{
+        flex: 1,
+        padding: "12px 14px",
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+        gap: 8,
+        alignContent: "start",
+      }}>
+        {filtered.length === 0 ? (
+          <div style={{ gridColumn: "1 / -1", textAlign: "center", padding: "60px 20px", color: "var(--text-muted)", fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.08em" }}>
+            <AlertTriangle style={{ width: 22, height: 22, margin: "0 auto 12px", display: "block" }} />
+            NO REPORTS MATCH CURRENT FILTERS
+          </div>
+        ) : (
+          filtered.map((article, idx) => {
+            const catColor  = CATEGORY_COLOR[article.category] ?? DEFAULT_COLOR;
+            const sevColor  = SEVERITY_COLOR[article.severity ?? "medium"] ?? "var(--text-muted)";
+            const region    = regionStr(article.region);
+            return (
+              <div
+                key={idx}
+                className="fade-in"
+                style={{
+                  background: "var(--bg-surface)",
+                  border: "1px solid var(--border)",
+                  borderLeft: `3px solid ${catColor}`,
+                  borderRadius: 3,
+                  padding: "12px 14px",
+                  animationDelay: `${idx * 30}ms`,
+                  transition: "border-color 0.15s, background 0.15s",
+                  cursor: "default",
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLDivElement).style.background = "var(--bg-elevated)";
+                  (e.currentTarget as HTMLDivElement).style.borderColor = catColor;
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLDivElement).style.background = "var(--bg-surface)";
+                  (e.currentTarget as HTMLDivElement).style.borderColor = "var(--border)";
+                  (e.currentTarget as HTMLDivElement).style.borderLeftColor = catColor;
+                }}
               >
-                <X className="w-3 h-3" />
-                Clear
-              </button>
-            )}
-          </div>
-        </section>
-
-        {/* Intelligence Feed */}
-        <section className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-base font-semibold text-white">
-              Intelligence Reports
-              <span className="ml-2 text-sm font-normal text-slate-500">
-                ({filteredArticles.length})
-              </span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {filteredArticles.length > 0 ? (
-              filteredArticles.map((article, idx) => (
-                <article
-                  key={idx}
-                  className={`animate-slide-up group bg-slate-900/40 ring-1 ring-slate-800/40 rounded-2xl p-5 hover:ring-slate-700/60 hover:bg-slate-900/60 transition-all ${
-                    selectedArticle?.title === article.title
-                      ? "ring-2 ring-blue-500/40 bg-slate-900/70"
-                      : ""
-                  }`}
-                  style={{ animationDelay: `${idx * 50}ms` }}
-                  onClick={() => setSelectedArticle(article)}
-                >
-                  {/* Top row: category + severity + time */}
-                  <div className="flex items-center justify-between mb-3 gap-2">
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-medium ring-1 ring-inset ${getCategoryStyle(article.category)}`}
-                      >
-                        {getCategoryIcon(article.category, "w-3.5 h-3.5")}
-                        {article.category}
-                      </span>
-                      {article.severity && (
-                        <span
-                          className={`text-[10px] font-bold uppercase px-2 py-0.5 rounded-md border ${getSeverityStyle(article.severity)}`}
-                        >
-                          {article.severity}
-                        </span>
-                      )}
-                    </div>
-                    <div className="flex items-center gap-1 text-xs text-slate-500">
-                      <Clock className="w-3 h-3" />
-                      {getRelativeTime(article.date)}
-                    </div>
-                  </div>
-
-                  {/* Title */}
-                  <a
-                    href={article.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group/link flex items-start gap-1 mb-3"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <h3 className="text-[15px] font-semibold text-slate-100 group-hover/link:text-blue-400 transition-colors leading-snug line-clamp-2">
-                      {article.title}
-                    </h3>
-                    <ExternalLink className="w-3.5 h-3.5 text-slate-600 group-hover/link:text-blue-400 transition-colors mt-0.5 shrink-0" />
-                  </a>
-
-                  {/* Metadata chips */}
-                  <div className="flex items-center gap-2 mb-4 flex-wrap">
-                    <span className="inline-flex items-center gap-1 text-[11px] text-slate-500 bg-slate-800/50 px-2 py-1 rounded-md">
-                      <Globe className="w-3 h-3" />
-                      {article.source}
+                {/* Card header */}
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                    <span style={{ color: catColor, display: "flex" }}>
+                      <CategoryIcon cat={article.category} size={12} />
                     </span>
-                    {article.region && (
-                      <span className="inline-flex items-center gap-1 text-[11px] text-slate-500 bg-slate-800/50 px-2 py-1 rounded-md">
-                        <MapPin className="w-3 h-3" />
-                        {article.region}
+                    <span style={{ color: catColor, fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em" }}>{article.category}</span>
+                    {article.severity && (
+                      <span style={{ color: sevColor, fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", borderLeft: "1px solid var(--border-subtle)", paddingLeft: 6, marginLeft: 2 }}>
+                        {article.severity}
                       </span>
                     )}
                   </div>
-
-                  {/* AI Analysis */}
-                  <div className="p-3.5 rounded-xl bg-slate-950/40 border border-slate-800/30">
-                    <div className="flex items-center gap-1.5 mb-2">
-                      <div className="w-1 h-1 rounded-full bg-blue-400" />
-                      <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">
-                        AI Risk Analysis
-                      </span>
-                    </div>
-                    <p className="text-[13px] text-slate-400 leading-relaxed">
-                      {article.summary}
-                    </p>
+                  <div style={{ display: "flex", alignItems: "center", gap: 4, color: "var(--text-muted)", fontSize: 10 }}>
+                    <Clock size={10} />
+                    {formatRelative(article.date, now)}
                   </div>
-                </article>
-              ))
-            ) : (
-              <div className="col-span-full p-12 text-center bg-slate-900/30 rounded-2xl ring-1 ring-slate-800/30">
-                <ShieldAlert className="w-10 h-10 mx-auto mb-4 text-slate-700" />
-                <p className="text-slate-400 font-medium">
-                  No reports match your filters
-                </p>
-                <p className="text-sm text-slate-600 mt-1">
-                  Try adjusting your search or filter criteria
-                </p>
-                {hasActiveFilters && (
-                  <button
-                    onClick={clearFilters}
-                    className="mt-4 px-4 py-2 text-sm font-medium rounded-lg bg-blue-500/10 text-blue-400 ring-1 ring-blue-500/20 hover:bg-blue-500/20 transition-all"
-                  >
-                    Clear all filters
-                  </button>
-                )}
+                </div>
+
+                {/* Title */}
+                <a
+                  href={article.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ display: "flex", alignItems: "flex-start", gap: 5, marginBottom: 8, textDecoration: "none" }}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <span style={{ color: "var(--text-primary)", fontWeight: 500, fontSize: 12, lineHeight: 1.45, flex: 1, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                    {article.title}
+                  </span>
+                  <ExternalLink size={10} style={{ color: "var(--text-muted)", flexShrink: 0, marginTop: 2 }} />
+                </a>
+
+                {/* Meta */}
+                <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10, flexWrap: "wrap" }}>
+                  <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
+                    <Globe size={10} />
+                    {article.source}
+                  </span>
+                  {region && (
+                    <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
+                      <MapPin size={10} />
+                      {region}
+                    </span>
+                  )}
+                </div>
+
+                {/* AI Analysis */}
+                <div style={{
+                  background: "var(--bg)",
+                  border: "1px solid var(--border-subtle)",
+                  borderRadius: 2,
+                  padding: "9px 11px",
+                }}>
+                  <div style={{ fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: 5 }}>
+                    AI RISK ANALYSIS
+                  </div>
+                  <p style={{ fontSize: 11, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
+                    {article.summary}
+                  </p>
+                </div>
               </div>
-            )}
-          </div>
-        </section>
+            );
+          })
+        )}
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-slate-800/30 mt-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex items-center gap-2 text-xs text-slate-600">
-            <Activity className="w-3.5 h-3.5" />
-            <span>
-              OSINT Risk Monitor &middot; Automated threat intelligence
-            </span>
-          </div>
-          <div className="flex items-center gap-4 text-xs text-slate-600">
-            <span>
-              Sources: BBC, CNBC, Hacker News, CISA
-            </span>
-            <span>&middot;</span>
-            <span>
-              Analysis: Llama 3.2 via HuggingFace
-            </span>
-          </div>
+      {/* ── STATUS BAR ─────────────────────────────────── */}
+      <footer style={{
+        height: 24, flexShrink: 0,
+        background: "var(--bg-surface)",
+        borderTop: "1px solid var(--border)",
+        display: "flex", alignItems: "center", justifyContent: "space-between",
+        padding: "0 14px",
+        fontSize: 10, color: "var(--text-muted)",
+        letterSpacing: "0.06em",
+      }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <span>OSINT MONITOR v2.0</span>
+          <span style={{ color: "var(--border)" }}>|</span>
+          <span>SRC: BBC · CNBC · THN · CISA · KREBS · NYT</span>
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <span>AI: LLAMA 3.2 · HUGGINGFACE</span>
+          <span style={{ color: "var(--border)" }}>|</span>
+          <span style={{ color: "var(--live)", fontWeight: 600 }}>● AUTO-UPDATE 6H</span>
         </div>
       </footer>
+
     </div>
   );
 }

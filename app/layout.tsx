@@ -1,35 +1,24 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "OSINT Risk Monitor | Global Threat Intelligence",
+  title: "OSINT Risk Monitor",
   description:
-    "Real-time geopolitical, cyber threat, and supply chain risk intelligence powered by AI analysis of open-source intelligence feeds.",
+    "Real-time geopolitical, cyber threat, and supply chain risk intelligence.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#07090c",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="dark">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950 text-slate-200`}
-      >
-        {children}
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }

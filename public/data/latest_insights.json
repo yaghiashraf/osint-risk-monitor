@@ -57,10 +57,7 @@
       "summary": "Malicious Laravel packages on Packagist deploy RAT on multiple platforms, posing a critical threat to users.",
       "category": "Cyber Attack",
       "severity": "critical",
-      "region": {
-        "lat": 37.7749,
-        "lng": -122.4194
-      },
+      "region": "United States",
       "lat": 37.7749,
       "lng": -122.4194
     },
