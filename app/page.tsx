@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useMemo, useCallback } from "react";
 import dynamic from "next/dynamic";
 import {
   ExternalLink,
@@ -14,8 +14,13 @@ import {
   AlertTriangle,
   Radio,
   Clock,
+  RefreshCw,
+  ChevronRight,
 } from "lucide-react";
 import type { Article as MapArticle } from "../components/WorldMap";
+import { LiveTVPanel } from "../components/LiveTVPanel";
+import { MarketPanel } from "../components/MarketPanel";
+import { ThreatChart } from "../components/ThreatChart";
 
 const DEFAULT_COLOR = "#4b5563";
 
@@ -25,7 +30,7 @@ const WorldMap = dynamic(() => import("../components/WorldMap"), {
     <div
       style={{
         background: "var(--map-ocean)",
-        height: "min(65vh, 520px)",
+        height: "min(52vh, 480px)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -79,39 +84,37 @@ const SEVERITY_COLOR: Record<string, string> = {
 
 function CategoryIcon({ cat, size = 13 }: { cat: string; size?: number }) {
   const s = { width: size, height: size };
-  if (cat === "Cyber Attack")  return <ShieldAlert style={s} />;
-  if (cat === "Supply Chain")  return <Truck       style={s} />;
-  if (cat === "Geopolitics")   return <Globe       style={s} />;
+  if (cat === "Cyber Attack") return <ShieldAlert style={s} />;
+  if (cat === "Supply Chain") return <Truck       style={s} />;
+  if (cat === "Geopolitics")  return <Globe       style={s} />;
   return <AlertTriangle style={s} />;
 }
 
 function formatRelative(dateStr: string, now: number): string {
-  const diff  = now - new Date(dateStr).getTime();
-  const m     = Math.floor(diff / 60000);
-  const h     = Math.floor(m / 60);
-  const d     = Math.floor(h / 24);
-  if (d > 0)  return `${d}d ago`;
-  if (h > 0)  return `${h}h ago`;
-  if (m > 0)  return `${m}m ago`;
+  const diff = now - new Date(dateStr).getTime();
+  const m    = Math.floor(diff / 60000);
+  const h    = Math.floor(m / 60);
+  const d    = Math.floor(h / 24);
+  if (d > 0) return `${d}d ago`;
+  if (h > 0) return `${h}h ago`;
+  if (m > 0) return `${m}m ago`;
   return "just now";
 }
 
-// ─── Ticker ─────────────────────────────────────────────────────────────────
+// ─── Ticker ──────────────────────────────────────────────────────────────────
 function Ticker({ articles }: { articles: Article[] }) {
   if (articles.length === 0) return null;
-  const items = [...articles, ...articles]; // duplicate for seamless loop
+  const items = [...articles, ...articles];
   return (
-    <div
-      style={{
-        height: 28,
-        borderBottom: "1px solid var(--border-subtle)",
-        background: "var(--bg-surface)",
-        overflow: "hidden",
-        display: "flex",
-        alignItems: "center",
-        position: "relative",
-      }}
-    >
+    <div style={{
+      height: 28,
+      borderBottom: "1px solid var(--border-subtle)",
+      background: "var(--bg-surface)",
+      overflow: "hidden",
+      display: "flex",
+      alignItems: "center",
+      position: "relative",
+    }}>
       <div style={{
         position: "absolute", left: 0, top: 0, bottom: 0,
         width: 60, zIndex: 2,
@@ -144,7 +147,7 @@ function Ticker({ articles }: { articles: Article[] }) {
   );
 }
 
-// ─── Stat Pill ───────────────────────────────────────────────────────────────
+// ─── Stat Pill ────────────────────────────────────────────────────────────────
 function StatPill({
   label, count, color, active, onClick,
 }: {
@@ -173,14 +176,100 @@ function StatPill({
   );
 }
 
-// ─── Main Page ───────────────────────────────────────────────────────────────
+// ─── Article Detail Drawer ────────────────────────────────────────────────────
+function ArticleDrawer({ article, now, onClose }: {
+  article: Article & { region: string };
+  now: number;
+  onClose: () => void;
+}) {
+  const catColor = CATEGORY_COLOR[article.category] ?? DEFAULT_COLOR;
+  const sevColor = SEVERITY_COLOR[article.severity ?? "medium"] ?? "var(--text-muted)";
+  return (
+    <div style={{
+      position: "fixed", right: 0, top: 40, bottom: 24,
+      width: "min(420px, 100vw)", zIndex: 100,
+      background: "var(--bg-surface)",
+      borderLeft: `3px solid ${catColor}`,
+      display: "flex", flexDirection: "column",
+      boxShadow: "-8px 0 32px rgba(0,0,0,0.6)",
+      animation: "slideIn 0.2s ease",
+    }}>
+      <div style={{
+        padding: "12px 14px",
+        borderBottom: "1px solid var(--border)",
+        display: "flex", alignItems: "center", justifyContent: "space-between",
+        flexShrink: 0,
+      }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+          <span style={{ color: catColor }}><CategoryIcon cat={article.category} size={13} /></span>
+          <span style={{ color: catColor, fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>{article.category}</span>
+          {article.severity && (
+            <span style={{ color: sevColor, fontSize: 9, fontWeight: 700, textTransform: "uppercase", borderLeft: "1px solid var(--border)", paddingLeft: 6 }}>
+              {article.severity}
+            </span>
+          )}
+        </div>
+        <button onClick={onClose} style={{ background: "none", border: "none", cursor: "pointer", color: "var(--text-muted)", display: "flex" }}>
+          <X size={14} />
+        </button>
+      </div>
+      <div style={{ flex: 1, overflow: "auto", padding: "14px" }}>
+        <a
+          href={article.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ display: "flex", gap: 6, alignItems: "flex-start", textDecoration: "none", marginBottom: 12 }}
+        >
+          <span style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.5, color: "var(--text-primary)", flex: 1 }}>
+            {article.title}
+          </span>
+          <ExternalLink size={11} style={{ color: "var(--accent)", flexShrink: 0, marginTop: 2 }} />
+        </a>
+        <div style={{ display: "flex", gap: 10, marginBottom: 14, flexWrap: "wrap" }}>
+          <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
+            <Globe size={10} />{article.source}
+          </span>
+          <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
+            <MapPin size={10} />{article.region}
+          </span>
+          <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
+            <Clock size={10} />{formatRelative(article.date, now)}
+          </span>
+        </div>
+        <div style={{
+          background: "var(--bg)",
+          border: "1px solid var(--border-subtle)",
+          borderLeft: `2px solid ${catColor}`,
+          borderRadius: 2,
+          padding: "12px 14px",
+        }}>
+          <div style={{ fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: 6 }}>
+            AI RISK ANALYSIS
+          </div>
+          <p style={{ fontSize: 12, color: "var(--text-secondary)", lineHeight: 1.7, margin: 0 }}>
+            {article.summary}
+          </p>
+        </div>
+        {article.lat !== 0 && article.lng !== 0 && (
+          <div style={{ marginTop: 12, padding: "8px 10px", background: "var(--bg-elevated)", borderRadius: 2, fontSize: 10, color: "var(--text-muted)", display: "flex", gap: 12 }}>
+            <span>LAT {article.lat.toFixed(2)}°</span>
+            <span>LNG {article.lng.toFixed(2)}°</span>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ─── Main Page ─────────────────────────────────────────────────────────────────
 export default function Home() {
-  const [data,          setData]         = useState<Data | null>(null);
-  const [loading,       setLoading]      = useState(true);
-  const [categoryFilter,setCategoryFilter] = useState<CategoryFilter>("all");
-  const [severityFilter,setSeverityFilter] = useState<SeverityFilter>("all");
-  const [searchQuery,   setSearchQuery]  = useState("");
-  const [now,           setNow]          = useState(() =>
+  const [data,            setData]          = useState<Data | null>(null);
+  const [loading,         setLoading]       = useState(true);
+  const [categoryFilter,  setCategoryFilter] = useState<CategoryFilter>("all");
+  const [severityFilter,  setSeverityFilter] = useState<SeverityFilter>("all");
+  const [searchQuery,     setSearchQuery]   = useState("");
+  const [selected,        setSelected]      = useState<(Article & { region: string }) | null>(null);
+  const [now,             setNow]           = useState(() =>
     typeof window !== "undefined" ? Date.now() : 0,
   );
 
@@ -210,7 +299,7 @@ export default function Home() {
         return (
           a.title.toLowerCase().includes(q) ||
           a.summary.toLowerCase().includes(q) ||
-          regionStr(a.region).toLowerCase().includes(q) ||
+          a.region.toLowerCase().includes(q) ||
           a.source.toLowerCase().includes(q)
         );
       }
@@ -222,8 +311,12 @@ export default function Home() {
     cyber:    articles.filter((a) => a.category === "Cyber Attack").length,
     supply:   articles.filter((a) => a.category === "Supply Chain").length,
     geo:      articles.filter((a) => a.category === "Geopolitics").length,
-    critical: articles.filter((a) => a.severity  === "critical").length,
+    critical: articles.filter((a) => a.severity === "critical").length,
   }), [articles]);
+
+  const handleMarkerClick = useCallback((article: MapArticle) => {
+    setSelected({ ...article, region: regionStr(article.region) });
+  }, []);
 
   if (loading) {
     return (
@@ -236,7 +329,7 @@ export default function Home() {
   }
 
   const clearFilters = () => { setCategoryFilter("all"); setSeverityFilter("all"); setSearchQuery(""); };
-  const hasFilters = categoryFilter !== "all" || severityFilter !== "all" || searchQuery !== "";
+  const hasFilters   = categoryFilter !== "all" || severityFilter !== "all" || searchQuery !== "";
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
@@ -250,7 +343,6 @@ export default function Home() {
         padding: "0 14px",
         position: "sticky", top: 0, zIndex: 50,
       }}>
-        {/* Left: branding */}
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <div className="live-dot" />
           <span style={{ fontWeight: 600, fontSize: 12, letterSpacing: "0.12em", color: "var(--text-primary)", textTransform: "uppercase" }}>
@@ -263,8 +355,6 @@ export default function Home() {
               : "NO DATA"}
           </span>
         </div>
-
-        {/* Right: stat pills */}
         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
           <StatPill label="Cyber"    count={stats.cyber}    color="var(--cyber)"   active={categoryFilter === "Cyber Attack"} onClick={() => setCategoryFilter(categoryFilter === "Cyber Attack" ? "all" : "Cyber Attack")} />
           <StatPill label="Geo"      count={stats.geo}      color="var(--geo)"     active={categoryFilter === "Geopolitics"}  onClick={() => setCategoryFilter(categoryFilter === "Geopolitics"  ? "all" : "Geopolitics")} />
@@ -282,7 +372,7 @@ export default function Home() {
 
       {/* ── MAP SECTION ────────────────────────────────── */}
       <div style={{ position: "relative", borderBottom: "1px solid var(--border)" }}>
-        {/* Map toolbar */}
+        {/* Map toolbar overlay */}
         <div style={{
           position: "absolute", top: 0, left: 0, right: 0, zIndex: 10,
           height: 34,
@@ -294,13 +384,11 @@ export default function Home() {
         }}>
           <span style={{ fontSize: 10, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginRight: 6 }}>Layer</span>
           {(["all", "Cyber Attack", "Supply Chain", "Geopolitics"] as const).map((cat) => {
-            const label = cat === "all" ? "All" : cat.replace(" ", "\u00A0");
+            const label  = cat === "all" ? "All" : cat.replace(" ", "\u00A0");
             const active = categoryFilter === cat;
-            const col = cat === "all" ? "var(--text-secondary)" : CATEGORY_COLOR[cat];
+            const col    = cat === "all" ? "var(--text-secondary)" : CATEGORY_COLOR[cat];
             return (
-              <button
-                key={cat}
-                onClick={() => setCategoryFilter(active && cat !== "all" ? "all" : cat)}
+              <button key={cat} onClick={() => setCategoryFilter(active && cat !== "all" ? "all" : cat)}
                 style={{
                   padding: "2px 9px", borderRadius: 2, fontSize: 10, fontWeight: 500,
                   fontFamily: "var(--font-mono)", cursor: "pointer",
@@ -315,16 +403,13 @@ export default function Home() {
               </button>
             );
           })}
-
           <div style={{ marginLeft: "auto", display: "flex", gap: 6 }}>
             <span style={{ fontSize: 10, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Severity</span>
             {(["all", "critical", "high", "medium"] as SeverityFilter[]).map((sev) => {
               const active = severityFilter === sev;
-              const col = sev === "all" ? "var(--text-secondary)" : SEVERITY_COLOR[sev];
+              const col    = sev === "all" ? "var(--text-secondary)" : SEVERITY_COLOR[sev];
               return (
-                <button
-                  key={sev}
-                  onClick={() => setSeverityFilter(active && sev !== "all" ? "all" : sev)}
+                <button key={sev} onClick={() => setSeverityFilter(active && sev !== "all" ? "all" : sev)}
                   style={{
                     padding: "2px 8px", borderRadius: 2, fontSize: 10, fontFamily: "var(--font-mono)", cursor: "pointer",
                     background: active ? `${col}22` : "transparent",
@@ -340,14 +425,28 @@ export default function Home() {
             })}
           </div>
         </div>
-
-        {/* The map itself (toolbar height offset) */}
         <div style={{ paddingTop: 34 }}>
           <WorldMap
             articles={filtered as MapArticle[]}
             activeCategory={categoryFilter}
+            onMarkerClick={handleMarkerClick}
           />
         </div>
+      </div>
+
+      {/* ── THREE-PANEL ROW: TV | MARKET | ANALYTICS ───── */}
+      <div style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
+        borderBottom: "1px solid var(--border)",
+        minHeight: 300,
+      }}>
+        {/* TV gets double width on wide screens */}
+        <div style={{ gridColumn: "span 2", minWidth: 0 }}>
+          <LiveTVPanel />
+        </div>
+        <MarketPanel />
+        <ThreatChart articles={articles} />
       </div>
 
       {/* ── FEED TOOLBAR ───────────────────────────────── */}
@@ -359,13 +458,12 @@ export default function Home() {
         flexWrap: "wrap",
         flexShrink: 0,
       }}>
-        {/* Search */}
         <div style={{ position: "relative", flex: 1, minWidth: 180, maxWidth: 320 }}>
           <Search size={12} style={{ position: "absolute", left: 9, top: "50%", transform: "translateY(-50%)", color: "var(--text-muted)", pointerEvents: "none" }} />
           <input
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search threats, regions..."
+            placeholder="Search threats, regions, sources..."
             style={{
               width: "100%", paddingLeft: 28, paddingRight: searchQuery ? 28 : 10,
               height: 28, background: "var(--bg)", border: "1px solid var(--border)",
@@ -379,17 +477,11 @@ export default function Home() {
             </button>
           )}
         </div>
-
-        {/* Result count */}
         <span style={{ fontSize: 10, color: "var(--text-muted)", letterSpacing: "0.06em" }}>
           {filtered.length} <span style={{ textTransform: "uppercase" }}>REPORTS</span>
         </span>
-
         {hasFilters && (
-          <button
-            onClick={clearFilters}
-            style={{ display: "flex", alignItems: "center", gap: 4, padding: "3px 8px", border: "1px solid var(--border)", borderRadius: 2, background: "transparent", cursor: "pointer", fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--text-secondary)" }}
-          >
+          <button onClick={clearFilters} style={{ display: "flex", alignItems: "center", gap: 4, padding: "3px 8px", border: "1px solid var(--border)", borderRadius: 2, background: "transparent", cursor: "pointer", fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--text-secondary)" }}>
             <X size={10} /> Clear filters
           </button>
         )}
@@ -411,31 +503,33 @@ export default function Home() {
           </div>
         ) : (
           filtered.map((article, idx) => {
-            const catColor  = CATEGORY_COLOR[article.category] ?? DEFAULT_COLOR;
-            const sevColor  = SEVERITY_COLOR[article.severity ?? "medium"] ?? "var(--text-muted)";
-            const region    = regionStr(article.region);
+            const catColor = CATEGORY_COLOR[article.category] ?? DEFAULT_COLOR;
+            const sevColor = SEVERITY_COLOR[article.severity ?? "medium"] ?? "var(--text-muted)";
+            const isSelected = selected?.title === article.title;
             return (
               <div
                 key={idx}
                 className="fade-in"
+                onClick={() => setSelected(isSelected ? null : article)}
                 style={{
-                  background: "var(--bg-surface)",
-                  border: "1px solid var(--border)",
+                  background: isSelected ? "var(--bg-elevated)" : "var(--bg-surface)",
+                  border: `1px solid ${isSelected ? catColor : "var(--border)"}`,
                   borderLeft: `3px solid ${catColor}`,
                   borderRadius: 3,
                   padding: "12px 14px",
                   animationDelay: `${idx * 30}ms`,
                   transition: "border-color 0.15s, background 0.15s",
-                  cursor: "default",
+                  cursor: "pointer",
                 }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLDivElement).style.background = "var(--bg-elevated)";
-                  (e.currentTarget as HTMLDivElement).style.borderColor = catColor;
+                  if (!isSelected) {
+                    (e.currentTarget as HTMLDivElement).style.background = "var(--bg-elevated)";
+                  }
                 }}
                 onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLDivElement).style.background = "var(--bg-surface)";
-                  (e.currentTarget as HTMLDivElement).style.borderColor = "var(--border)";
-                  (e.currentTarget as HTMLDivElement).style.borderLeftColor = catColor;
+                  if (!isSelected) {
+                    (e.currentTarget as HTMLDivElement).style.background = "var(--bg-surface)";
+                  }
                 }}
               >
                 {/* Card header */}
@@ -451,17 +545,17 @@ export default function Home() {
                       </span>
                     )}
                   </div>
-                  <div style={{ display: "flex", alignItems: "center", gap: 4, color: "var(--text-muted)", fontSize: 10 }}>
-                    <Clock size={10} />
-                    {formatRelative(article.date, now)}
+                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 4, color: "var(--text-muted)", fontSize: 10 }}>
+                      <Clock size={10} />
+                      {formatRelative(article.date, now)}
+                    </div>
+                    <ChevronRight size={12} style={{ color: catColor, opacity: isSelected ? 1 : 0.4, transform: isSelected ? "rotate(90deg)" : "none", transition: "transform 0.15s" }} />
                   </div>
                 </div>
 
                 {/* Title */}
-                <a
-                  href={article.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a href={article.link} target="_blank" rel="noopener noreferrer"
                   style={{ display: "flex", alignItems: "flex-start", gap: 5, marginBottom: 8, textDecoration: "none" }}
                   onClick={(e) => e.stopPropagation()}
                 >
@@ -474,24 +568,17 @@ export default function Home() {
                 {/* Meta */}
                 <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10, flexWrap: "wrap" }}>
                   <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
-                    <Globe size={10} />
-                    {article.source}
+                    <Globe size={10} />{article.source}
                   </span>
-                  {region && (
+                  {article.region && (
                     <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
-                      <MapPin size={10} />
-                      {region}
+                      <MapPin size={10} />{article.region}
                     </span>
                   )}
                 </div>
 
                 {/* AI Analysis */}
-                <div style={{
-                  background: "var(--bg)",
-                  border: "1px solid var(--border-subtle)",
-                  borderRadius: 2,
-                  padding: "9px 11px",
-                }}>
+                <div style={{ background: "var(--bg)", border: "1px solid var(--border-subtle)", borderRadius: 2, padding: "9px 11px" }}>
                   <div style={{ fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: 5 }}>
                     AI RISK ANALYSIS
                   </div>
@@ -516,17 +603,23 @@ export default function Home() {
         letterSpacing: "0.06em",
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <span>OSINT MONITOR v2.0</span>
+          <span>OSINT MONITOR v2.1</span>
           <span style={{ color: "var(--border)" }}>|</span>
           <span>SRC: BBC · CNBC · THN · CISA · KREBS · NYT</span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <span>AI: LLAMA 3.2 · HUGGINGFACE</span>
+          <span>AI: LLAMA 3.2 · HuggingFace</span>
+          <span style={{ color: "var(--border)" }}>|</span>
+          <span>MARKET: CoinGecko</span>
           <span style={{ color: "var(--border)" }}>|</span>
           <span style={{ color: "var(--live)", fontWeight: 600 }}>● AUTO-UPDATE 6H</span>
         </div>
       </footer>
 
+      {/* ── ARTICLE DETAIL DRAWER ──────────────────────── */}
+      {selected && (
+        <ArticleDrawer article={selected} now={now} onClose={() => setSelected(null)} />
+      )}
     </div>
   );
 }

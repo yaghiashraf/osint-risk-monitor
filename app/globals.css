@@ -115,3 +115,15 @@ html, body {
 
 /* Monospace number tabular alignment */
 .tabular { font-variant-numeric: tabular-nums; }
+
+/* Drawer slide-in */
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+/* RefreshCw spin */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
