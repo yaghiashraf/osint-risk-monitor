@@ -1,17 +1,65 @@
 {
-  "lastUpdated": "2026-03-04T18:38:50.562Z",
+  "lastUpdated": "2026-03-05T01:22:20.215Z",
   "articles": [
     {
-      "title": "Live Updates: No Letup in Strikes on Iran, U.S. Says, as Mideast Crisis Widens",
+      "title": "Live Updates: Senate Republicans Block War Powers Limits as Mideast Crisis Widens",
       "link": "https://www.nytimes.com/live/2026/03/04/world/iran-war-israel-lebanon-trump",
-      "date": "Wed, 04 Mar 2026 18:33:46 +0000",
+      "date": "Thu, 05 Mar 2026 01:11:16 +0000",
       "source": "NY Times World",
-      "summary": "Escalating tensions in the Middle East lead to increased military activity, posing a critical threat to regional stability.",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "China to reportedly boost defense spending by 7%, slowest pace since 2021",
+      "link": "https://www.cnbc.com/2026/03/05/china-defense-spending-7-percent-2026-budget.html",
+      "date": "Thu, 05 Mar 2026 00:36:31 GMT",
+      "source": "CNBC Finance",
+      "summary": "China's 7% defense spending boost may indicate increased military involvement in the Middle East, posing a critical risk to global supply chains.",
+      "category": "Supply Chain",
       "severity": "critical",
       "region": "Middle East",
-      "lat": 32.86,
-      "lng": 35.22
+      "lat": 31.5,
+      "lng": 35
+    },
+    {
+      "title": "Stocks making the biggest moves after hours: Broadcom, Okta, StubHub & more",
+      "link": "https://www.cnbc.com/2026/03/04/stocks-making-the-biggest-moves-after-hours-avgo-okta-stub.html",
+      "date": "Wed, 04 Mar 2026 21:58:21 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply chain disruptions and cybersecurity threats may impact global trade and commerce, potentially leading to economic instability.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Asia",
+      "lat": 20,
+      "lng": 0
+    },
+    {
+      "title": "What to Know About Nepal's Gen Z Election",
+      "link": "https://www.nytimes.com/2026/03/04/world/asia/nepal-election-gen-z-what-to-know.html",
+      "date": "Wed, 04 Mar 2026 21:46:26 +0000",
+      "source": "NY Times World",
+      "summary": "Nepal's Gen Z election may lead to increased youth activism and potential instability in the region, potentially affecting global geopolitics.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Nepal",
+      "lat": 27.71,
+      "lng": 85.19
+    },
+    {
+      "title": "Spain's Pedro Sánchez hits back at Trump threat to sever trade saying 'no to war'",
+      "link": "https://www.bbc.com/news/articles/c93wwq1n542o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 04 Mar 2026 20:42:35 GMT",
+      "source": "BBC World",
+      "summary": "Trump's threat may escalate tensions between the US and Spain, potentially affecting trade and diplomatic relations.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Europe",
+      "lat": 40.4168,
+      "lng": -3.7038
     },
     {
       "title": "Iran postpones Khamenei funeral as US-Israeli bombardment continues",
@@ -20,10 +68,10 @@
       "source": "BBC World",
       "summary": "Iran's postponement of Khamenei's funeral may escalate tensions with the US and Israel, potentially leading to increased military action in the region.",
       "category": "Geopolitics",
-      "severity": "high",
+      "severity": "critical",
       "region": "Middle East",
       "lat": 32.8656,
-      "lng": 51.5204
+      "lng": 51.5074
     },
     {
       "title": "149 Hacktivist DDoS Attacks Hit 110 Organizations in 16 Countries After Middle East Conflict",
@@ -38,88 +86,52 @@
       "lng": 0
     },
     {
-      "title": "Trump sides with crypto firms in trillion-dollar battle with banks over stablecoin yield",
-      "link": "https://www.cnbc.com/2026/03/04/trump-crypto-banks-stablecoin-yield.html",
-      "date": "Wed, 04 Mar 2026 16:40:36 GMT",
-      "source": "CNBC Finance",
-      "summary": "Crypto firms' yield offers may siphon trillions from the industry, threatening stability, as banks warn of potential losses.",
-      "category": "Supply Chain",
-      "severity": "critical",
-      "region": "United States",
-      "lat": 38.8977,
-      "lng": -77.0365
-    },
-    {
-      "title": "Higher tariffs likely this week, says US Treasury",
-      "link": "https://www.bbc.com/news/articles/cjwzzq70qgvo?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 04 Mar 2026 16:22:22 GMT",
+      "title": "US sub sinks Iranian warship in Indian Ocean, Hegseth says",
+      "link": "https://www.bbc.com/news/articles/c0e55g03v2zo?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 04 Mar 2026 16:56:17 GMT",
       "source": "BBC World",
-      "summary": "Increased tariffs may disrupt global supply chains, impacting trade between US and affected countries.",
+      "summary": "US action in Indian Ocean may escalate tensions between US and Iran, potentially drawing in other regional actors.",
       "category": "Geopolitics",
-      "severity": "high",
-      "region": "North America",
-      "lat": 37.7749,
-      "lng": -122.4194
+      "severity": "critical",
+      "region": "Indian Ocean",
+      "lat": 6.9,
+      "lng": 79.7
     },
     {
       "title": "Coinbase leads crypto stocks higher after Trump signals support for digital asset market structure bill",
       "link": "https://www.cnbc.com/2026/03/04/coinbase-leads-crypto-stocks-higher-after-trump-signals-support-for-digital-asset-market-structure-bill.html",
       "date": "Wed, 04 Mar 2026 15:19:27 GMT",
       "source": "CNBC Finance",
-      "summary": "Coinbase's 12% surge indicates increased investor confidence in crypto market structure bill, potentially leading to increased adoption and stability in the industry.",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "United States",
-      "lat": 37.7749,
-      "lng": -122.4194
-    },
-    {
-      "title": "Israel tells people in large parts of southern Lebanon to leave ahead of attacks",
-      "link": "https://www.bbc.com/news/articles/cvg11pne0rro?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 04 Mar 2026 14:55:30 GMT",
-      "source": "BBC Middle East",
-      "summary": "Escalation of conflict between Israel and Hezbollah may lead to further displacement and instability in the region.",
-      "category": "Geopolitics",
-      "severity": "critical",
-      "region": "Lebanon",
-      "lat": 34.8333,
-      "lng": 35.6667
-    },
-    {
-      "title": "Stocks making the biggest moves premarket: Moderna, Ross Stores, Box, Gitlab and more",
-      "link": "https://www.cnbc.com/2026/03/04/stocks-making-the-biggest-moves-premarket-mrna-rost-box-gtlb.html",
-      "date": "Wed, 04 Mar 2026 14:30:02 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply chain disruptions and stock price fluctuations may indicate potential cybersecurity threats or vulnerabilities in global logistics and retail industries.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Asia",
-      "lat": 38.8977,
-      "lng": 77.0365
-    },
-    {
-      "title": "Coruna iOS Exploit Kit Uses 23 Exploits Across Five Chains Targeting iOS 13–17.2.1",
-      "link": "https://thehackernews.com/2026/03/coruna-ios-exploit-kit-uses-23-exploits.html",
-      "date": "Wed, 04 Mar 2026 18:58:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
       "lng": 0
     },
     {
-      "title": "Spain's Pedro Sánchez hits back at Trump threat to sever trade saying 'no to war'",
-      "link": "https://www.bbc.com/news/articles/c93wwq1n542o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 04 Mar 2026 12:30:50 GMT",
-      "source": "BBC World",
-      "summary": "Trump's threat may escalate tensions between Spain and the US, potentially affecting bilateral trade and diplomatic relations.",
+      "title": "Israel tells people in large parts of southern Lebanon to leave ahead of attacks",
+      "link": "https://www.bbc.com/news/articles/cvg11pne0rro?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 04 Mar 2026 14:55:30 GMT",
+      "source": "BBC Middle East",
+      "summary": "Escalating conflict between Israel and Hezbollah displaces civilians, posing significant geopolitical risks.",
       "category": "Geopolitics",
-      "severity": "medium",
+      "severity": "critical",
+      "region": "Lebanon",
+      "lat": 34,
+      "lng": 35.5
+    },
+    {
+      "title": "Coruna iOS Exploit Kit Uses 23 Exploits Across Five Chains Targeting iOS 13–17.2.1",
+      "link": "https://thehackernews.com/2026/03/coruna-ios-exploit-kit-uses-23-exploits.html",
+      "date": "Wed, 04 Mar 2026 18:58:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Coruna iOS Exploit Kit targets iOS 13-17.2.1, featuring 5 full exploit chains and 23 exploits, posing a critical threat to Apple iPhone users.",
+      "category": "Cyber Attack",
+      "severity": "critical",
       "region": "Europe",
-      "lat": 40.4168,
-      "lng": -3.7038
+      "lat": 43.42,
+      "lng": -6.78
     },
     {
       "title": "Global Leaders Brace for the Fallout From a Fast Metastasizing War",
@@ -138,7 +150,7 @@
       "link": "https://thehackernews.com/2026/03/new-rfp-template-for-ai-usage-control.html",
       "date": "Wed, 04 Mar 2026 17:00:00 +0530",
       "source": "The Hacker News",
-      "summary": "AI Governance is crucial for securing AI usage, but many organizations lack clear requirements, posing a critical risk to enterprise productivity and security.",
+      "summary": "AI Governance template addresses security concerns, enabling organizations to secure AI usage and meet regulatory requirements.",
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "United States",
@@ -146,25 +158,13 @@
       "lng": -122.4194
     },
     {
-      "title": "What to Know About Nepal's Gen Z Election",
-      "link": "https://www.nytimes.com/2026/03/04/world/asia/nepal-election-gen-z-what-to-know.html",
-      "date": "Wed, 04 Mar 2026 10:38:18 +0000",
-      "source": "NY Times World",
-      "summary": "Nepal's Gen Z election may lead to increased youth activism and potential instability in the region, potentially affecting global geopolitics.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Nepal",
-      "lat": 27.71,
-      "lng": 85.19
-    },
-    {
       "title": "'All red lines have been crossed': Gulf states weigh response to Iranian strikes",
       "link": "https://www.bbc.com/news/articles/cjrqqd8lw2wo?at_medium=RSS&at_campaign=rss",
       "date": "Wed, 04 Mar 2026 00:24:05 GMT",
       "source": "BBC Middle East",
-      "summary": "Retaliatory Iranian strikes on Gulf states have raised concerns about regional stability and safety, potentially impacting global energy markets and trade routes.",
+      "summary": "Retaliatory Iranian strikes on Gulf states have tarnished their image as safe and prosperous, escalating tensions in the region.",
       "category": "Geopolitics",
-      "severity": "high",
+      "severity": "critical",
       "region": "Middle East",
       "lat": 26.2,
       "lng": 54.4
@@ -174,24 +174,24 @@
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-062-06",
       "date": "Tue, 03 Mar 26 12:00:00 +0000",
       "source": "CISA Advisories",
-      "summary": "Successful exploitation of these vulnerabilities could enable attackers to gain unauthorized administrative control over vulnerable charging stations or disrupt charging services through denial-of-service attacks.",
+      "summary": "Successful exploitation of these vulnerabilities could enable attackers to gain unauthorized administrative control over vulnerable charging stations or disrupt charging services through denial-of-service attacks. This could have significant consequences for the energy sector and the general public. The affected Mobiliti e-mobi.hu versions could be exploited by attackers to gain critical control over charging infrastructure.",
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "Hungary",
-      "lat": 47,
-      "lng": 19
+      "lat": 47.49726,
+      "lng": 19.04051
     },
     {
       "title": "Hitachi Energy RTU500 Product",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-062-03",
       "date": "Tue, 03 Mar 26 12:00:00 +0000",
       "source": "CISA Advisories",
-      "summary": "Hitachi Energy RTU500 product vulnerability exposes low-value user management information and device outage, critical impact.",
+      "summary": "Hitachi Energy RTU500 product versions 12.7.1 to 12 are vulnerable to exploitation, exposing user management information and causing device outages.",
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "Asia",
-      "lat": 30,
-      "lng": 135
+      "lat": 40.7128,
+      "lng": 74.006
     },
     {
       "title": "Labkotec LID-3300IP",
@@ -202,8 +202,8 @@
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "United States",
-      "lat": 38.8977,
-      "lng": -77.0365
+      "lat": 37.7749,
+      "lng": -122.4194
     },
     {
       "title": "Who is the Kimwolf Botmaster “Dort”?",
@@ -222,19 +222,19 @@
       "link": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
       "date": "Fri, 20 Feb 2026 20:00:30 +0000",
       "source": "Krebs on Security",
-      "summary": "Starkiller phishing service bypasses traditional phishing tactics by proxying real login pages and MFA, posing significant security risk to targeted users.",
+      "summary": "Stealthy phishing service 'Starkiller' bypasses traditional phishing tactics by proxying real login pages and MFA, posing significant security risk to users worldwide.",
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "Global",
-      "lat": 37.7749,
-      "lng": -122.4194
+      "lat": 20,
+      "lng": 0
     },
     {
       "title": "Kimwolf Botnet Swamps Anonymity Network I2P",
       "link": "https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/",
       "date": "Wed, 11 Feb 2026 16:08:11 +0000",
       "source": "Krebs on Security",
-      "summary": "Kimwolf botnet disrupts I2P, compromising anonymity and security of users worldwide.",
+      "summary": "Kimwolf botnet disrupts I2P, compromising anonymity and security for users worldwide.",
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "Global",
