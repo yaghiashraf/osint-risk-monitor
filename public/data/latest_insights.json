@@ -1,40 +1,52 @@
 {
-  "lastUpdated": "2026-03-05T01:22:20.215Z",
+  "lastUpdated": "2026-03-05T06:43:02.784Z",
   "articles": [
     {
       "title": "Live Updates: Senate Republicans Block War Powers Limits as Mideast Crisis Widens",
       "link": "https://www.nytimes.com/live/2026/03/04/world/iran-war-israel-lebanon-trump",
-      "date": "Thu, 05 Mar 2026 01:11:16 +0000",
+      "date": "Thu, 05 Mar 2026 06:36:13 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "summary": "Escalating tensions in the Middle East may lead to increased security risks for US citizens and interests, with potential for broader geopolitical instability.",
       "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "China to reportedly boost defense spending by 7%, slowest pace since 2021",
-      "link": "https://www.cnbc.com/2026/03/05/china-defense-spending-7-percent-2026-budget.html",
-      "date": "Thu, 05 Mar 2026 00:36:31 GMT",
-      "source": "CNBC Finance",
-      "summary": "China's 7% defense spending boost may indicate increased military involvement in the Middle East, posing a critical risk to global supply chains.",
-      "category": "Supply Chain",
       "severity": "critical",
       "region": "Middle East",
-      "lat": 31.5,
-      "lng": 35
+      "lat": 31.75,
+      "lng": 35.25
+    },
+    {
+      "title": "China sets lowest economic growth target since 1991",
+      "link": "https://www.bbc.com/news/articles/cqxddwl93qjo?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 05 Mar 2026 03:10:52 GMT",
+      "source": "BBC World",
+      "summary": "China's lowered economic growth target may lead to increased economic instability and potential ripple effects on global markets, potentially impacting geopolitical relationships.",
+      "category": "Geopolitics",
+      "severity": "critical",
+      "region": "China",
+      "lat": 35,
+      "lng": 105
+    },
+    {
+      "title": "China to boost defense spending by 7%, slowest pace since 2021",
+      "link": "https://www.cnbc.com/2026/03/05/china-defense-spending-7-percent-2026-budget.html",
+      "date": "Thu, 05 Mar 2026 02:43:33 GMT",
+      "source": "CNBC Finance",
+      "summary": "China's 7% defense spending boost amid escalating conflicts may disrupt global supply chains, particularly in the Middle East.",
+      "category": "Supply Chain",
+      "severity": "high",
+      "region": "Asia",
+      "lat": 30,
+      "lng": 121.5
     },
     {
       "title": "Stocks making the biggest moves after hours: Broadcom, Okta, StubHub & more",
       "link": "https://www.cnbc.com/2026/03/04/stocks-making-the-biggest-moves-after-hours-avgo-okta-stub.html",
       "date": "Wed, 04 Mar 2026 21:58:21 GMT",
       "source": "CNBC Finance",
-      "summary": "Supply chain disruptions and cybersecurity threats may impact global trade and commerce, potentially leading to economic instability.",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
       "severity": "medium",
-      "region": "Asia",
-      "lat": 20,
+      "region": "Global",
+      "lat": 0,
       "lng": 0
     },
     {
@@ -42,24 +54,12 @@
       "link": "https://www.nytimes.com/2026/03/04/world/asia/nepal-election-gen-z-what-to-know.html",
       "date": "Wed, 04 Mar 2026 21:46:26 +0000",
       "source": "NY Times World",
-      "summary": "Nepal's Gen Z election may lead to increased youth activism and potential instability in the region, potentially affecting global geopolitics.",
+      "summary": "Nepal's Gen Z election may lead to increased youth involvement in politics, potentially destabilizing the government and creating opportunities for corruption.",
       "category": "Geopolitics",
       "severity": "medium",
       "region": "Nepal",
       "lat": 27.71,
       "lng": 85.19
-    },
-    {
-      "title": "Spain's Pedro Sánchez hits back at Trump threat to sever trade saying 'no to war'",
-      "link": "https://www.bbc.com/news/articles/c93wwq1n542o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 04 Mar 2026 20:42:35 GMT",
-      "source": "BBC World",
-      "summary": "Trump's threat may escalate tensions between the US and Spain, potentially affecting trade and diplomatic relations.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Europe",
-      "lat": 40.4168,
-      "lng": -3.7038
     },
     {
       "title": "Iran postpones Khamenei funeral as US-Israeli bombardment continues",
@@ -68,7 +68,7 @@
       "source": "BBC World",
       "summary": "Iran's postponement of Khamenei's funeral may escalate tensions with the US and Israel, potentially leading to increased military action in the region.",
       "category": "Geopolitics",
-      "severity": "critical",
+      "severity": "high",
       "region": "Middle East",
       "lat": 32.8656,
       "lng": 51.5074
@@ -90,7 +90,7 @@
       "link": "https://www.bbc.com/news/articles/c0e55g03v2zo?at_medium=RSS&at_campaign=rss",
       "date": "Wed, 04 Mar 2026 16:56:17 GMT",
       "source": "BBC World",
-      "summary": "US action in Indian Ocean may escalate tensions between US and Iran, potentially drawing in other regional actors.",
+      "summary": "US action in Indian Ocean may escalate tensions with Iran, Sri Lanka's naval incident raises concerns about regional stability.",
       "category": "Geopolitics",
       "severity": "critical",
       "region": "Indian Ocean",
@@ -114,12 +114,12 @@
       "link": "https://www.bbc.com/news/articles/cvg11pne0rro?at_medium=RSS&at_campaign=rss",
       "date": "Wed, 04 Mar 2026 14:55:30 GMT",
       "source": "BBC Middle East",
-      "summary": "Escalating conflict between Israel and Hezbollah displaces civilians, posing significant geopolitical risks.",
+      "summary": "Escalation in the region may lead to increased global tensions and potential humanitarian crises.",
       "category": "Geopolitics",
       "severity": "critical",
       "region": "Lebanon",
       "lat": 34,
-      "lng": 35.5
+      "lng": 35.6
     },
     {
       "title": "Coruna iOS Exploit Kit Uses 23 Exploits Across Five Chains Targeting iOS 13–17.2.1",
@@ -129,9 +129,9 @@
       "summary": "Coruna iOS Exploit Kit targets iOS 13-17.2.1, featuring 5 full exploit chains and 23 exploits, posing a critical threat to Apple iPhone users.",
       "category": "Cyber Attack",
       "severity": "critical",
-      "region": "Europe",
-      "lat": 43.42,
-      "lng": -6.78
+      "region": "Spain",
+      "lat": 43.3718,
+      "lng": -8.5133
     },
     {
       "title": "Global Leaders Brace for the Fallout From a Fast Metastasizing War",
@@ -142,15 +142,15 @@
       "category": "Geopolitics",
       "severity": "critical",
       "region": "Middle East",
-      "lat": 30,
-      "lng": 36
+      "lat": 31.75,
+      "lng": 35.25
     },
     {
       "title": "New RFP Template for AI Usage Control and AI Governance ",
       "link": "https://thehackernews.com/2026/03/new-rfp-template-for-ai-usage-control.html",
       "date": "Wed, 04 Mar 2026 17:00:00 +0530",
       "source": "The Hacker News",
-      "summary": "AI Governance template addresses security concerns, enabling organizations to secure AI usage and meet regulatory requirements.",
+      "summary": "AI Governance is crucial for securing AI usage, but many organizations lack clear requirements, posing a critical risk to enterprise productivity.",
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "United States",
@@ -162,7 +162,7 @@
       "link": "https://www.bbc.com/news/articles/cjrqqd8lw2wo?at_medium=RSS&at_campaign=rss",
       "date": "Wed, 04 Mar 2026 00:24:05 GMT",
       "source": "BBC Middle East",
-      "summary": "Retaliatory Iranian strikes on Gulf states have tarnished their image as safe and prosperous, escalating tensions in the region.",
+      "summary": "Retaliatory Iranian strikes on Gulf states have raised concerns about regional stability and security, potentially destabilizing the already volatile Middle East region.",
       "category": "Geopolitics",
       "severity": "critical",
       "region": "Middle East",
@@ -174,12 +174,12 @@
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-062-06",
       "date": "Tue, 03 Mar 26 12:00:00 +0000",
       "source": "CISA Advisories",
-      "summary": "Successful exploitation of these vulnerabilities could enable attackers to gain unauthorized administrative control over vulnerable charging stations or disrupt charging services through denial-of-service attacks. This could have significant consequences for the energy sector and the general public. The affected Mobiliti e-mobi.hu versions could be exploited by attackers to gain critical control over charging infrastructure.",
+      "summary": "Successful exploitation of these vulnerabilities could enable attackers to gain unauthorized administrative control over vulnerable charging stations or disrupt charging services through denial-of-service attacks.",
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "Hungary",
-      "lat": 47.49726,
-      "lng": 19.04051
+      "lat": 47,
+      "lng": 19
     },
     {
       "title": "Hitachi Energy RTU500 Product",
@@ -190,8 +190,8 @@
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "Asia",
-      "lat": 40.7128,
-      "lng": 74.006
+      "lat": 38.9,
+      "lng": 139.7
     },
     {
       "title": "Labkotec LID-3300IP",
@@ -222,11 +222,11 @@
       "link": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
       "date": "Fri, 20 Feb 2026 20:00:30 +0000",
       "source": "Krebs on Security",
-      "summary": "Stealthy phishing service 'Starkiller' bypasses traditional phishing tactics by proxying real login pages and MFA, posing significant security risk to users worldwide.",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "critical",
+      "severity": "medium",
       "region": "Global",
-      "lat": 20,
+      "lat": 0,
       "lng": 0
     },
     {
@@ -234,7 +234,7 @@
       "link": "https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/",
       "date": "Wed, 11 Feb 2026 16:08:11 +0000",
       "source": "Krebs on Security",
-      "summary": "Kimwolf botnet disrupts I2P, compromising anonymity and security for users worldwide.",
+      "summary": "Kimwolf botnet disrupts I2P, compromising anonymity and security of users worldwide, with potential for widespread impact on IoT devices and encrypted communications.",
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "Global",
