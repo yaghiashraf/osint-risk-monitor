@@ -1,16 +1,40 @@
 {
-  "lastUpdated": "2026-03-06T01:24:57.075Z",
+  "lastUpdated": "2026-03-06T06:39:31.452Z",
   "articles": [
     {
-      "title": "Iran Live Updates: Israel Bombards Beirut, as Middle East Strikes Widen",
+      "title": "Israel Attacks Beirut and Tehran as Fighting in Middle East Accelerates",
       "link": "https://www.nytimes.com/live/2026/03/05/world/iran-war-israel-trump",
-      "date": "Fri, 06 Mar 2026 01:19:20 +0000",
+      "date": "Fri, 06 Mar 2026 06:34:19 +0000",
       "source": "NY Times World",
-      "summary": "Escalating tensions between Iran and Israel may lead to increased global instability, with potential for further military conflicts.",
+      "summary": "Escalating tensions in the Middle East may lead to global instability, with potential for increased cyberattacks and supply chain disruptions.",
+      "category": "Geopolitics",
+      "severity": "high",
+      "region": "Middle East",
+      "lat": 32,
+      "lng": 35
+    },
+    {
+      "title": "US and Venezuela agree to resume diplomatic ties after Maduro capture",
+      "link": "https://www.bbc.com/news/articles/cy9g1l5jx90o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 06 Mar 2026 04:23:12 GMT",
+      "source": "BBC World",
+      "summary": "Resumption of diplomatic ties may lead to increased US-Venezuela cooperation, potentially stabilizing the region.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "South America",
+      "lat": -1.5,
+      "lng": -66.9
+    },
+    {
+      "title": "Israel strikes Beirut after evacuation warning sparks panic",
+      "link": "https://www.bbc.com/news/articles/cj32750e7j6o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 06 Mar 2026 04:08:48 GMT",
+      "source": "BBC Middle East",
+      "summary": "Escalation of conflict between Israel and Hezbollah may lead to regional instability and global security concerns.",
       "category": "Geopolitics",
       "severity": "critical",
-      "region": "Middle East",
-      "lat": 33,
+      "region": "Lebanon",
+      "lat": 33.9,
       "lng": 35.5
     },
     {
@@ -18,36 +42,36 @@
       "link": "https://www.cnbc.com/2026/03/05/stocks-making-the-biggest-moves-after-hours-cost-mrvl-gap.html",
       "date": "Thu, 05 Mar 2026 23:29:12 GMT",
       "source": "CNBC Finance",
-      "summary": "Extended trading reveals supply chain disruptions and potential cybersecurity threats from Marvell Technology's recent acquisition, impacting global market stability.",
+      "summary": "Extended trading reveals supply chain disruptions and potential cybersecurity threats from Marvell Technology's recent acquisition, while Costco's inventory management issues may impact global market stability.",
       "category": "Supply Chain",
       "severity": "medium",
       "region": "Asia",
       "lat": 20,
-      "lng": 0
+      "lng": 108
     },
     {
       "title": "'What is the game plan?': The Iran war is unsettling China and its ambitions ",
       "link": "https://www.bbc.com/news/articles/c2044vzrdpzo?at_medium=RSS&at_campaign=rss",
       "date": "Thu, 05 Mar 2026 23:13:57 GMT",
       "source": "BBC World",
-      "summary": "China's growing dependence on Middle Eastern oil and its Belt and Road Initiative make it vulnerable to regional instability, potentially disrupting global energy markets and trade routes.",
+      "summary": "China's war with Iran could escalate tensions in the Middle East, impacting global oil markets and trade routes.",
       "category": "Geopolitics",
       "severity": "high",
       "region": "Middle East",
-      "lat": 31.5,
-      "lng": 35
+      "lat": 32.86,
+      "lng": 35.22
     },
     {
-      "title": "'We have been preparing': Why the boots on the ground in Iran could be Kurdish",
-      "link": "https://www.bbc.com/news/articles/cm215nnjyr0o?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 05 Mar 2026 21:20:49 GMT",
+      "title": "Trump cuts his losses on Noem after controversial tenure at homeland security",
+      "link": "https://www.bbc.com/news/articles/c2e4v7yvjx8o?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 05 Mar 2026 22:16:24 GMT",
       "source": "BBC World",
-      "summary": "Increased risk of conflict in Iran's Kurdish region, potentially destabilizing the country and region, with implications for global energy markets and international relations.",
+      "summary": "Noem's departure may lead to a power vacuum in the US Department of Homeland Security, potentially destabilizing border security and immigration policies.",
       "category": "Geopolitics",
-      "severity": "critical",
-      "region": "Iran",
-      "lat": 36.25,
-      "lng": 45.75
+      "severity": "high",
+      "region": "North America",
+      "lat": 42.358,
+      "lng": -71.059
     },
     {
       "title": "Mortgages in 47 seconds: Better’s new ChatGPT app targets lenders Rocket and UWM",
@@ -62,40 +86,16 @@
       "lng": -122.4194
     },
     {
-      "title": "Israeli evacuation order for Beirut's southern suburbs sparks panic",
-      "link": "https://www.bbc.com/news/articles/cj32750e7j6o?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 05 Mar 2026 20:10:40 GMT",
-      "source": "BBC Middle East",
-      "summary": "Escalating conflict between Israel and Hezbollah may disrupt global energy markets and international relations, posing a critical threat to regional stability.",
-      "category": "Geopolitics",
-      "severity": "critical",
-      "region": "Lebanon",
-      "lat": 33.9,
-      "lng": 35.5
-    },
-    {
       "title": "Iran's high-risk war strategy seems to centre on endurance and deterrence",
       "link": "https://www.bbc.com/news/articles/c93jj3gz8x0o?at_medium=RSS&at_campaign=rss",
       "date": "Thu, 05 Mar 2026 18:40:22 GMT",
       "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "US asked Ukraine for help fighting Iranian drones, Zelensky says",
-      "link": "https://www.bbc.com/news/articles/cr5llg0e9g9o?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 05 Mar 2026 18:19:34 GMT",
-      "source": "BBC World",
-      "summary": "US request for Ukraine's assistance in combating Iranian drones may strain relations and compromise Ukraine's air defenses.",
+      "summary": "Iran's high-risk war strategy prioritizes endurance and deterrence, potentially absorbing strikes while adversaries suffer costs, posing a critical threat to regional stability.",
       "category": "Geopolitics",
       "severity": "critical",
-      "region": "Ukraine",
-      "lat": 50.4501,
-      "lng": 30.5236
+      "region": "Iran",
+      "lat": 35.6895,
+      "lng": 51.5074
     },
     {
       "title": "Oaktree's Howard Marks says there's no systemic problem with private credit",
@@ -112,38 +112,26 @@
     {
       "title": "South African President on Trump’s Oval Office ‘Ambush’ and ‘Racist’ Policies",
       "link": "https://www.nytimes.com/2026/03/05/world/africa/south-africa-ramaphosa-trump-meeting-racist.html",
-      "date": "Thu, 05 Mar 2026 17:54:45 +0000",
+      "date": "Thu, 05 Mar 2026 17:54:46 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "summary": "South Africa's relations with US may be strained due to President Ramaphosa's comments on Trump's Oval Office visit and racist policies, potentially impacting global geopolitics.",
       "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
+      "severity": "high",
+      "region": "South Africa",
+      "lat": -26.2,
+      "lng": 27.9
     },
     {
       "title": "Iran school and nearby military base struck multiple times, satellite image reveals",
       "link": "https://www.bbc.com/news/articles/c5yqqyly9n0o?at_medium=RSS&at_campaign=rss",
       "date": "Thu, 05 Mar 2026 17:46:24 GMT",
       "source": "BBC Middle East",
-      "summary": "Attack on Iranian school and military base raises concerns about regional instability and potential escalation of tensions with the US and its allies.",
+      "summary": "Attack on Iranian school and military base raises concerns about escalating tensions in the Middle East, potentially destabilizing regional security and global stability.",
       "category": "Geopolitics",
       "severity": "critical",
       "region": "Iran",
       "lat": 35.6895,
       "lng": 51.3789
-    },
-    {
-      "title": "Preparing for the Quantum Era: Post-Quantum Cryptography Webinar for Security Leaders",
-      "link": "https://thehackernews.com/2026/03/preparing-for-quantum-era-post-quantum.html",
-      "date": "Thu, 05 Mar 2026 20:52:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
     },
     {
       "title": "Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities",
@@ -155,6 +143,18 @@
       "severity": "critical",
       "region": "Asia",
       "lat": 20,
+      "lng": 0
+    },
+    {
+      "title": "Preparing for the Quantum Era: Post-Quantum Cryptography Webinar for Security Leaders",
+      "link": "https://thehackernews.com/2026/03/preparing-for-quantum-era-post-quantum.html",
+      "date": "Thu, 05 Mar 2026 20:52:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
       "lng": 0
     },
     {
@@ -186,36 +186,36 @@
       "link": "https://www.cisa.gov/news-events/alerts/2026/03/05/cisa-adds-five-known-exploited-vulnerabilities-catalog",
       "date": "Thu, 05 Mar 26 12:00:00 +0000",
       "source": "CISA Advisories",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "summary": "CISA has added five known exploited vulnerabilities to its catalog, posing critical risks to multiple products from Hikvision, Rockwell, Apple, and others.",
       "category": "Cyber Attack",
-      "severity": "medium",
+      "severity": "critical",
       "region": "Global",
-      "lat": 0,
-      "lng": 0
+      "lat": 31.75,
+      "lng": 121.47
     },
     {
       "title": "Iran’s Friends Include China and Russia. But Where are They Now?",
       "link": "https://www.nytimes.com/2026/03/05/world/middleeast/iran-turkey-india-russia.html",
       "date": "Thu, 05 Mar 2026 10:04:24 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "summary": "Iran's allies, China and Russia, are not providing significant military support to Iran in the current conflict, despite rhetoric of support.",
       "category": "Geopolitics",
       "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
+      "region": "Middle East",
+      "lat": 32.86,
+      "lng": 35.69
     },
     {
       "title": "ePower epower.ie",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-062-07",
       "date": "Tue, 03 Mar 26 12:00:00 +0000",
       "source": "CISA Advisories",
-      "summary": "Successful exploitation of vulnerabilities in ePower epower.ie could lead to unauthorized administrative control or denial-of-service attacks, posing a significant risk to charging services.",
+      "summary": "Successful exploitation of vulnerabilities in ePower epower.ie could lead to unauthorized administrative control or denial-of-service attacks.",
       "category": "Cyber Attack",
       "severity": "critical",
-      "region": "Global",
-      "lat": 53.4,
-      "lng": -1.2
+      "region": "Europe",
+      "lat": 52.52,
+      "lng": 13.405
     },
     {
       "title": "Who is the Kimwolf Botmaster “Dort”?",
@@ -246,7 +246,7 @@
       "link": "https://krebsonsecurity.com/2026/02/kimwolf-botnet-swamps-anonymity-network-i2p/",
       "date": "Wed, 11 Feb 2026 16:08:11 +0000",
       "source": "Krebs on Security",
-      "summary": "Kimwolf botnet disrupts I2P, compromising anonymity and security for users worldwide.",
+      "summary": "Kimwolf botnet disrupts I2P, compromising anonymity and security of users worldwide.",
       "category": "Cyber Attack",
       "severity": "critical",
       "region": "Global",
