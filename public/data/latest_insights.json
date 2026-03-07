@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-07T12:31:09.424Z",
+  "lastUpdated": "2026-03-07T18:23:57.903Z",
   "articles": [
     {
-      "title": "Mideast Fighting: Live Updates: Trump Vows to Hit Iran Harder",
+      "title": "Mideast Fighting: Live Updates: Strikes Across Iran With No Compromise in Sight",
       "link": "https://www.nytimes.com/live/2026/03/07/world/iran-war-trump-israel-lebanon",
-      "date": "Sat, 07 Mar 2026 12:22:06 +0000",
+      "date": "Sat, 07 Mar 2026 18:09:46 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,10 +14,58 @@
       "lng": 0
     },
     {
+      "title": "Iranian ambassador warns UK to be 'very careful' about further involvement in war",
+      "link": "https://www.bbc.com/news/articles/cq6qp458zv1o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 07 Mar 2026 16:53:57 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Why did Iran's president apologise? ",
+      "link": "https://www.bbc.com/news/articles/cz7g2qrz8vdo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 07 Mar 2026 16:51:14 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "OpenAI Codex Security Scanned 1.2 Million Commits and Found 10,561 High-Severity Issues",
+      "link": "https://thehackernews.com/2026/03/openai-codex-security-scanned-12.html",
+      "date": "Sat, 07 Mar 2026 21:58:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Anthropic Finds 22 Firefox Vulnerabilities Using Claude Opus 4.6 AI Model",
+      "link": "https://thehackernews.com/2026/03/anthropic-finds-22-firefox.html",
+      "date": "Sat, 07 Mar 2026 16:51:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
       "title": "We've been speaking to Iranians during one week of war. Here's what they said",
       "link": "https://www.bbc.com/news/articles/c5y5lqygrn7o?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 07 Mar 2026 06:00:32 GMT",
-      "source": "BBC Middle East",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -53,7 +101,7 @@
       "title": "Trump demands 'unconditional surrender' from Iran as Putin speaks with Iran's president",
       "link": "https://www.bbc.com/news/articles/c5yq82k1wk8o?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 07 Mar 2026 02:04:06 GMT",
-      "source": "BBC World",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -98,18 +146,6 @@
       "lng": 0
     },
     {
-      "title": "Flight paths squeezed as Iran conflict closes more airspace ",
-      "link": "https://www.bbc.com/news/articles/crrx1jgr4jjo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 06 Mar 2026 18:09:19 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "U.S.-Iran war exposes big market concentration risk. It isn't in S&P 500 stocks",
       "link": "https://www.cnbc.com/2026/03/06/iran-war-oil-energy-emerging-markets-stocks-south-korea.html",
       "date": "Fri, 06 Mar 2026 17:52:33 GMT",
@@ -122,45 +158,9 @@
       "lng": 0
     },
     {
-      "title": "Israeli troops push into Lebanon for yet another war with Iran's proxy Hezbollah",
-      "link": "https://www.bbc.com/news/articles/cpv8xlvk3p4o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 06 Mar 2026 16:16:05 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Transparent Tribe Uses AI to Mass-Produce Malware Implants in Campaign Targeting India",
       "link": "https://thehackernews.com/2026/03/transparent-tribe-uses-ai-to-mass.html",
       "date": "Fri, 06 Mar 2026 20:41:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Multi-Stage VOID#GEIST Malware Delivering XWorm, AsyncRAT, and Xeno RAT",
-      "link": "https://thehackernews.com/2026/03/multi-stage-voidgeist-malware.html",
-      "date": "Fri, 06 Mar 2026 20:03:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "The MSP Guide to Using AI-Powered Risk Management to Scale Cybersecurity",
-      "link": "https://thehackernews.com/2026/03/the-msp-guide-to-using-ai-powered-risk.html",
-      "date": "Fri, 06 Mar 2026 16:00:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
