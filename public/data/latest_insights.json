@@ -1,6 +1,18 @@
 {
-  "lastUpdated": "2026-03-08T12:32:04.913Z",
+  "lastUpdated": "2026-03-08T18:23:53.233Z",
   "articles": [
+    {
+      "title": "Oil price surge could boost these Chinese stocks, Goldman says ",
+      "link": "https://www.cnbc.com/2026/03/08/oil-price-surge-could-boost-these-chinese-stocks-goldman-says-.html",
+      "date": "Sun, 08 Mar 2026 12:54:46 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
     {
       "title": "Explosion at US embassy in Oslo may have been terrorism, Norway police say",
       "link": "https://www.bbc.com/news/articles/c5yjegg892lo?at_medium=RSS&at_campaign=rss",
@@ -74,9 +86,9 @@
       "lng": 0
     },
     {
-      "title": "Dozens killed as Israeli special forces raid Lebanese village in search of 40-year-old remains",
-      "link": "https://www.bbc.com/news/articles/cy8l2p2l3v0o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 07 Mar 2026 19:16:44 GMT",
+      "title": "Boy, 12, among six dead as tornadoes hit Michigan and Oklahoma",
+      "link": "https://www.bbc.com/news/articles/crrxpwzvd5vo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 08 Mar 2026 01:08:16 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -149,18 +161,6 @@
       "title": "Robinhood's venture fund, which gives investors access to private companies, tanks 11% on first day",
       "link": "https://www.cnbc.com/2026/03/06/robinhoods-venture-fund-which-gives-investors-access-to-private-companies-tanks-11percent-on-first-day.html",
       "date": "Fri, 06 Mar 2026 23:41:32 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Fed Governor Miran says job losses in February add to the case for more interest rate cuts",
-      "link": "https://www.cnbc.com/2026/03/06/fed-governor-miran-says-job-losses-in-february-add-to-the-case-for-more-interest-rate-cuts.html",
-      "date": "Fri, 06 Mar 2026 18:14:50 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
