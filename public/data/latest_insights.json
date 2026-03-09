@@ -1,10 +1,22 @@
 {
-  "lastUpdated": "2026-03-09T01:22:31.785Z",
+  "lastUpdated": "2026-03-09T06:53:30.527Z",
   "articles": [
     {
-      "title": "Oil prices jump above $100 for first time in four years",
-      "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 09 Mar 2026 00:28:40 GMT",
+      "title": "'Night turned into day': Iranians tell of strikes on oil depots",
+      "link": "https://www.bbc.com/news/articles/clygpxq41l3o?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 09 Mar 2026 05:40:05 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Rihanna's Beverly Hills home hit by gunfire, police say",
+      "link": "https://www.bbc.com/news/articles/ckg2pm2kvkeo?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 09 Mar 2026 03:01:00 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +26,9 @@
       "lng": 0
     },
     {
-      "title": "Masked fan unplugs VAR monitor in German match",
-      "link": "https://www.bbc.com/sport/football/articles/c0rj2kq978qo?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 09 Mar 2026 00:13:32 GMT",
+      "title": "Stock markets slump as oil prices surge over Strait of Hormuz fears",
+      "link": "https://www.bbc.com/news/articles/c79542n0grwo?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 09 Mar 2026 02:19:19 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -42,18 +54,6 @@
       "link": "https://www.bbc.com/news/articles/c78xxg05w0zo?at_medium=RSS&at_campaign=rss",
       "date": "Sun, 08 Mar 2026 21:51:48 GMT",
       "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "'Night turned into day': Iranians tell of strikes on oil depots",
-      "link": "https://www.bbc.com/news/articles/clygpxq41l3o?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 08 Mar 2026 16:32:57 GMT",
-      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -88,7 +88,7 @@
     {
       "title": "A Loose Band of Emerging Powers Is Divided Over Iran",
       "link": "https://www.nytimes.com/2026/03/08/world/middleeast/brics-iran-allies-us-israel-war.html",
-      "date": "Sun, 08 Mar 2026 09:12:01 +0000",
+      "date": "Sun, 08 Mar 2026 09:12:02 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
