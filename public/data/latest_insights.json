@@ -1,13 +1,25 @@
 {
-  "lastUpdated": "2026-03-11T01:17:36.278Z",
+  "lastUpdated": "2026-03-11T06:42:39.338Z",
   "articles": [
     {
-      "title": "Iran Live Updates: U.S. Says It Struck 16 Iranian Mine-Laying Vessels Near Oil Route",
+      "title": "U.S. Says It Struck 16 Iranian Mine-Laying Vessels Near Oil Route",
       "link": "https://www.nytimes.com/live/2026/03/10/world/iran-war-trump-us-israel",
-      "date": "Wed, 11 Mar 2026 00:50:31 +0000",
+      "date": "Wed, 11 Mar 2026 05:56:26 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Five Malicious Rust Crates and AI Bot Exploit CI/CD Pipelines to Steal Developer Secrets",
+      "link": "https://thehackernews.com/2026/03/five-malicious-rust-crates-and-ai-bot.html",
+      "date": "Wed, 11 Mar 2026 10:42:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -86,18 +98,6 @@
       "lng": 0
     },
     {
-      "title": "How to Stop AI Data Leaks: A Webinar Guide to Auditing Modern Agentic Workflows",
-      "link": "https://thehackernews.com/2026/03/how-to-stop-ai-data-leaks-webinar-guide.html",
-      "date": "Tue, 10 Mar 2026 21:51:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "FortiGate Devices Exploited to Breach Networks and Steal Service Account Credentials",
       "link": "https://thehackernews.com/2026/03/fortigate-devices-exploited-to-breach.html",
       "date": "Tue, 10 Mar 2026 21:51:00 +0530",
@@ -110,9 +110,9 @@
       "lng": 0
     },
     {
-      "title": "KadNap Malware Infects 14,000+ Edge Devices to Power Stealth Proxy Botnet",
-      "link": "https://thehackernews.com/2026/03/kadnap-malware-infects-14000-edge.html",
-      "date": "Tue, 10 Mar 2026 21:30:00 +0530",
+      "title": "How to Stop AI Data Leaks: A Webinar Guide to Auditing Modern Agentic Workflows",
+      "link": "https://thehackernews.com/2026/03/how-to-stop-ai-data-leaks-webinar-guide.html",
+      "date": "Tue, 10 Mar 2026 21:51:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
@@ -124,7 +124,7 @@
     {
       "title": "New Supreme Leader Inherits Sprawling, Secretive Office That Dominates Iran",
       "link": "https://www.nytimes.com/2026/03/10/world/middleeast/iran-supreme-leader-secretive-office.html",
-      "date": "Tue, 10 Mar 2026 15:05:57 +0000",
+      "date": "Tue, 10 Mar 2026 15:05:58 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
