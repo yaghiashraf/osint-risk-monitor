@@ -1,10 +1,46 @@
 {
-  "lastUpdated": "2026-03-10T18:38:22.726Z",
+  "lastUpdated": "2026-03-11T01:17:36.278Z",
   "articles": [
     {
-      "title": "War expands to central Beirut as Israeli strike kills Iranians in luxury hotel",
-      "link": "https://www.bbc.com/news/articles/c2k8y7vy78no?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 10 Mar 2026 18:33:03 GMT",
+      "title": "Iran Live Updates: U.S. Says It Struck 16 Iranian Mine-Laying Vessels Near Oil Route",
+      "link": "https://www.nytimes.com/live/2026/03/10/world/iran-war-trump-us-israel",
+      "date": "Wed, 11 Mar 2026 00:50:31 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Microsoft Patch Tuesday, March 2026 Edition",
+      "link": "https://krebsonsecurity.com/2026/03/microsoft-patch-tuesday-march-2026-edition/",
+      "date": "Wed, 11 Mar 2026 00:32:51 +0000",
+      "source": "Krebs on Security",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Jeffrey Epstein had two key aides - why do they still control his money and secrets?",
+      "link": "https://www.bbc.com/news/articles/cdjm7rxjxneo?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 11 Mar 2026 00:10:20 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Air strikes cause black rain and 'unprecedented' pollution in Tehran, scientists say",
+      "link": "https://www.bbc.com/news/articles/cqxd1nv3re2o?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 10 Mar 2026 19:39:58 GMT",
       "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,10 +50,22 @@
       "lng": 0
     },
     {
-      "title": "Iran Live Updates: Nearly 700,000 Flee Israeli Strikes in Lebanon",
-      "link": "https://www.nytimes.com/live/2026/03/10/world/iran-war-trump-us-israel",
-      "date": "Tue, 10 Mar 2026 18:31:36 +0000",
-      "source": "NY Times World",
+      "title": "Steve Rosenberg: Russia seeks diplomatic and economic gains from Iran war",
+      "link": "https://www.bbc.com/news/articles/c4gjyg0djvmo?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 10 Mar 2026 19:35:29 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "War expands to central Beirut as Israeli strike kills Iranians in luxury hotel",
+      "link": "https://www.bbc.com/news/articles/c2k8y7vy78no?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 10 Mar 2026 18:33:03 GMT",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -32,18 +80,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Air strikes cause black rain and 'unprecedented' pollution in Tehran, scientists say",
-      "link": "https://www.bbc.com/news/articles/cqxd1nv3re2o?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 10 Mar 2026 16:42:31 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -134,18 +170,6 @@
       "lng": 0
     },
     {
-      "title": "Lebanon calls for talks with Israel on plan to end Hezbollah conflict",
-      "link": "https://www.bbc.com/news/articles/cd9g5p3ppxlo?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 10 Mar 2026 12:00:25 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Honeywell IQ4x BMS Controller",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-069-03",
       "date": "Tue, 10 Mar 26 12:00:00 +0000",
@@ -194,18 +218,6 @@
       "lng": 0
     },
     {
-      "title": "Five Iranian footballers granted Australian visas after anthem protest",
-      "link": "https://www.bbc.com/news/articles/cwy8e978xl8o?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 10 Mar 2026 10:38:32 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "How AI Assistants are Moving the Security Goalposts",
       "link": "https://krebsonsecurity.com/2026/03/how-ai-assistants-are-moving-the-security-goalposts/",
       "date": "Sun, 08 Mar 2026 23:35:42 +0000",
@@ -221,18 +233,6 @@
       "title": "Who is the Kimwolf Botmaster “Dort”?",
       "link": "https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort/",
       "date": "Sat, 28 Feb 2026 12:01:57 +0000",
-      "source": "Krebs on Security",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "‘Starkiller’ Phishing Service Proxies Real Login Pages, MFA",
-      "link": "https://krebsonsecurity.com/2026/02/starkiller-phishing-service-proxies-real-login-pages-mfa/",
-      "date": "Fri, 20 Feb 2026 20:00:30 +0000",
       "source": "Krebs on Security",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
