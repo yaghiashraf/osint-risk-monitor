@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-13T01:21:04.093Z",
+  "lastUpdated": "2026-03-13T06:42:13.451Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: U.S. Refueling Plane Crashes in Iraq, Military Says",
+      "title": "U.S. Refueling Plane Crashes in Iraq, Military Says",
       "link": "https://www.nytimes.com/live/2026/03/12/world/iran-war-news-trump-oil-israel",
-      "date": "Fri, 13 Mar 2026 01:14:35 +0000",
+      "date": "Fri, 13 Mar 2026 05:26:42 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,21 @@
       "lng": 0
     },
     {
-      "title": "French vote tests polarised electorate with right hoping to win control of Paris",
-      "link": "https://www.bbc.com/news/articles/cdxzzqye9w0o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 13 Mar 2026 00:15:23 GMT",
+      "title": "Veeam Patches 7 Critical Backup & Replication Flaws Allowing Remote Code Execution",
+      "link": "https://thehackernews.com/2026/03/veeam-patches-7-critical-backup.html",
+      "date": "Fri, 13 Mar 2026 09:45:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "'There's no hiding place on a ship': The sailors stranded in the Gulf",
+      "link": "https://www.bbc.com/news/articles/ce3g0vz223no?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 13 Mar 2026 01:47:54 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -116,18 +128,6 @@
       "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "How to Scale Phishing Detection in Your SOC: 3 Steps for CISOs",
-      "link": "https://thehackernews.com/2026/03/how-to-scale-phishing-detection-in-your.html",
-      "date": "Thu, 12 Mar 2026 19:00:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
