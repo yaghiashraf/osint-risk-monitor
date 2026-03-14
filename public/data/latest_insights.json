@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-14T06:37:24.923Z",
+  "lastUpdated": "2026-03-14T12:34:15.158Z",
   "articles": [
     {
-      "title": "Israel-Iran Conflict: U.S. Military Attacks Iran’s Oil Export Hub, Trump Says",
-      "link": "https://www.nytimes.com/live/2026/03/13/world/iran-war-trump-oil-israel",
-      "date": "Sat, 14 Mar 2026 05:28:40 +0000",
+      "title": "Iran War Live Updates: U.S. Bombs Iranian Oil Hub",
+      "link": "https://www.nytimes.com/live/2026/03/14/world/iran-war-trump-oil-israel",
+      "date": "Sat, 14 Mar 2026 12:27:18 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,10 +14,46 @@
       "lng": 0
     },
     {
-      "title": "Los Angeles asks for investigation into LA28 Olympics chief over Epstein ties",
-      "link": "https://www.bbc.com/news/articles/cn9ewxq98e5o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 14 Mar 2026 02:28:50 GMT",
+      "title": "Hamas urges key ally Iran to halt attacks on Gulf states",
+      "link": "https://www.bbc.com/news/articles/cvg3xk6xgyzo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 14 Mar 2026 12:05:46 GMT",
       "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Why has the US targeted Iran's Kharg Island?",
+      "link": "https://www.bbc.com/news/articles/c8jxzlwvd8ro?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 14 Mar 2026 11:39:38 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Netanyahu Has the War He Always Wanted, but on Trump’s Terms",
+      "link": "https://www.nytimes.com/2026/03/14/world/middleeast/netanyahu-iran-war-trump.html",
+      "date": "Sat, 14 Mar 2026 09:03:44 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Mahmood Mamdani, Father of NYC Mayor, Is Writing a Book on Gaza",
+      "link": "https://www.nytimes.com/2026/03/14/world/africa/mahmood-mamdani-gaza-war-book.html",
+      "date": "Sat, 14 Mar 2026 09:00:07 +0000",
+      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -30,30 +66,6 @@
       "link": "https://www.bbc.com/news/articles/cq8gj9n12g8o?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 14 Mar 2026 00:53:15 GMT",
       "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Family of Michigan synagogue suspect killed in Lebanon airstrike, officials say",
-      "link": "https://www.bbc.com/news/articles/cdxz0jpzk4do?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 13 Mar 2026 23:36:41 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Cuba Acknowledges Talks with Trump Officials For the First Time",
-      "link": "https://www.nytimes.com/2026/03/13/world/americas/cuba-us-talks-trump-oil.html",
-      "date": "Fri, 13 Mar 2026 19:19:14 +0000",
-      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -122,30 +134,6 @@
       "lng": 0
     },
     {
-      "title": "Iranians react to new supreme leader's first address",
-      "link": "https://www.bbc.com/news/articles/czj1z0enk70o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 13 Mar 2026 15:53:48 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "As hopes of regime change in Iran fade, Netanyahu faces political test",
-      "link": "https://www.bbc.com/news/articles/cvg5yp7v0ppo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 13 Mar 2026 15:35:26 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "INTERPOL Dismantles 45,000 Malicious IPs, Arrests 94 in Global Cybercrime",
       "link": "https://thehackernews.com/2026/03/interpol-dismantles-45000-malicious-ips.html",
       "date": "Fri, 13 Mar 2026 20:50:00 +0530",
@@ -158,36 +146,12 @@
       "lng": 0
     },
     {
-      "title": "All six crew members killed after US refuelling plane crashes in Iraq",
-      "link": "https://www.bbc.com/news/articles/cy0dz5ql17vo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 13 Mar 2026 14:29:12 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "link": "https://www.cisa.gov/news-events/alerts/2026/03/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
       "date": "Fri, 13 Mar 26 12:00:00 +0000",
       "source": "CISA Advisories",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "How the War in Iran Could Help China and Change Asia",
-      "link": "https://www.nytimes.com/2026/03/13/world/asia/iran-war-china-asia.html",
-      "date": "Fri, 13 Mar 2026 04:00:37 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
