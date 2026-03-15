@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-14T18:27:54.169Z",
+  "lastUpdated": "2026-03-15T01:44:27.697Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Iran Defies Trump’s Threats Over Strait of Hormuz Blockade",
+      "title": "Iran War Live Updates: U.S. Tells Citizens to Leave Iraq After Second Attack on Embassy",
       "link": "https://www.nytimes.com/live/2026/03/14/world/iran-war-trump-oil-israel",
-      "date": "Sat, 14 Mar 2026 18:22:37 +0000",
+      "date": "Sun, 15 Mar 2026 01:27:00 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,33 @@
       "lng": 0
     },
     {
-      "title": "Treasure hunter freed from prison after refusing to turn over shipwreck gold",
-      "link": "https://www.bbc.com/news/articles/cg4g7kn99q3o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 14 Mar 2026 17:51:28 GMT",
+      "title": "'Gruesome' war bets fuel calls for crackdown on prediction markets",
+      "link": "https://www.bbc.com/news/articles/cjwz8051y0lo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 15 Mar 2026 00:01:31 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "BBC visits aftermath of Israeli strike on Lebanon that killed family as IDF targets Hezbollah",
+      "link": "https://www.bbc.com/news/articles/c20lvn0ex6yo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 14 Mar 2026 22:55:40 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Three more Iran football team members change minds over asylum",
+      "link": "https://www.bbc.com/news/articles/c98gz372683o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 14 Mar 2026 20:48:55 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -65,7 +89,7 @@
       "title": "Hamas urges key ally Iran to halt attacks on Gulf states",
       "link": "https://www.bbc.com/news/articles/cvg3xk6xgyzo?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 14 Mar 2026 13:34:17 GMT",
-      "source": "BBC World",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -77,7 +101,7 @@
       "title": "More US Marines and warships being moved to Middle East, reports say",
       "link": "https://www.bbc.com/news/articles/cq8gj9n12g8o?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 14 Mar 2026 13:27:32 GMT",
-      "source": "BBC World",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
