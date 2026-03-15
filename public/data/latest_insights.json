@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-03-15T12:35:35.472Z",
+  "lastUpdated": "2026-03-15T18:29:24.029Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Israel Launches New Strikes on Iran",
+      "title": "Iran War Live Updates: ‘No Guarantees’ Oil Prices Drop Soon, U.S. Official Says",
       "link": "https://www.nytimes.com/live/2026/03/15/world/iran-war-trump-oil-israel",
-      "date": "Sun, 15 Mar 2026 12:11:30 +0000",
+      "date": "Sun, 15 Mar 2026 18:21:43 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Severe flooding kills 66 in Kenya, as heavy rains continue",
+      "link": "https://www.bbc.com/news/articles/cz6e5eng03yo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 15 Mar 2026 16:12:11 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -42,18 +54,6 @@
       "link": "https://www.bbc.com/news/articles/cqxdndz75zvo?at_medium=RSS&at_campaign=rss",
       "date": "Sun, 15 Mar 2026 10:38:22 GMT",
       "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Severe flooding kills 62 in Kenya, as heavy rains continue",
-      "link": "https://www.bbc.com/news/articles/cz6e5eng03yo?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 15 Mar 2026 10:13:03 GMT",
-      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
