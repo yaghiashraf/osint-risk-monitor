@@ -1,13 +1,73 @@
 {
-  "lastUpdated": "2026-03-16T12:54:11.752Z",
+  "lastUpdated": "2026-03-16T18:52:25.569Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Israel Expands Lebanon Offensive; Trump’s Oil-Route Demands Draw Cool Response",
+      "title": "Iran War Live Updates: Trump Disparages Allies for Rebuffing His Requests for Military Assistance",
       "link": "https://www.nytimes.com/live/2026/03/16/world/iran-war-trump-oil-lebanon",
-      "date": "Mon, 16 Mar 2026 12:45:39 +0000",
+      "date": "Mon, 16 Mar 2026 18:41:28 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "'My mother cried out one last time': Palestinian boy, 12, describes how Israeli forces killed his family in car",
+      "link": "https://www.bbc.com/news/articles/c70n2x7p22do?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 16 Mar 2026 17:57:45 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Wary allies show there's no quick fix to Trump's Iran crisis",
+      "link": "https://www.bbc.com/news/articles/c8r17plnvy3o?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 16 Mar 2026 17:34:13 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Apollo's John Zito questions private equity's software valuations: 'All the marks are wrong'",
+      "link": "https://www.cnbc.com/2026/03/16/apollo-john-zito-private-equity-software-valuations.html",
+      "date": "Mon, 16 Mar 2026 17:17:36 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Stocks making the biggest moves midday: Nvidia, Peloton, Meta, Dollar Tree & more",
+      "link": "https://www.cnbc.com/2026/03/16/stocks-making-the-biggest-moves-midday-nvda-pton-meta-dltr.html",
+      "date": "Mon, 16 Mar 2026 16:27:04 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "⚡ Weekly Recap: Chrome 0-Days, Router Botnets, AWS Breach, Rogue AI Agents & More",
+      "link": "https://thehackernews.com/2026/03/weekly-recap-chrome-0-days-router.html",
+      "date": "Mon, 16 Mar 2026 19:47:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -50,6 +110,18 @@
       "lng": 0
     },
     {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/03/16/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "date": "Mon, 16 Mar 26 12:00:00 +0000",
+      "source": "CISA Advisories",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
       "title": "Why Security Validation Is Becoming Agentic",
       "link": "https://thehackernews.com/2026/03/why-security-validation-is-becoming.html",
       "date": "Mon, 16 Mar 2026 17:28:00 +0530",
@@ -86,18 +158,6 @@
       "lng": 0
     },
     {
-      "title": "DRILLAPP Backdoor Targets Ukraine, Abuses Microsoft Edge Debugging for Stealth Espionage",
-      "link": "https://thehackernews.com/2026/03/drillapp-backdoor-targets-ukraine.html",
-      "date": "Mon, 16 Mar 2026 14:37:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Intrigue, Power Plays and Rivalries: Inside the Rise of Mojtaba Khamenei",
       "link": "https://www.nytimes.com/2026/03/16/world/middleeast/iran-mojtaba-khamenei-election-supreme-leader.html",
       "date": "Mon, 16 Mar 2026 09:01:52 +0000",
@@ -110,45 +170,9 @@
       "lng": 0
     },
     {
-      "title": "Holiday spending, export demand drive China’s economic momentum as Iran war headwinds loom",
-      "link": "https://www.cnbc.com/2026/03/16/china-data-today-retail-sales-property-industrial-production.html",
-      "date": "Mon, 16 Mar 2026 06:11:06 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "China talks up oil sufficiency as Trump seeks Beijing's help on securing Hormuz energy route",
-      "link": "https://www.cnbc.com/2026/03/16/china-oil-reserves-trump-iran-war-hormuz.html",
-      "date": "Mon, 16 Mar 2026 06:02:59 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Iran taking steps to prevent anti-establishment protests, Tehran residents tell BBC",
-      "link": "https://www.bbc.com/news/articles/clygdwqw5dvo?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 16 Mar 2026 04:43:43 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "How US groups are driving a new generation of anti-abortion activism in the UK",
-      "link": "https://www.bbc.com/news/articles/cx2dl5j0w23o?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 16 Mar 2026 00:31:48 GMT",
+      "title": "Meta and TikTok let harmful content rise after evidence outrage drove engagement, say whistleblowers",
+      "link": "https://www.bbc.com/news/articles/cqj9kgxqjwjo?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 16 Mar 2026 06:10:55 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -172,18 +196,6 @@
     {
       "title": "Siemens SIDIS Prime",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-071-03",
-      "date": "Thu, 12 Mar 26 12:00:00 +0000",
-      "source": "CISA Advisories",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Siemens RUGGEDCOM APE1808 Devices",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-071-02",
       "date": "Thu, 12 Mar 26 12:00:00 +0000",
       "source": "CISA Advisories",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
