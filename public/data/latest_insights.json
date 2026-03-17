@@ -1,13 +1,37 @@
 {
-  "lastUpdated": "2026-03-16T18:52:25.569Z",
+  "lastUpdated": "2026-03-17T01:23:30.034Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Trump Disparages Allies for Rebuffing His Requests for Military Assistance",
+      "title": "Iran War Live Updates: Trump Says He Wants to Delay Visit to China Because of Conflict",
       "link": "https://www.nytimes.com/live/2026/03/16/world/iran-war-trump-oil-lebanon",
-      "date": "Mon, 16 Mar 2026 18:41:28 +0000",
+      "date": "Tue, 17 Mar 2026 01:15:51 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Intrigue, Power Plays and Rivalries: Inside the Rise of Mojtaba Khamenei",
+      "link": "https://www.nytimes.com/2026/03/16/world/middleeast/iran-mojtaba-khamenei-election-supreme-leader.html",
+      "date": "Tue, 17 Mar 2026 00:45:26 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "GlassWorm Attack Uses Stolen GitHub Tokens to Force-Push Malware Into Python Repos",
+      "link": "https://thehackernews.com/2026/03/glassworm-attack-uses-stolen-github.html",
+      "date": "Tue, 17 Mar 2026 01:07:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -134,34 +158,10 @@
       "lng": 0
     },
     {
-      "title": "ClickFix Campaigns Spread MacSync macOS Infostealer via Fake AI Tool Installers",
-      "link": "https://thehackernews.com/2026/03/clickfix-campaigns-spread-macsync-macos.html",
-      "date": "Mon, 16 Mar 2026 17:11:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Who wants what from the Iran war?",
       "link": "https://www.bbc.com/news/articles/cgk2lm5znyro?at_medium=RSS&at_campaign=rss",
       "date": "Mon, 16 Mar 2026 11:00:03 GMT",
       "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Intrigue, Power Plays and Rivalries: Inside the Rise of Mojtaba Khamenei",
-      "link": "https://www.nytimes.com/2026/03/16/world/middleeast/iran-mojtaba-khamenei-election-supreme-leader.html",
-      "date": "Mon, 16 Mar 2026 09:01:52 +0000",
-      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
