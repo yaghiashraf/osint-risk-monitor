@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-18T01:26:47.779Z",
+  "lastUpdated": "2026-03-18T06:54:29.886Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Iran Confirms Israeli Strikes Killed Top Security Chief",
-      "link": "https://www.nytimes.com/live/2026/03/17/world/iran-war-trump-oil-lebanon",
-      "date": "Wed, 18 Mar 2026 01:24:43 +0000",
+      "title": "Dozens Dead in Pakistani Airstrike on Kabul",
+      "link": "https://www.nytimes.com/2026/03/17/world/asia/afghanistan-pakistan-kabul-hospital.html",
+      "date": "Wed, 18 Mar 2026 06:48:50 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,33 @@
       "lng": 0
     },
     {
-      "title": "Total repression and air strikes bring unrelenting dread for Iranians",
-      "link": "https://www.bbc.com/news/articles/cn9e0wrglgdo?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 18 Mar 2026 00:07:36 GMT",
+      "title": "Iran Launches Missile Attack on Tel Aviv in Retaliation for Latest Killings",
+      "link": "https://www.nytimes.com/live/2026/03/17/world/iran-war-trump-oil-lebanon",
+      "date": "Wed, 18 Mar 2026 06:05:18 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Critical Unpatched Telnetd Flaw (CVE-2026-32746) Enables Unauthenticated Root RCE via Port 23",
+      "link": "https://thehackernews.com/2026/03/critical-telnetd-flaw-cve-2026-32746.html",
+      "date": "Wed, 18 Mar 2026 10:36:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Death of Ali Larijani deepens crisis at heart of Iran's leadership",
+      "link": "https://www.bbc.com/news/articles/cgqgxqekp89o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 18 Mar 2026 04:36:46 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -28,7 +52,7 @@
     {
       "title": "Top US counterterrorism official resigns over Iran war, urging Trump to 'reverse course'",
       "link": "https://www.bbc.com/news/articles/cg4g66r3z40o?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 17 Mar 2026 21:48:08 GMT",
+      "date": "Wed, 18 Mar 2026 02:12:16 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -38,9 +62,9 @@
       "lng": 0
     },
     {
-      "title": "Death of Ali Larijani deepens crisis at heart of Iran's leadership",
-      "link": "https://www.bbc.com/news/articles/cgqgxqekp89o?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 17 Mar 2026 21:43:59 GMT",
+      "title": "Total repression and air strikes bring unrelenting dread for Iranians",
+      "link": "https://www.bbc.com/news/articles/cn9e0wrglgdo?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 18 Mar 2026 00:07:36 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -77,18 +101,6 @@
       "title": "Inside the Supply Line Delivering American Guns to Mexican Cartels",
       "link": "https://www.nytimes.com/2026/03/17/world/americas/mexico-us-guns-trafficking-cartels.html",
       "date": "Tue, 17 Mar 2026 19:02:25 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Dozens Dead in Pakistani Airstrike on Kabul",
-      "link": "https://www.nytimes.com/2026/03/17/world/asia/afghanistan-pakistan-kabul-hospital.html",
-      "date": "Tue, 17 Mar 2026 17:44:29 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -162,18 +174,6 @@
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-076-02",
       "date": "Tue, 17 Mar 26 12:00:00 +0000",
       "source": "CISA Advisories",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "AI is Everywhere, But CISOs are Still Securing It with Yesterday's Skills and Tools, Study Finds",
-      "link": "https://thehackernews.com/2026/03/ai-is-everywhere-but-cisos-are-still.html",
-      "date": "Tue, 17 Mar 2026 17:00:00 +0530",
-      "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
       "severity": "medium",
