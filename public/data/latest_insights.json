@@ -1,13 +1,37 @@
 {
-  "lastUpdated": "2026-03-20T01:22:14.988Z",
+  "lastUpdated": "2026-03-20T06:44:41.921Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: As Attacks Shake Markets, Trump Seeks to Reassure Americans",
+      "title": "DoJ Disrupts 3 Million-Device IoT Botnets Behind Record 31.4 Tbps Global DDoS Attacks",
+      "link": "https://thehackernews.com/2026/03/doj-disrupts-3-million-device-iot.html",
+      "date": "Fri, 20 Mar 2026 11:55:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "As Attacks Shake Markets, Trump Seeks to Reassure Americans",
       "link": "https://www.nytimes.com/live/2026/03/19/world/iran-war-news-trump-oil",
-      "date": "Fri, 20 Mar 2026 00:58:36 +0000",
+      "date": "Fri, 20 Mar 2026 05:23:22 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Apple Warns Older iPhones Vulnerable to Coruna, DarkSword Exploit Kit Attacks",
+      "link": "https://thehackernews.com/2026/03/apple-warns-older-iphones-vulnerable-to.html",
+      "date": "Fri, 20 Mar 2026 10:46:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -38,6 +62,18 @@
       "lng": 0
     },
     {
+      "title": "Iranians prepare for Persian new year under shadow of war",
+      "link": "https://www.bbc.com/news/articles/cvgkg8p7zlko?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 20 Mar 2026 00:04:34 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
       "title": "Are US and Israel aligned on Iran war? Deciphering Trump's post after gas field attacks",
       "link": "https://www.bbc.com/news/articles/c8x7leknlywo?at_medium=RSS&at_campaign=rss",
       "date": "Thu, 19 Mar 2026 23:19:00 GMT",
@@ -54,18 +90,6 @@
       "link": "https://www.bbc.com/news/articles/c2k3jgy9vq3o?at_medium=RSS&at_campaign=rss",
       "date": "Thu, 19 Mar 2026 22:41:40 GMT",
       "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Teenager among first to be executed over Iran's anti-government protests",
-      "link": "https://www.bbc.com/news/articles/ce9mzn7k722o?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 19 Mar 2026 22:07:17 GMT",
-      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -110,36 +134,12 @@
       "lng": 0
     },
     {
-      "title": "54 EDR Killers Use BYOVD to Exploit 34 Signed Vulnerable Drivers and Disable Security",
-      "link": "https://thehackernews.com/2026/03/54-edr-killers-use-byovd-to-exploit-34.html",
-      "date": "Fri, 20 Mar 2026 00:22:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Copper joins gold in broad commodities sell-off. There's a worrying reason behind it",
       "link": "https://www.cnbc.com/2026/03/19/copper-joins-gold-in-broad-commodities-sell-off-theres-a-worrying-reason-behind-it.html",
       "date": "Thu, 19 Mar 2026 17:24:32 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "ThreatsDay Bulletin: FortiGate RaaS, Citrix Exploits, MCP Abuse, LiveChat Phish & More",
-      "link": "https://thehackernews.com/2026/03/threatsday-bulletin-fortigate-raas.html",
-      "date": "Thu, 19 Mar 2026 19:55:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
