@@ -1,11 +1,47 @@
 {
-  "lastUpdated": "2026-03-21T01:17:22.101Z",
+  "lastUpdated": "2026-03-21T06:34:11.024Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Trump Says U.S. Is Considering ‘Winding Down’ War",
+      "title": "Trump Says U.S. Is Considering ‘Winding Down’ Iran War",
       "link": "https://www.nytimes.com/live/2026/03/20/world/iran-war-oil-trump",
-      "date": "Sat, 21 Mar 2026 01:08:23 +0000",
+      "date": "Sat, 21 Mar 2026 05:52:38 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "A Public Holiday Every Week? Sri Lankans Bemoan the Enforced Day Off.",
+      "link": "https://www.nytimes.com/2026/03/21/world/asia/sri-lanka-public-holiday-oil-war.html",
+      "date": "Sat, 21 Mar 2026 04:00:14 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "​At Least 10 Killed in South Korean Factory Fire",
+      "link": "https://www.nytimes.com/2026/03/20/world/asia/south-korea-factory-fire-deaths.html",
+      "date": "Sat, 21 Mar 2026 03:49:26 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Chuck Norris memes were undefeated for a generation of young fans",
+      "link": "https://www.bbc.com/news/articles/c62541e29z9o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 21 Mar 2026 01:03:01 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -62,18 +98,6 @@
       "lng": 0
     },
     {
-      "title": "On a Holiday of Renewal, Iranians Are Mourning and Fearful",
-      "link": "https://www.nytimes.com/2026/03/20/world/middleeast/iran-nowruz-new-year.html",
-      "date": "Fri, 20 Mar 2026 19:42:50 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Trivy Security Scanner GitHub Actions Breached, 75 Tags Hijacked to Steal CI/CD Secrets",
       "link": "https://thehackernews.com/2026/03/trivy-security-scanner-github-actions.html",
       "date": "Fri, 20 Mar 2026 23:17:00 +0530",
@@ -92,18 +116,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Norway's crown princess breaks silence, claiming she was 'manipulated and deceived' by Epstein",
-      "link": "https://www.bbc.com/news/articles/cde5y63y3n7o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 20 Mar 2026 15:30:28 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -164,18 +176,6 @@
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Trump Organization Eyes Transylvania Golf Course Deal",
-      "link": "https://www.nytimes.com/2026/03/20/world/europe/trump-romania-transylvania-apartments-golf-course.html",
-      "date": "Fri, 20 Mar 2026 09:01:06 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
