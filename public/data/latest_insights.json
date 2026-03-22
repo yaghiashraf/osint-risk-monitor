@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-22T12:33:51.662Z",
+  "lastUpdated": "2026-03-22T18:26:54.386Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Trump Threatens to Hit Power Plants Unless Strait Is Reopened, as Tehran Remains Defiant",
+      "title": "Iran War Live Updates: Tehran Is Defiant After Trump Threatens Power Plants",
       "link": "https://www.nytimes.com/live/2026/03/22/world/iran-war-oil-trump",
-      "date": "Sun, 22 Mar 2026 12:24:38 +0000",
+      "date": "Sun, 22 Mar 2026 18:19:17 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,21 @@
       "lng": 0
     },
     {
-      "title": "Sudan army denies deadly Eid strike on key hospital in Darfur",
-      "link": "https://www.bbc.com/news/articles/cr715xynkvvo?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 22 Mar 2026 12:15:05 GMT",
+      "title": "Israeli settlers target Palestinian villages in occupied West Bank, attacking people and properties",
+      "link": "https://www.bbc.com/news/articles/cew719w80g7o?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 22 Mar 2026 17:57:48 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iranian missiles injure 180 in towns near Israeli nuclear site",
+      "link": "https://www.bbc.com/news/articles/c9qdvnv13qdo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 22 Mar 2026 17:35:19 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -28,8 +40,32 @@
     {
       "title": "The Billionaire Funding France’s Far Right",
       "link": "https://www.nytimes.com/2026/03/22/world/europe/pierre-eduoard-sterin-france-far-right.html",
-      "date": "Sun, 22 Mar 2026 11:35:09 +0000",
+      "date": "Sun, 22 Mar 2026 13:52:14 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Qatari and Turkish citizens die in military helicopter crash",
+      "link": "https://www.bbc.com/news/articles/cx2v4k0xn9no?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 22 Mar 2026 13:35:44 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Sudan drone attack on key hospital killed 64 people during Eid, WHO says",
+      "link": "https://www.bbc.com/news/articles/cr715xynkvvo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 22 Mar 2026 12:15:05 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -50,58 +86,10 @@
       "lng": 0
     },
     {
-      "title": "Iranian missiles injure 160 in towns near Israeli nuclear site",
-      "link": "https://www.bbc.com/news/articles/c9qdvnv13qdo?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 22 Mar 2026 10:57:44 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Socialists battle to hold Paris as France holds mayoral elections",
-      "link": "https://www.bbc.com/news/articles/c87wgw27201o?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 22 Mar 2026 07:08:59 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "France Is Voting for Thousands of New Mayors. Here’s Why It Matters.",
       "link": "https://www.nytimes.com/2026/03/22/world/europe/france-mayors-elections-far-right.html",
       "date": "Sun, 22 Mar 2026 04:01:22 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Trump at a crossroads as US weighs tough options in Iran",
-      "link": "https://www.bbc.com/news/articles/clyxv87zwwpo?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 22 Mar 2026 00:50:43 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Why there's no sign of the conflict in the Middle East 'winding down'",
-      "link": "https://www.bbc.com/news/videos/cwywlv9ked0o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 21 Mar 2026 17:52:25 GMT",
-      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
