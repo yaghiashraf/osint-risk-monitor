@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-21T18:26:34.035Z",
+  "lastUpdated": "2026-03-22T01:26:35.063Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: U.S. Bombed Thousands of Iranian Targets, but Iran Shows No Sign of Backing Down",
+      "title": "Iran War Live Updates: Iranian Missiles Evade Israel’s Formidable Defenses, Hitting 2 Cities",
       "link": "https://www.nytimes.com/live/2026/03/21/world/iran-war-oil-trump",
-      "date": "Sat, 21 Mar 2026 18:05:26 +0000",
+      "date": "Sun, 22 Mar 2026 01:22:36 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,9 @@
       "lng": 0
     },
     {
-      "title": "Pentagon restrictions on press violate First Amendment, judge rules",
-      "link": "https://www.bbc.com/news/articles/cwy3961xdr8o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 21 Mar 2026 16:11:58 GMT",
+      "title": "Trump at a crossroads as US weighs tough options in Iran",
+      "link": "https://www.bbc.com/news/articles/clyxv87zwwpo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 22 Mar 2026 00:50:43 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,9 +26,33 @@
       "lng": 0
     },
     {
-      "title": "Thousands evacuated as Hawaii faces worst flooding in 20 years",
-      "link": "https://www.bbc.com/news/articles/c20qj970gwro?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 21 Mar 2026 16:09:50 GMT",
+      "title": "Iranian strike hits near Israeli nuclear facility after Tehran says its site targeted",
+      "link": "https://www.bbc.com/news/articles/c9qdvnv13qdo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 21 Mar 2026 23:01:07 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Zelensky Sends Negotiators to the U.S., Hoping to Revive Peace Talks",
+      "link": "https://www.nytimes.com/2026/03/21/world/europe/ukraine-russia-peace-talks-iran.html",
+      "date": "Sat, 21 Mar 2026 20:36:38 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Russian drone attack kills two in Ukraine ahead of talks in US, officials say",
+      "link": "https://www.bbc.com/news/articles/crl18nwjzzzo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 21 Mar 2026 19:39:57 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -74,36 +98,12 @@
       "lng": 0
     },
     {
-      "title": "UK allows US to use bases to strike Strait of Hormuz targets",
-      "link": "https://www.bbc.com/news/articles/c36rny6xgppo?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 21 Mar 2026 10:47:17 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Oracle Patches Critical CVE-2026-21992 Enabling Unauthenticated RCE in Identity Manager",
       "link": "https://thehackernews.com/2026/03/oracle-patches-critical-cve-2026-21992.html",
       "date": "Sat, 21 Mar 2026 15:54:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Zelensky Sends Negotiators to the U.S., Hoping to Revive Peace Talks",
-      "link": "https://www.nytimes.com/2026/03/21/world/europe/ukraine-russia-peace-talks-iran.html",
-      "date": "Sat, 21 Mar 2026 09:01:34 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -128,18 +128,6 @@
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Iranian strikes on bases used by US caused $800m in damage, new analysis shows",
-      "link": "https://www.bbc.com/news/articles/cddq7j48p35o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 20 Mar 2026 22:34:05 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
