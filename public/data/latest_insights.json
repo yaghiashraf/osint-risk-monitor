@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-03-24T01:20:35.297Z",
+  "lastUpdated": "2026-03-24T06:56:05.411Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: U.S. and Iran Send Conflicting Signals on Peace Prospects",
+      "title": "U.S. and Iran Send Conflicting Signals on Peace Prospects",
       "link": "https://www.nytimes.com/live/2026/03/23/world/iran-war-oil-trump",
-      "date": "Tue, 24 Mar 2026 01:06:15 +0000",
+      "date": "Tue, 24 Mar 2026 06:51:26 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Ultimatums, diplomacy and a trip to Graceland as Trump eyes a deal with Iran",
+      "link": "https://www.bbc.com/news/articles/c895v5pq5p1o?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 24 Mar 2026 02:41:31 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -77,7 +89,7 @@
       "title": "A committed pharmacist and a homesick blogger – the Iranian civilians killed in the war",
       "link": "https://www.bbc.com/news/articles/c3v6ld7lv9no?at_medium=RSS&at_campaign=rss",
       "date": "Mon, 23 Mar 2026 18:31:26 GMT",
-      "source": "BBC World",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
