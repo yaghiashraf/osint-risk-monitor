@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-03-24T18:53:02.252Z",
+  "lastUpdated": "2026-03-25T01:25:05.044Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Tehran Fires New Barrages After U.S. Claims Progress on Talks",
+      "title": "Iran War Live Updates: Pentagon Orders 2,000 Airborne Troops to Middle East",
       "link": "https://www.nytimes.com/live/2026/03/24/world/iran-war-trump-oil",
-      "date": "Tue, 24 Mar 2026 18:49:05 +0000",
+      "date": "Wed, 25 Mar 2026 01:14:05 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Oil at $150 will trigger global recession, says boss of financial giant BlackRock",
+      "link": "https://www.bbc.com/news/articles/c9wqrdkx8ppo?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 25 Mar 2026 00:00:20 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -16,10 +28,46 @@
     {
       "title": "The U.S. Military Said It Helped Bomb a Drug Camp in Ecuador. It Was a Dairy Farm.",
       "link": "https://www.nytimes.com/2026/03/24/world/americas/us-ecuador-drug-camp-bombing-dairy-farm.html",
-      "date": "Tue, 24 Mar 2026 18:43:38 +0000",
+      "date": "Tue, 24 Mar 2026 22:51:56 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Pilots killed in LaGuardia plane crash named",
+      "link": "https://www.bbc.com/news/articles/cz67jq0enwpo?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 24 Mar 2026 20:34:20 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "World has 'never experienced' soaring refining margins like this, TotalEnergies CEO tells CNBC",
+      "link": "https://www.cnbc.com/2026/03/24/totalenergies-ceo-world-has-never-experienced-refining-margins-like-this-.html",
+      "date": "Tue, 24 Mar 2026 19:28:56 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "TeamPCP Backdoors LiteLLM Versions 1.82.7–1.82.8 Likely via Trivy CI/CD Compromise",
+      "link": "https://thehackernews.com/2026/03/teampcp-backdoors-litellm-versions.html",
+      "date": "Tue, 24 Mar 2026 23:51:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -32,18 +80,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Russia launches 948 drones at Ukraine in largest attack over 24-hour period",
-      "link": "https://www.bbc.com/news/articles/cz90gpyw90wo?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 24 Mar 2026 18:12:36 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -86,18 +122,6 @@
       "lng": 0
     },
     {
-      "title": "Hackers Use Fake Resumes to Steal Enterprise Credentials and Deploy Crypto Miner",
-      "link": "https://thehackernews.com/2026/03/hackers-use-fake-resumes-to-steal.html",
-      "date": "Tue, 24 Mar 2026 22:05:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Iran war shows norms of international conflicts have been overturned",
       "link": "https://www.bbc.com/news/articles/c4gjv02g54ko?at_medium=RSS&at_campaign=rss",
       "date": "Tue, 24 Mar 2026 15:55:08 GMT",
@@ -110,34 +134,10 @@
       "lng": 0
     },
     {
-      "title": "Moody's cuts rating on private credit fund run by KKR and Future Standard to junk as bad loans grow",
-      "link": "https://www.cnbc.com/2026/03/24/moodys-private-credit-fund-kkr-future-standard-junk.html",
-      "date": "Tue, 24 Mar 2026 14:55:50 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "How Pakistan Is Trying to Reshape Its Image Abroad",
       "link": "https://www.nytimes.com/2026/03/24/world/asia/pakistan-media-news-misinformation.html",
       "date": "Tue, 24 Mar 2026 13:15:56 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Australia and EU agree sweeping trade deal in face of global uncertainty",
-      "link": "https://www.bbc.com/news/articles/cly6g6l6lq7o?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 24 Mar 2026 12:14:15 GMT",
-      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
