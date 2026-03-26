@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-03-26T01:30:34.746Z",
+  "lastUpdated": "2026-03-26T07:00:01.516Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Tehran Dismisses U.S. Cease-Fire Conditions as Israel Steps Up Attacks",
+      "title": "Tehran Dismisses U.S. Cease-Fire Conditions as Israel Steps Up Attacks",
       "link": "https://www.nytimes.com/live/2026/03/25/world/iran-war-trump-oil-news",
-      "date": "Thu, 26 Mar 2026 01:19:10 +0000",
+      "date": "Thu, 26 Mar 2026 05:28:48 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Prepare for turbulence - how a prolonged Middle East conflict could reshape how we fly",
+      "link": "https://www.bbc.com/news/articles/cn08x9lw0pzo?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 26 Mar 2026 00:41:16 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -38,10 +50,10 @@
       "lng": 0
     },
     {
-      "title": "Iran's foreign minister says there are no negotiations with US",
-      "link": "https://www.bbc.com/news/articles/cly9nz5vyz4o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 25 Mar 2026 21:06:26 GMT",
-      "source": "BBC Middle East",
+      "title": "Who wants what and why from US-Iran peace talks?",
+      "link": "https://www.bbc.com/news/articles/cm29l9r68j8o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 25 Mar 2026 21:37:34 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -50,10 +62,10 @@
       "lng": 0
     },
     {
-      "title": "UN votes to recognise enslavement of Africans as 'gravest crime against humanity'",
-      "link": "https://www.bbc.com/news/articles/cvg06q36052o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 25 Mar 2026 20:12:31 GMT",
-      "source": "BBC World",
+      "title": "Iran's foreign minister says there are no negotiations with US",
+      "link": "https://www.bbc.com/news/articles/cly9nz5vyz4o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 25 Mar 2026 21:06:26 GMT",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -102,18 +114,6 @@
       "link": "https://www.nytimes.com/2026/03/25/world/africa/in-secret-deportation-deal-us-leveraged-favors-and-funds.html",
       "date": "Wed, 25 Mar 2026 16:46:27 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Democrats flip Florida state seat that includes Trump's Mar-a-Lago home",
-      "link": "https://www.bbc.com/news/articles/c9qd7wyln2jo?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 25 Mar 2026 15:07:13 GMT",
-      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
