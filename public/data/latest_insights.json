@@ -1,11 +1,59 @@
 {
-  "lastUpdated": "2026-03-25T18:46:01.931Z",
+  "lastUpdated": "2026-03-26T01:30:34.746Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Tehran Dismisses Cease-Fire Offer but Signals Openness to Talks",
+      "title": "Iran War Live Updates: Tehran Dismisses U.S. Cease-Fire Conditions as Israel Steps Up Attacks",
       "link": "https://www.nytimes.com/live/2026/03/25/world/iran-war-trump-oil-news",
-      "date": "Wed, 25 Mar 2026 18:41:02 +0000",
+      "date": "Thu, 26 Mar 2026 01:19:10 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Stocks making the biggest moves after hours: Worthington Steel, Karman, MillerKnoll and more",
+      "link": "https://www.cnbc.com/2026/03/25/stocks-making-the-biggest-moves-after-hours-ws-krmn-mlkn.html",
+      "date": "Wed, 25 Mar 2026 23:42:47 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Meta and YouTube found liable in landmark social media addiction trial",
+      "link": "https://www.bbc.com/news/articles/c747x7gz249o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 25 Mar 2026 22:59:23 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iran's foreign minister says there are no negotiations with US",
+      "link": "https://www.bbc.com/news/articles/cly9nz5vyz4o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 25 Mar 2026 21:06:26 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "UN votes to recognise enslavement of Africans as 'gravest crime against humanity'",
+      "link": "https://www.bbc.com/news/articles/cvg06q36052o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 25 Mar 2026 20:12:31 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -16,34 +64,10 @@
     {
       "title": "SpaceX reportedly could file for an IPO this week. These funds allow you to invest right now",
       "link": "https://www.cnbc.com/2026/03/25/spacex-reportedly-could-file-for-an-ipo-this-week-these-funds-allow-you-to-invest-right-now.html",
-      "date": "Wed, 25 Mar 2026 18:40:58 GMT",
+      "date": "Wed, 25 Mar 2026 19:16:58 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "UN votes to recognise slavery as 'gravest crime against humanity'",
-      "link": "https://www.bbc.com/news/articles/cvg06q36052o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 25 Mar 2026 17:51:27 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Meta and Google found liable in landmark social media addiction trial",
-      "link": "https://www.bbc.com/news/articles/c747x7gz249o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 25 Mar 2026 17:45:59 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -86,30 +110,6 @@
       "lng": 0
     },
     {
-      "title": "Iran rejects US 15-point peace plan, state media report",
-      "link": "https://www.bbc.com/news/articles/cly9nz5vyz4o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 25 Mar 2026 16:46:12 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Former SEC Chair Jay Clayton says regulators would scrutinize trading ahead of Trump post",
-      "link": "https://www.cnbc.com/2026/03/25/former-sec-chair-jay-clayton-says-regulators-would-scrutinize-trading-ahead-of-trump-post.html",
-      "date": "Wed, 25 Mar 2026 15:21:44 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Democrats flip Florida state seat that includes Trump's Mar-a-Lago home",
       "link": "https://www.bbc.com/news/articles/c9qd7wyln2jo?at_medium=RSS&at_campaign=rss",
       "date": "Wed, 25 Mar 2026 15:07:13 GMT",
@@ -136,7 +136,7 @@
     {
       "title": "Ukraine Finally Got Battlefield Momentum. Now Comes a Russian Offensive.",
       "link": "https://www.nytimes.com/2026/03/25/world/europe/ukraine-russia-war-zaporizhzhia.html",
-      "date": "Wed, 25 Mar 2026 13:45:22 +0000",
+      "date": "Wed, 25 Mar 2026 13:45:23 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
