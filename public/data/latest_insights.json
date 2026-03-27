@@ -1,11 +1,47 @@
 {
-  "lastUpdated": "2026-03-27T01:30:39.861Z",
+  "lastUpdated": "2026-03-27T06:59:20.917Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Trump Again Extends Deadline for Iran to Open Strait or Face Strikes on Power Grid",
+      "title": "Panic buying prompts PM to reassure Australians over fuel supply",
+      "link": "https://www.bbc.com/news/articles/cg73znr1vj7o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 27 Mar 2026 06:32:59 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump Again Extends Deadline for Iran to Open Strait or Face Strikes on Power Grid",
       "link": "https://www.nytimes.com/live/2026/03/26/world/iran-war-israel-trump-oil",
-      "date": "Fri, 27 Mar 2026 01:20:22 +0000",
+      "date": "Fri, 27 Mar 2026 06:15:17 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Private credit's cracks open door for Wall Street banks' comeback: 'The tug of war is just starting'",
+      "link": "https://www.cnbc.com/2026/03/27/wall-street-banks-private-credit-market-share-leveraged-loans.html",
+      "date": "Fri, 27 Mar 2026 06:15:02 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Two Cuba-bound aid ships missing after leaving Mexico",
+      "link": "https://www.bbc.com/news/articles/cp84kw1y337o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 27 Mar 2026 03:42:48 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -16,7 +52,7 @@
     {
       "title": "Sen. Warren rips Federal Reserve chair pick Kevin Warsh: 'You have learned nothing from your failures'",
       "link": "https://www.cnbc.com/2026/03/26/federal-reserve-kevin-walsh-elizabeth-warren-trump.html",
-      "date": "Thu, 26 Mar 2026 22:06:20 GMT",
+      "date": "Fri, 27 Mar 2026 02:05:55 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
@@ -26,22 +62,10 @@
       "lng": 0
     },
     {
-      "title": "US prosecutors argue Maduro 'plundered' Venezuelan wealth in court battle over legal fees",
-      "link": "https://www.bbc.com/news/articles/c4g8wxyq7v5o?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 26 Mar 2026 18:49:46 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Zelensky visits Saudi Arabia after offering Ukraine's drone expertise",
       "link": "https://www.bbc.com/news/articles/cx2r4wxdw3no?at_medium=RSS&at_campaign=rss",
       "date": "Thu, 26 Mar 2026 18:24:13 GMT",
-      "source": "BBC World",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -164,18 +188,6 @@
       "source": "CISA Advisories",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Stocks making the biggest moves premarket: Micron, Sandisk, Newmont and more",
-      "link": "https://www.cnbc.com/2026/03/26/stocks-making-the-biggest-moves-premarket-mu-sndk-nem.html",
-      "date": "Thu, 26 Mar 2026 11:56:49 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
