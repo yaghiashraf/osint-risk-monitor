@@ -1,6 +1,54 @@
 {
-  "lastUpdated": "2026-03-28T12:37:32.012Z",
+  "lastUpdated": "2026-03-28T18:30:11.020Z",
   "articles": [
+    {
+      "title": "Three Lebanese journalists killed in Israeli strike, say broadcasters",
+      "link": "https://www.bbc.com/news/articles/cgme1j70294o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 28 Mar 2026 17:48:44 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iran-Linked Hackers Breach FBI Director’s Personal Email, Hit Stryker With Wiper Attack",
+      "link": "https://thehackernews.com/2026/03/iran-linked-hackers-breach-fbi.html",
+      "date": "Sat, 28 Mar 2026 21:10:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Halfway Through Lent, a Small Quebec Island Celebrates With Masks and Jigs",
+      "link": "https://www.nytimes.com/2026/03/28/world/canada/mid-lent-celebration-quebec-islands.html",
+      "date": "Sat, 28 Mar 2026 14:38:17 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Castro Heirs Emerge Across Cuba’s Political Scene Amid Energy Crisis and Trump Threats",
+      "link": "https://www.nytimes.com/2026/03/28/world/americas/castro-family-cuba-energy-crisis-trump.html",
+      "date": "Sat, 28 Mar 2026 14:08:36 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
     {
       "title": "As stocks and bonds fall, and oil hits $100, a futures trade that boomed in 2022 may again be a winner",
       "link": "https://www.cnbc.com/2026/03/28/market-correction-futures-hedging-strategies.html",
@@ -26,33 +74,9 @@
       "lng": 0
     },
     {
-      "title": "Castro Heirs Emerge Across Cuba’s Political Scene Amid Energy Crisis and Trump Threats",
-      "link": "https://www.nytimes.com/2026/03/28/world/americas/castro-family-cuba-energy-crisis-trump.html",
-      "date": "Sat, 28 Mar 2026 09:02:14 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "On Iran’s Rugged Frontier, Kurds Yearn to Join the Fight",
       "link": "https://www.nytimes.com/2026/03/28/world/europe/iran-kurds-iraq-fighters.html",
       "date": "Sat, 28 Mar 2026 09:01:53 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Halfway Through Lent, a Small Quebec Island Celebrates With Masks and Jigs",
-      "link": "https://www.nytimes.com/2026/03/28/world/canada/mid-lent-celebration-quebec-islands.html",
-      "date": "Sat, 28 Mar 2026 09:01:12 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -68,30 +92,6 @@
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "TA446 Deploys DarkSword iOS Exploit Kit in Targeted Spear-Phishing Campaign",
-      "link": "https://thehackernews.com/2026/03/ta446-deploys-leaked-darksword-ios.html",
-      "date": "Sat, 28 Mar 2026 12:37:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Tiger Woods charged with driving under influence after crash",
-      "link": "https://www.bbc.com/sport/golf/articles/cvg092kege7o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 28 Mar 2026 06:47:10 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
