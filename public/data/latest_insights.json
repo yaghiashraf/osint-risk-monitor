@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-29T06:55:49.036Z",
+  "lastUpdated": "2026-03-29T12:38:17.606Z",
   "articles": [
     {
-      "title": "U.S. Marines Arrive in Middle East, as Houthis Enter War",
-      "link": "https://www.nytimes.com/live/2026/03/28/world/iran-war-trump-israel-oil",
-      "date": "Sun, 29 Mar 2026 04:28:13 +0000",
+      "title": "Iran War Live Updates: Israel Strikes Tehran as Regional Diplomats Gather in Pakistan for Talks",
+      "link": "https://www.nytimes.com/live/2026/03/29/world/iran-war-trump-israel-oil",
+      "date": "Sun, 29 Mar 2026 12:28:31 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,21 @@
       "lng": 0
     },
     {
-      "title": "Trump is waging war based on instinct and it isn't working",
-      "link": "https://www.bbc.com/news/articles/c5y969pnxgvo?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 29 Mar 2026 00:02:46 GMT",
+      "title": "This Chinese gold play is attractive even as the metal sees big price swings, analysts say",
+      "link": "https://www.cnbc.com/2026/03/29/this-chinese-jewelry-stock-is-attractive-despite-the-swings-in-gold-prices.html",
+      "date": "Sun, 29 Mar 2026 12:21:58 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iranian attacks across Gulf continue as major industrial sites hit",
+      "link": "https://www.bbc.com/news/articles/cp86yrq5jy7o?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 29 Mar 2026 11:38:20 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,10 +38,22 @@
       "lng": 0
     },
     {
-      "title": "One ant for $220: the new frontier of wildlife trafficking",
-      "link": "https://www.bbc.com/news/articles/cg4g44zv37qo?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 29 Mar 2026 00:01:15 GMT",
-      "source": "BBC World",
+      "title": "The Slum in Gangnam, the Richest Part of Seoul",
+      "link": "https://www.nytimes.com/2026/03/29/world/asia/korea-seoul-gangnam-slum.html",
+      "date": "Sun, 29 Mar 2026 11:28:28 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "A Toothless Iran? Missile and Drone Strikes Show It Can Still Inflict Pain.",
+      "link": "https://www.nytimes.com/2026/03/29/world/middleeast/iran-missiles-war.html",
+      "date": "Sun, 29 Mar 2026 08:16:54 +0000",
+      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -40,7 +64,19 @@
     {
       "title": "Three Lebanese journalists killed in Israeli strike, say broadcasters",
       "link": "https://www.bbc.com/news/articles/cgme1j70294o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 28 Mar 2026 21:50:40 GMT",
+      "date": "Sun, 29 Mar 2026 07:51:04 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Jeremy Bowen: Trump is waging war based on instinct and it isn't working",
+      "link": "https://www.bbc.com/news/articles/c5y969pnxgvo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 29 Mar 2026 00:02:46 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -62,34 +98,10 @@
       "lng": 0
     },
     {
-      "title": "Israeli Strike Kills 3 Journalists in Southern Lebanon, Officials Say",
-      "link": "https://www.nytimes.com/2026/03/28/world/middleeast/lebanon-journalists-killed-israeli-strike.html",
-      "date": "Sat, 28 Mar 2026 19:14:03 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Potential Houthi threat to Red Sea shipping could further damage global economy",
       "link": "https://www.bbc.com/news/articles/cwyvd5z1xjno?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 28 Mar 2026 19:08:30 GMT",
       "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Yemen’s Houthis Fire at Israel and Vow Further Attacks",
-      "link": "https://www.nytimes.com/2026/03/28/world/middleeast/yemen-houthis-attack-israel-war.html",
-      "date": "Sat, 28 Mar 2026 18:06:29 +0000",
-      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -134,8 +146,8 @@
       "lng": 0
     },
     {
-      "title": "CISA Adds CVE-2025-53521 to KEV After Active F5 BIG-IP APM Exploitation",
-      "link": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html",
+      "title": "TA446 Deploys DarkSword iOS Exploit Kit in Targeted Spear-Phishing Campaign",
+      "link": "https://thehackernews.com/2026/03/ta446-deploys-leaked-darksword-ios.html",
       "date": "Sat, 28 Mar 2026 12:37:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
@@ -164,18 +176,6 @@
       "source": "CISA Advisories",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Stocks making the biggest moves premarket: AstraZeneca, Unity Software, Coinbase & more",
-      "link": "https://www.cnbc.com/2026/03/27/stocks-making-the-biggest-moves-premarket-azn-u-coin.html",
-      "date": "Fri, 27 Mar 2026 11:40:25 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
