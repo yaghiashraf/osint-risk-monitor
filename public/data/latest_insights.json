@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-03-30T01:49:16.562Z",
+  "lastUpdated": "2026-03-30T07:18:23.332Z",
   "articles": [
     {
-      "title": "U.S. to Allow Russian Oil Tanker to Reach Cuba, Breaking Blockade",
-      "link": "https://www.nytimes.com/2026/03/29/world/americas/cuba-russian-oil-tanlker.html",
-      "date": "Sun, 29 Mar 2026 23:01:29 +0000",
+      "title": "Iran War Live Updates: Trump Says Iran to Allow More Oil Ships Through Strait of Hormuz",
+      "link": "https://www.nytimes.com/live/2026/03/30/world/iran-war-trump-oil-news",
+      "date": "Mon, 30 Mar 2026 07:15:48 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,10 +14,34 @@
       "lng": 0
     },
     {
-      "title": "Can Canada’s Left Regroup? A New Leader Will Try.",
-      "link": "https://www.nytimes.com/2026/03/29/world/americas/canada-new-democrats-party-leader-avi-lewis.html",
-      "date": "Sun, 29 Mar 2026 19:14:47 +0000",
+      "title": "He Led Congo for 18 Years. Now, Joseph Kabila Is a Hunted Man.",
+      "link": "https://www.nytimes.com/2026/03/30/world/africa/he-led-congo-for-18-years-now-hes-a-hunted-man.html",
+      "date": "Mon, 30 Mar 2026 04:01:10 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "They’ve Been Accused of Running a ‘Covert’ Operation in Greenland. It’s No Secret.",
+      "link": "https://www.nytimes.com/2026/03/30/world/europe/trump-greenland-operation-danish-media.html",
+      "date": "Mon, 30 Mar 2026 04:01:10 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Netanyahu says Latin Patriarch will have full access to holy site",
+      "link": "https://www.bbc.com/news/articles/cvg0128z41eo?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 30 Mar 2026 00:41:58 GMT",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -44,18 +68,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "A Toothless Iran? Missile and Drone Strikes Show It Can Still Inflict Pain.",
-      "link": "https://www.nytimes.com/2026/03/29/world/middleeast/iran-missiles-war.html",
-      "date": "Sun, 29 Mar 2026 08:16:54 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
