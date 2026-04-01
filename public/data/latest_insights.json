@@ -1,10 +1,22 @@
 {
-  "lastUpdated": "2026-04-01T01:52:53.969Z",
+  "lastUpdated": "2026-04-01T07:11:25.278Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Trump Says U.S. Military Campaign to Wind Down and Plans National Address",
+      "title": "Claude Code Source Leaked via npm Packaging Error, Anthropic Confirms",
+      "link": "https://thehackernews.com/2026/04/claude-code-tleaked-via-npm-packaging.html",
+      "date": "Wed, 01 Apr 2026 11:42:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump Says U.S. Military Campaign to Wind Down and Plans National Address",
       "link": "https://www.nytimes.com/live/2026/03/31/world/iran-war-oil-trump",
-      "date": "Wed, 01 Apr 2026 01:46:04 +0000",
+      "date": "Wed, 01 Apr 2026 05:53:02 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -113,18 +125,6 @@
       "title": "TrueConf Zero-Day Exploited in Attacks on Southeast Asian Government Networks",
       "link": "https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html",
       "date": "Tue, 31 Mar 2026 21:33:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Vertex AI Vulnerability Exposes Google Cloud Data and Private Artifacts",
-      "link": "https://thehackernews.com/2026/03/vertex-ai-vulnerability-exposes-google.html",
-      "date": "Tue, 31 Mar 2026 18:39:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
