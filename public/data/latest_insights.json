@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-04-03T01:44:17.945Z",
+  "lastUpdated": "2026-04-03T07:00:11.055Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Strikes Hit Infrastructure Sites in Iran After Trump’s Threat",
+      "title": "Strikes Hit Infrastructure Sites in Iran After Trump’s Threat",
       "link": "https://www.nytimes.com/live/2026/04/02/world/iran-war-trump-news",
-      "date": "Fri, 03 Apr 2026 01:13:03 +0000",
+      "date": "Fri, 03 Apr 2026 06:41:15 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Artemis II blasts ever closer to the far side of the Moon",
+      "link": "https://www.bbc.com/news/articles/c937g7nd5x4o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 03 Apr 2026 03:35:28 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -17,18 +29,6 @@
       "title": "Trump removes US Attorney General Pam Bondi ",
       "link": "https://www.bbc.com/news/articles/ce843ge47z4o?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 03 Apr 2026 00:31:27 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Iran war could make beer and bottled water pricier for Indians",
-      "link": "https://www.bbc.com/news/articles/c5ywqky5dd7o?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 02 Apr 2026 23:16:37 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -62,9 +62,9 @@
       "lng": 0
     },
     {
-      "title": "Iran's two largest steel plants shut down due to air strikes, companies say",
-      "link": "https://www.bbc.com/news/articles/c1w4pdexxqpo?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 02 Apr 2026 17:01:08 GMT",
+      "title": "Ros Atkins on…the cost of the Iran war",
+      "link": "https://www.bbc.com/news/videos/c1d9nnqqld0o?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 02 Apr 2026 18:29:14 GMT",
       "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
