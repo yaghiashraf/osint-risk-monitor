@@ -1,6 +1,54 @@
 {
-  "lastUpdated": "2026-04-04T06:51:46.359Z",
+  "lastUpdated": "2026-04-04T12:37:57.857Z",
   "articles": [
+    {
+      "title": "Iran War Live Updates: U.S. Searches for Missing Airman as Israel Launches Fresh Strikes on Tehran",
+      "link": "https://www.nytimes.com/live/2026/04/04/world/iran-war-trump-news",
+      "date": "Sat, 04 Apr 2026 12:13:24 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump Wants to Make Deportation Deals. Autocrats Are Ready to Listen.",
+      "link": "https://www.nytimes.com/2026/04/04/world/africa/trump-deportation-africa-migrants.html",
+      "date": "Sat, 04 Apr 2026 11:12:59 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Rescue team in Iran face 'harrowing and dangerous' search for US crew member",
+      "link": "https://www.bbc.com/news/articles/c0le43jw8e9o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 04 Apr 2026 10:41:38 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iranians Seek Respite in Nature Amid the War",
+      "link": "https://www.nytimes.com/2026/04/04/world/europe/iranian-respite-war.html",
+      "date": "Sat, 04 Apr 2026 09:02:03 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
     {
       "title": "Artemis II crew now halfway to Moon as they take 'spectacular' image of Earth ",
       "link": "https://www.bbc.com/news/articles/ce8jzr423p9o?at_medium=RSS&at_campaign=rss",
@@ -14,31 +62,7 @@
       "lng": 0
     },
     {
-      "title": "Epstein Presented Himself to Indian Tycoon as a Trump White House Insider",
-      "link": "https://www.nytimes.com/2026/04/04/world/asia/epstein-india-ambani.html",
-      "date": "Sat, 04 Apr 2026 04:01:08 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Rescue team in Iran face 'harrowing and dangerous' search for US crew member",
-      "link": "https://www.bbc.com/news/articles/c0le43jw8e9o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 04 Apr 2026 02:52:09 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "After 16 years in power, can Viktor Orban finally be unseated?",
+      "title": "After 16 years in power, could Viktor Orban finally be unseated?",
       "link": "https://www.bbc.com/news/articles/czd7y1n3jyjo?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 03 Apr 2026 23:04:24 GMT",
       "source": "BBC World",
@@ -54,18 +78,6 @@
       "link": "https://www.bbc.com/news/articles/c93e9r62py4o?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 03 Apr 2026 20:06:47 GMT",
       "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Could There Be a Popular Uprising in Cuba?",
-      "link": "https://www.nytimes.com/2026/04/03/world/americas/cuba-opposition-uprising.html",
-      "date": "Fri, 03 Apr 2026 17:45:55 +0000",
-      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -128,18 +140,6 @@
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "In Syria, Kidnappings of Women and Girls Fuel a Minority Group’s Fears",
-      "link": "https://www.nytimes.com/2026/04/03/world/middleeast/syria-kidnapping-alawite-woman-girls.html",
-      "date": "Fri, 03 Apr 2026 04:01:13 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
