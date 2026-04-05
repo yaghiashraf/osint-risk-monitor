@@ -1,6 +1,54 @@
 {
-  "lastUpdated": "2026-04-05T06:57:28.694Z",
+  "lastUpdated": "2026-04-05T12:40:04.888Z",
   "articles": [
+    {
+      "title": "Iran War Live Updates: U.S. Rescues Officer From Downed Fighter Jet in Iran, Trump Says",
+      "link": "https://www.nytimes.com/live/2026/04/05/world/iran-war-trump-news",
+      "date": "Sun, 05 Apr 2026 12:33:44 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iran Downing of Plane and Daring U.S. Rescue Leave Both Sides Emboldened",
+      "link": "https://www.nytimes.com/2026/04/05/world/middleeast/iran-us-rescue.html",
+      "date": "Sun, 05 Apr 2026 12:33:42 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Pope Leo Calls for Peace and Warns of a World Indifferent to Violence",
+      "link": "https://www.nytimes.com/2026/04/05/world/europe/pope-leo-easter.html",
+      "date": "Sun, 05 Apr 2026 11:44:11 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "What we know so far about rescue of US airman in Iran",
+      "link": "https://www.bbc.com/news/articles/cm2k1dgz142o?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 05 Apr 2026 10:07:16 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
     {
       "title": "36 Malicious npm Packages Exploited Redis, PostgreSQL to Deploy Persistent Implants",
       "link": "https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html",
@@ -26,34 +74,10 @@
       "lng": 0
     },
     {
-      "title": "China Built the World’s Drone Industry. Now It’s Locking Down the Skies.",
-      "link": "https://www.nytimes.com/2026/04/05/world/asia/china-drone-regulations.html",
-      "date": "Sun, 05 Apr 2026 04:01:08 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Man charged over fatal shooting of baby in pram in New York",
       "link": "https://www.bbc.com/news/articles/cx267dnex7ko?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 04 Apr 2026 23:28:09 GMT",
       "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Trump Wants to Make Deportation Deals. Autocrats Are Ready to Listen.",
-      "link": "https://www.nytimes.com/2026/04/04/world/africa/trump-deportation-africa-migrants.html",
-      "date": "Sat, 04 Apr 2026 21:48:19 +0000",
-      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -74,46 +98,10 @@
       "lng": 0
     },
     {
-      "title": "German males under 45 may need military approval for long stays abroad ",
-      "link": "https://www.bbc.com/news/articles/cvg3nr83xyvo?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 04 Apr 2026 21:16:42 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Search for missing airman presents serious test for US",
       "link": "https://www.bbc.com/news/articles/c0le69de645o?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 04 Apr 2026 20:13:41 GMT",
       "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "What we know so far about the US fighter jet shot down over Iran",
-      "link": "https://www.bbc.com/news/articles/cm2k1dgz142o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 04 Apr 2026 20:06:12 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Iranians Seek Respite in Nature Amid the War",
-      "link": "https://www.nytimes.com/2026/04/04/world/europe/iranian-respite-war.html",
-      "date": "Sat, 04 Apr 2026 09:02:03 +0000",
-      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
