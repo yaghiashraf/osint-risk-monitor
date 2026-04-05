@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-05T12:40:04.888Z",
+  "lastUpdated": "2026-04-05T18:32:46.494Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: U.S. Rescues Officer From Downed Fighter Jet in Iran, Trump Says",
+      "title": "Iran War Live Updates: Trump Escalates Threat to Hit Iranian Power Plants After U.S. Rescues Downed Airman",
       "link": "https://www.nytimes.com/live/2026/04/05/world/iran-war-trump-news",
-      "date": "Sun, 05 Apr 2026 12:33:44 +0000",
+      "date": "Sun, 05 Apr 2026 18:29:14 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,34 +14,58 @@
       "lng": 0
     },
     {
-      "title": "Iran Downing of Plane and Daring U.S. Rescue Leave Both Sides Emboldened",
-      "link": "https://www.nytimes.com/2026/04/05/world/middleeast/iran-us-rescue.html",
-      "date": "Sun, 05 Apr 2026 12:33:42 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Pope Leo Calls for Peace and Warns of a World Indifferent to Violence",
-      "link": "https://www.nytimes.com/2026/04/05/world/europe/pope-leo-easter.html",
-      "date": "Sun, 05 Apr 2026 11:44:11 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "What we know so far about rescue of US airman in Iran",
+      "title": "How downed F-15 US airman was rescued inside Iran",
       "link": "https://www.bbc.com/news/articles/cm2k1dgz142o?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 05 Apr 2026 10:07:16 GMT",
+      "date": "Sun, 05 Apr 2026 17:15:34 GMT",
       "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Pepsi Drops Sponsorship of Wireless Festival Headlined by Kanye West",
+      "link": "https://www.nytimes.com/2026/04/05/world/europe/ye-music-festival-pepsi-antisemitism.html",
+      "date": "Sun, 05 Apr 2026 17:01:44 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Seriously wounded US airman rescued from Iran, Trump says ",
+      "link": "https://www.bbc.com/news/articles/cr41evk126go?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 05 Apr 2026 16:46:33 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Hungary alleges plot to blow up gas pipeline ahead of election",
+      "link": "https://www.bbc.com/news/articles/cj60x206dx1o?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 05 Apr 2026 16:38:06 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Pope Leo XIV Calls for Peace in First Easter Mass",
+      "link": "https://www.nytimes.com/2026/04/05/world/europe/pope-leo-easter.html",
+      "date": "Sun, 05 Apr 2026 11:44:12 +0000",
+      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -74,22 +98,10 @@
       "lng": 0
     },
     {
-      "title": "Man charged over fatal shooting of baby in pram in New York",
-      "link": "https://www.bbc.com/news/articles/cx267dnex7ko?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 04 Apr 2026 23:28:09 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "US says it has arrested relatives of late Iranian ​general Qasem ​Soleimani",
       "link": "https://www.bbc.com/news/articles/cgqkn4j48qdo?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 04 Apr 2026 21:29:46 GMT",
-      "source": "BBC World",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
