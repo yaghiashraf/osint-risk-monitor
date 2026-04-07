@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-07T01:46:31.296Z",
+  "lastUpdated": "2026-04-07T07:06:56.998Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Trump Renews Threat of Attacks on Bridges and Power Plants",
+      "title": "Trump Renews Threat of Attacks on Iran’s Bridges and Power Plants",
       "link": "https://www.nytimes.com/live/2026/04/06/world/iran-war-trump-israel",
-      "date": "Tue, 07 Apr 2026 01:40:46 +0000",
+      "date": "Tue, 07 Apr 2026 05:56:15 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,21 @@
       "lng": 0
     },
     {
-      "title": "Clock ticks on Trump's Iran ultimatum with little sign of breakthrough",
-      "link": "https://www.bbc.com/news/articles/czexw94rj5jo?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 06 Apr 2026 23:04:23 GMT",
+      "title": "Flowise AI Agent Builder Under Active CVSS 10.0 RCE Exploitation; 12,000+ Instances Exposed",
+      "link": "https://thehackernews.com/2026/04/flowise-ai-agent-builder-under-active.html",
+      "date": "Tue, 07 Apr 2026 11:26:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Taiwan opposition leader makes first China visit since 2016",
+      "link": "https://www.bbc.com/news/articles/c0krnz7mmmjo?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 07 Apr 2026 05:21:20 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -28,8 +40,32 @@
     {
       "title": "New Revelations Reignite Crypto Scandal Involving Argentina’s President Milei",
       "link": "https://www.nytimes.com/2026/04/06/world/americas/argentina-milei-crypto-libra.html",
-      "date": "Mon, 06 Apr 2026 22:18:27 +0000",
+      "date": "Tue, 07 Apr 2026 04:49:43 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "JD Vance due in Hungary to back Orban's re-election bid",
+      "link": "https://www.bbc.com/news/articles/cyv16lq2rp1o?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 07 Apr 2026 01:45:41 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Little sign of breakthrough as Trump's Iran deadline nears ",
+      "link": "https://www.bbc.com/news/articles/czexw94rj5jo?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 06 Apr 2026 23:04:23 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -41,7 +77,7 @@
       "title": "Trump threatens to take out Iran in 'one night' if no deal before deadline",
       "link": "https://www.bbc.com/news/articles/cqj8ep9w1pno?at_medium=RSS&at_campaign=rss",
       "date": "Mon, 06 Apr 2026 21:55:50 GMT",
-      "source": "BBC World",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -56,18 +92,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Ten killed in Israeli strikes and clashes between Hamas and militia in Gaza, local sources say",
-      "link": "https://www.bbc.com/news/articles/c77md512n71o?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 06 Apr 2026 19:11:20 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -134,18 +158,6 @@
       "lng": 0
     },
     {
-      "title": "Multi-OS Cyberattacks: How SOCs Close a Critical Risk in 3 Steps",
-      "link": "https://thehackernews.com/2026/04/multi-os-cyberattacks-how-socs-close.html",
-      "date": "Mon, 06 Apr 2026 18:30:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "link": "https://www.cisa.gov/news-events/alerts/2026/04/06/cisa-adds-one-known-exploited-vulnerability-catalog",
       "date": "Mon, 06 Apr 26 12:00:00 +0000",
@@ -164,18 +176,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Trump issues expletive-laden threat to Iran over Hormuz Strait blockage",
-      "link": "https://www.bbc.com/news/articles/cvg0q6wdzp1o?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 06 Apr 2026 04:56:03 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
