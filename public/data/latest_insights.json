@@ -1,22 +1,10 @@
 {
-  "lastUpdated": "2026-04-08T01:46:50.773Z",
+  "lastUpdated": "2026-04-08T07:09:22.059Z",
   "articles": [
     {
-      "title": "US journalist Shelly Kittleson released after kidnap in Iraq, officials say",
-      "link": "https://www.bbc.com/news/articles/crm1xjp08k3o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 08 Apr 2026 01:44:26 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Iran War Live Updates: U.S. and Iran Agree to Cease-Fire, Avoiding Trump’s Threats of Imminent Devastation",
+      "title": "U.S., Iran and Israel Agree to Cease-Fire",
       "link": "https://www.nytimes.com/live/2026/04/07/world/iran-war-trump-news",
-      "date": "Wed, 08 Apr 2026 01:43:34 +0000",
+      "date": "Wed, 08 Apr 2026 06:54:33 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,9 +14,33 @@
       "lng": 0
     },
     {
-      "title": "Oil slides after US-Iran ceasefire deal to reopen Strait of Hormuz",
-      "link": "https://www.bbc.com/news/articles/c8r40y3rv75o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 08 Apr 2026 01:30:40 GMT",
+      "title": "How Pakistan helped secure a fragile ceasefire between the US and Iran",
+      "link": "https://www.bbc.com/news/articles/cj401qvgg19o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 08 Apr 2026 05:03:31 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iran-Linked Hackers Disrupt U.S. Critical Infrastructure by Targeting Internet-Exposed PLCs",
+      "link": "https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html",
+      "date": "Wed, 08 Apr 2026 09:53:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iran ceasefire deal a partial win for Trump - but at a high cost",
+      "link": "https://www.bbc.com/news/articles/cwyvp55xrlro?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 08 Apr 2026 03:30:55 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -38,9 +50,9 @@
       "lng": 0
     },
     {
-      "title": "Iran ceasefire deal a temporary win for Trump - but it comes at a cost",
-      "link": "https://www.bbc.com/news/articles/cwyvp55xrlro?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 08 Apr 2026 00:45:08 GMT",
+      "title": "What we know about the two-week ceasefire between the US and Iran ",
+      "link": "https://www.bbc.com/news/articles/ce84z6y3ke4o?at_medium=RSS&at_campaign=rss",
+      "date": "Wed, 08 Apr 2026 02:58:55 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -52,7 +64,7 @@
     {
       "title": "Trump-backed Republican Clay Fuller wins election to replace Marjorie Taylor Greene",
       "link": "https://www.bbc.com/news/articles/c8r40erdj6mo?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 08 Apr 2026 00:37:00 GMT",
+      "date": "Wed, 08 Apr 2026 02:33:45 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -64,20 +76,8 @@
     {
       "title": "‘I Love Viktor’: Trump and Vance Cheer on Orban in Hungarian Race",
       "link": "https://www.nytimes.com/2026/04/07/world/europe/vance-hungary-orban-fidesz-election.html",
-      "date": "Tue, 07 Apr 2026 22:40:43 +0000",
+      "date": "Tue, 07 Apr 2026 22:40:44 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "French couple leave Iran after more than three years in jail",
-      "link": "https://www.bbc.com/news/articles/clyxk5640wko?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 07 Apr 2026 19:18:08 GMT",
-      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -126,30 +126,6 @@
       "link": "https://www.nytimes.com/2026/04/07/world/asia/kabul-drug-rehab-pakistan-airstrike.html",
       "date": "Tue, 07 Apr 2026 15:42:11 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Docker CVE-2026-34040 Lets Attackers Bypass Authorization and Gain Host Access",
-      "link": "https://thehackernews.com/2026/04/docker-cve-2026-34040-lets-attackers.html",
-      "date": "Tue, 07 Apr 2026 20:45:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "One gunman killed and two injured in shooting at Israeli consulate in Istanbul ",
-      "link": "https://www.bbc.com/news/articles/c3exp8j7yz4o?at_medium=RSS&at_campaign=rss",
-      "date": "Tue, 07 Apr 2026 14:51:07 GMT",
-      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
