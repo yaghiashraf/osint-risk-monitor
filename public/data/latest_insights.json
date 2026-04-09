@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-04-09T01:26:13.186Z",
+  "lastUpdated": "2026-04-09T07:13:27.383Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Cease-Fire Tested by Confusion Over Strait and Strikes on Lebanon",
+      "title": "Cease-Fire Tested by Confusion Over Strait and Strikes on Lebanon",
       "link": "https://www.nytimes.com/live/2026/04/08/world/iran-war-trump-news",
-      "date": "Thu, 09 Apr 2026 01:17:22 +0000",
+      "date": "Thu, 09 Apr 2026 07:06:57 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump criticises Nato as alliance chief describes meeting as 'very frank' ",
+      "link": "https://www.bbc.com/news/articles/c05d8j9r5ejo?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 09 Apr 2026 01:59:34 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -17,7 +29,7 @@
       "title": "At least 182 killed across Lebanon in large wave of Israeli strikes",
       "link": "https://www.bbc.com/news/articles/c0j6d538l6qo?at_medium=RSS&at_campaign=rss",
       "date": "Wed, 08 Apr 2026 20:54:59 GMT",
-      "source": "BBC World",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
