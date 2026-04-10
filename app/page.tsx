@@ -14,7 +14,6 @@ import {
   AlertTriangle,
   Radio,
   Clock,
-  RefreshCw,
   ChevronRight,
 } from "lucide-react";
 import type { Article as MapArticle } from "../components/WorldMap";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Tv, Volume2, VolumeX, Radio, ExternalLink, LayoutGrid, Maximize2 } from "lucide-react";
+import { Tv, Volume2, VolumeX, Radio, ExternalLink, LayoutGrid } from "lucide-react";
 
 // ── Channel definitions matching worldmonitor.app's 9 defaults ─────────────
 // type "youtube"    → embed by video ID  (persistent live stream IDs)
