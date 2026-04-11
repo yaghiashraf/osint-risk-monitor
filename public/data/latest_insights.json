@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-10T18:41:45.939Z",
+  "lastUpdated": "2026-04-11T01:28:31.434Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Iran Adds New Condition as Vance Heads to Peace Talks",
+      "title": "Iran War Live Updates: Iranian Delegation Arrives at Peace Talks, With Vance en Route",
       "link": "https://www.nytimes.com/live/2026/04/10/world/iran-war-trump-israel-lebanon",
-      "date": "Fri, 10 Apr 2026 18:35:46 +0000",
+      "date": "Sat, 11 Apr 2026 01:21:54 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,9 @@
       "lng": 0
     },
     {
-      "title": "Prince Harry sued for defamation by charity Sentebale he co-founded",
-      "link": "https://www.bbc.com/news/articles/cr517n2v7myo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 10 Apr 2026 18:29:16 GMT",
+      "title": "Final push for votes as challenger to Hungary's Orbán scents victory",
+      "link": "https://www.bbc.com/news/articles/c0q9527y41lo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 11 Apr 2026 00:17:18 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,10 +26,10 @@
       "lng": 0
     },
     {
-      "title": "Lebanon says ceasefire must be in place before Israel talks",
-      "link": "https://www.bbc.com/news/articles/c93en5q2zl3o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 10 Apr 2026 18:21:59 GMT",
-      "source": "BBC Middle East",
+      "title": "Historic Vance-Ghalibaf talks must bridge deep distrust",
+      "link": "https://www.bbc.com/news/articles/cn9qzl12537o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 10 Apr 2026 23:46:49 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -38,9 +38,9 @@
       "lng": 0
     },
     {
-      "title": "Palestinian shot dead during Israeli settler attack on occupied West Bank village",
-      "link": "https://www.bbc.com/news/articles/czrekrzzex1o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 10 Apr 2026 17:08:27 GMT",
+      "title": "Lebanon and Israel officials to meet in US on Tuesday",
+      "link": "https://www.bbc.com/news/articles/c93en5q2zl3o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 10 Apr 2026 22:43:03 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -52,10 +52,22 @@
     {
       "title": "Michael Burry says he's still betting against Palantir after Trump post boosts stock",
       "link": "https://www.cnbc.com/2026/04/10/michael-burry-says-hes-still-betting-against-palantir-after-trump-post-boosts-stock.html",
-      "date": "Fri, 10 Apr 2026 17:08:12 GMT",
+      "date": "Fri, 10 Apr 2026 20:20:12 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Palestinian shot dead during Israeli settler attack on occupied West Bank village",
+      "link": "https://www.bbc.com/news/articles/czrekrzzex1o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 10 Apr 2026 17:08:27 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -140,30 +152,6 @@
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Trump says Iran's handling of Strait of Hormuz is 'not the agreement we have'",
-      "link": "https://www.bbc.com/news/articles/cge0xre3d27o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 10 Apr 2026 02:10:44 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Ceasefire or no ceasefire, the Middle East's reshuffling is not yet done",
-      "link": "https://www.bbc.com/news/articles/cp3l4yk5rlgo?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 09 Apr 2026 23:01:47 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
