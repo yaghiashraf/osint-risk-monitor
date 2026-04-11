@@ -1,13 +1,37 @@
 {
-  "lastUpdated": "2026-04-11T06:53:20.803Z",
+  "lastUpdated": "2026-04-11T12:39:42.082Z",
   "articles": [
     {
-      "title": "Iran Has Been Consistent in War. Will It Be Consistent in Peace Talks?",
-      "link": "https://www.nytimes.com/2026/04/11/world/middleeast/iran-peace-talks-demands.html",
-      "date": "Sat, 11 Apr 2026 04:01:18 +0000",
+      "title": "Iran War Live Updates: U.S. and Iranian Officials Meet Separately With Pakistani Mediators Ahead of Talks",
+      "link": "https://www.nytimes.com/live/2026/04/11/world/iran-war-trump-talks-pakistan",
+      "date": "Sat, 11 Apr 2026 12:35:33 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iran Has Been Consistent in War. Will It Be Consistent in Peace Talks?",
+      "link": "https://www.nytimes.com/2026/04/11/world/middleeast/iran-peace-talks-demands.html",
+      "date": "Sat, 11 Apr 2026 08:55:05 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Citizen Lab: Law Enforcement Used Webloc to Track 500 Million Devices via Ad Data",
+      "link": "https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html",
+      "date": "Sat, 11 Apr 2026 11:32:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -26,10 +50,10 @@
       "lng": 0
     },
     {
-      "title": "In New War With Israel, Hezbollah Defies Notion That It Was Crippled",
-      "link": "https://www.nytimes.com/2026/04/11/world/middleeast/hezbollah-israel.html",
-      "date": "Sat, 11 Apr 2026 04:01:08 +0000",
-      "source": "NY Times World",
+      "title": "Frontrunner for California governor denies sexual assault allegations",
+      "link": "https://www.bbc.com/news/articles/c20qg3g9554o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 11 Apr 2026 03:13:10 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -50,21 +74,9 @@
       "lng": 0
     },
     {
-      "title": "Final push for votes as challenger to Hungary's Orbán scents victory",
+      "title": "Final push for votes as challenger to Hungary's Orbán senses victory",
       "link": "https://www.bbc.com/news/articles/c0q9527y41lo?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 11 Apr 2026 00:17:18 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Lyse Doucet: Historic US-Iran talks must bridge deep distrust",
-      "link": "https://www.bbc.com/news/articles/cn9qzl12537o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 10 Apr 2026 23:46:49 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -161,18 +173,6 @@
       "title": "Browser Extensions Are the New AI Consumption Channel That No One Is Talking About",
       "link": "https://thehackernews.com/2026/04/browser-extensions-are-new-ai.html",
       "date": "Fri, 10 Apr 2026 16:30:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Google Rolls Out DBSC in Chrome 146 to Block Session Theft on Windows",
-      "link": "https://thehackernews.com/2026/04/google-rolls-out-dbsc-in-chrome-146-to.html",
-      "date": "Fri, 10 Apr 2026 13:28:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
