@@ -1,11 +1,47 @@
 {
-  "lastUpdated": "2026-04-11T01:28:31.434Z",
+  "lastUpdated": "2026-04-11T06:53:20.803Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Iranian Delegation Arrives at Peace Talks, With Vance en Route",
-      "link": "https://www.nytimes.com/live/2026/04/10/world/iran-war-trump-israel-lebanon",
-      "date": "Sat, 11 Apr 2026 01:21:54 +0000",
+      "title": "Iran Has Been Consistent in War. Will It Be Consistent in Peace Talks?",
+      "link": "https://www.nytimes.com/2026/04/11/world/middleeast/iran-peace-talks-demands.html",
+      "date": "Sat, 11 Apr 2026 04:01:18 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "How Lu Xun, a Famous Chinese Writer, Became a Cute Communist Mascot",
+      "link": "https://www.nytimes.com/2026/04/11/world/asia/lu-xun-chinese-writer-communist-mascot.html",
+      "date": "Sat, 11 Apr 2026 04:01:16 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "In New War With Israel, Hezbollah Defies Notion That It Was Crippled",
+      "link": "https://www.nytimes.com/2026/04/11/world/middleeast/hezbollah-israel.html",
+      "date": "Sat, 11 Apr 2026 04:01:08 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Artemis II mission was a triumph - now comes the hard part",
+      "link": "https://www.bbc.com/news/articles/cj0v119zp19o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 11 Apr 2026 00:38:44 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -26,7 +62,7 @@
       "lng": 0
     },
     {
-      "title": "Historic Vance-Ghalibaf talks must bridge deep distrust",
+      "title": "Lyse Doucet: Historic US-Iran talks must bridge deep distrust",
       "link": "https://www.bbc.com/news/articles/cn9qzl12537o?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 10 Apr 2026 23:46:49 GMT",
       "source": "BBC World",
@@ -38,10 +74,22 @@
       "lng": 0
     },
     {
+      "title": "Historic Vance-Ghalibaf talks must bridge deep distrust",
+      "link": "https://www.bbc.com/news/articles/cn9qzl12537o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 10 Apr 2026 23:46:49 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
       "title": "Lebanon and Israel officials to meet in US on Tuesday",
       "link": "https://www.bbc.com/news/articles/c93en5q2zl3o?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 10 Apr 2026 22:43:03 GMT",
-      "source": "BBC World",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -116,30 +164,6 @@
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Lebanon: Images of a Nation Uprooted by War",
-      "link": "https://www.nytimes.com/2026/04/10/world/middleeast/lebanon-displaced-photos.html",
-      "date": "Fri, 10 Apr 2026 09:05:07 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "This Hungarian Town Explains Why Orban Could Lose on Sunday",
-      "link": "https://www.nytimes.com/2026/04/10/world/europe/hungary-corruption-orban-magyar-election.html",
-      "date": "Fri, 10 Apr 2026 09:02:30 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
