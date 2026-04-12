@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-11T18:33:41.426Z",
+  "lastUpdated": "2026-04-12T01:52:28.011Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: U.S. and Iran Hold Historic High-Level Peace Talks",
+      "title": "Iran War Live Updates: U.S. and Iran Fail to Reach Agreement After Marathon Peace Talks, Vance Says",
       "link": "https://www.nytimes.com/live/2026/04/11/world/iran-war-trump-talks-pakistan",
-      "date": "Sat, 11 Apr 2026 18:23:27 +0000",
+      "date": "Sun, 12 Apr 2026 01:45:46 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,9 @@
       "lng": 0
     },
     {
-      "title": "Nearly 400 sentenced in Nigeria for links to militant Islamists",
-      "link": "https://www.bbc.com/news/articles/cvge1kdmpzwo?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 11 Apr 2026 14:41:31 GMT",
+      "title": "Why this disillusioned Trump voter spends hours searching Epstein files",
+      "link": "https://www.bbc.com/news/articles/cx237vmr2lyo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 12 Apr 2026 00:30:44 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,9 +26,33 @@
       "lng": 0
     },
     {
-      "title": "Frontrunner for California governor denies sexual assault allegations",
-      "link": "https://www.bbc.com/news/articles/c20qg3g9554o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 11 Apr 2026 14:24:24 GMT",
+      "title": "Hungarians decide whether to end 16 years of Orbán rule and elect rival",
+      "link": "https://www.bbc.com/news/articles/cdxdepjrv95o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 11 Apr 2026 23:25:42 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "How bond market's private credit crisis fears are playing out in fixed-income ETFs ",
+      "link": "https://www.cnbc.com/2026/04/11/bond-market-private-credit-crisis-fixed-income-etfs.html",
+      "date": "Sat, 11 Apr 2026 21:37:12 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "'It's a special thing to be on Planet Earth': Artemis crew welcomed home in Houston",
+      "link": "https://www.bbc.com/news/videos/cd7jzj9rg1qo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 11 Apr 2026 21:23:07 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -42,30 +66,6 @@
       "link": "https://www.nytimes.com/2026/04/11/world/middleeast/iran-peace-talks-demands.html",
       "date": "Sat, 11 Apr 2026 14:22:30 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "How bond market's private credit crisis fears are playing out in fixed-income ETFs ",
-      "link": "https://www.cnbc.com/2026/04/11/bond-market-private-credit-crisis-fixed-income-etfs.html",
-      "date": "Sat, 11 Apr 2026 14:15:29 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Artemis crew home safely after completing historic mission to the Moon",
-      "link": "https://www.bbc.com/news/articles/cr51z54d5rpo?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 11 Apr 2026 07:53:46 GMT",
-      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
