@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-12T12:43:21.130Z",
+  "lastUpdated": "2026-04-12T18:37:18.202Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Top Iranian Negotiator Suggests Further Peace Talks Are Possible",
+      "title": "Iran War Live Updates: Trump Says U.S. Will ‘Blockade’ Strait of Hormuz After No Peace Deal Reached",
       "link": "https://www.nytimes.com/live/2026/04/12/world/iran-war-trump-talks-pakistan",
-      "date": "Sun, 12 Apr 2026 12:27:52 +0000",
+      "date": "Sun, 12 Apr 2026 18:20:02 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,9 @@
       "lng": 0
     },
     {
-      "title": "Hungarians vote in big numbers on whether to end Orbán rule and elect rival",
-      "link": "https://www.bbc.com/news/articles/cdxdepjrv95o?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 12 Apr 2026 12:02:31 GMT",
+      "title": "Civilians feared killed after reports of air strike on Nigerian market",
+      "link": "https://www.bbc.com/news/articles/cgk021z3ejpo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 12 Apr 2026 18:11:04 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,9 +26,21 @@
       "lng": 0
     },
     {
-      "title": "Ukraine and Russia accuse each other of hundreds of ceasefire violations",
-      "link": "https://www.bbc.com/news/articles/cz78y73v830o?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 12 Apr 2026 11:53:37 GMT",
+      "title": "Trump's Strait of Hormuz blockade threat raises risks and leaves predicaments unchanged",
+      "link": "https://www.bbc.com/news/articles/c8dl5mly2rzo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 12 Apr 2026 17:45:11 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Asha Bhosle: The sound of Bollywood dies aged 92",
+      "link": "https://www.bbc.com/news/articles/c6ppd0qdp1do?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 12 Apr 2026 16:56:08 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -40,8 +52,20 @@
     {
       "title": "In Pakistan Talks, Iran Saw a U.S. Trying to Dictate, Not Negotiate",
       "link": "https://www.nytimes.com/2026/04/12/world/middleeast/iran-united-states-negotiations.html",
-      "date": "Sun, 12 Apr 2026 11:24:22 +0000",
+      "date": "Sun, 12 Apr 2026 16:36:37 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "After Iran talks falter, the big question is what happens next?",
+      "link": "https://www.bbc.com/news/articles/c5y943x2g8qo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 12 Apr 2026 12:48:01 GMT",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -56,18 +80,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Asha Bhosle: The sound of Bollywood dies aged 92",
-      "link": "https://www.bbc.com/news/articles/c6ppd0qdp1do?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 12 Apr 2026 10:03:00 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -98,9 +110,9 @@
       "lng": 0
     },
     {
-      "title": "What to Know as Hungary Votes in Elections Watched by the World",
+      "title": "What to Know About the Hungary Elections as Orban Fights to Remain in Power",
       "link": "https://www.nytimes.com/2026/04/12/world/europe/hungary-election-what-to-know.html",
-      "date": "Sun, 12 Apr 2026 04:01:33 +0000",
+      "date": "Sun, 12 Apr 2026 04:01:34 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -149,18 +161,6 @@
       "title": "Concerns after satellite provider restricts Iran images following US pressure",
       "link": "https://www.bbc.com/news/articles/c5y721yqe6ro?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 11 Apr 2026 05:40:51 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Lebanon and Israel officials to meet in US on Tuesday",
-      "link": "https://www.bbc.com/news/articles/c93en5q2zl3o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 10 Apr 2026 22:43:03 GMT",
       "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
