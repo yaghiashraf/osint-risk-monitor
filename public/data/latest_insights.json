@@ -1,10 +1,46 @@
 {
-  "lastUpdated": "2026-04-14T01:52:23.112Z",
+  "lastUpdated": "2026-04-14T07:21:00.033Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Iran Proposes Suspending Nuclear Activity for Up to 5 Years",
+      "title": "ShowDoc RCE Flaw CVE-2025-0520 Actively Exploited on Unpatched Servers",
+      "link": "https://thehackernews.com/2026/04/showdoc-rce-flaw-cve-2025-0520-actively.html",
+      "date": "Tue, 14 Apr 2026 11:20:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "CISA Adds 6 Known Exploited Flaws in Fortinet, Microsoft, and Adobe Software",
+      "link": "https://thehackernews.com/2026/04/cisa-adds-6-known-exploited-flaws-in.html",
+      "date": "Tue, 14 Apr 2026 11:09:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "China exports growth in March misses estimates, imports surge most in over four years ",
+      "link": "https://www.cnbc.com/2026/04/14/china-trade-data-march-exports-imports-march.html",
+      "date": "Tue, 14 Apr 2026 05:15:50 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iran Proposes Suspending Nuclear Activity for Up to 5 Years",
       "link": "https://www.nytimes.com/live/2026/04/13/world/iran-war-trump-news",
-      "date": "Tue, 14 Apr 2026 01:27:17 +0000",
+      "date": "Tue, 14 Apr 2026 04:48:11 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,7 +50,7 @@
       "lng": 0
     },
     {
-      "title": "Lebanon enters talks with Israel but with no cards to play",
+      "title": "Lebanon seeks peace, but Hezbollah needs to be convinced first",
       "link": "https://www.bbc.com/news/articles/cr51l794mlyo?at_medium=RSS&at_campaign=rss",
       "date": "Mon, 13 Apr 2026 23:26:46 GMT",
       "source": "BBC World",
@@ -74,45 +110,9 @@
       "lng": 0
     },
     {
-      "title": "FBI and Indonesian Police Dismantle W3LL Phishing Network Behind $20M Fraud Attempts",
-      "link": "https://thehackernews.com/2026/04/fbi-and-indonesian-police-dismantle.html",
-      "date": "Mon, 13 Apr 2026 20:16:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Israel steps up strikes on Lebanon and Hezbollah attacks continue as talks loom",
       "link": "https://www.bbc.com/news/articles/czd78q6r8jno?at_medium=RSS&at_campaign=rss",
       "date": "Mon, 13 Apr 2026 13:55:09 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "⚡ Weekly Recap: Fiber Optic Spying, Windows Rootkit, AI Vulnerability Hunting and More",
-      "link": "https://thehackernews.com/2026/04/weekly-recap-fiber-optic-spying-windows.html",
-      "date": "Mon, 13 Apr 2026 18:31:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Iran carried out highest number of executions in decades",
-      "link": "https://www.bbc.com/news/articles/cly9ggzy3ngo?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 13 Apr 2026 12:53:00 GMT",
       "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -176,18 +176,6 @@
       "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Morgan Stanley predicts these beaten-down Chinese stocks can rebound on easing Middle East tensions",
-      "link": "https://www.cnbc.com/2026/04/12/morgan-stanley-chinese-stocks-that-can-recover-on-iran-ceasefire.html",
-      "date": "Sun, 12 Apr 2026 11:16:44 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
