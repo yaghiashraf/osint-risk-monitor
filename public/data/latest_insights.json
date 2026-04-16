@@ -1,13 +1,37 @@
 {
-  "lastUpdated": "2026-04-16T01:57:02.855Z",
+  "lastUpdated": "2026-04-16T07:22:00.423Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Pakistani Mediators Arrive in Iran to Keep Peace Talks Alive",
+      "title": "Pakistani Mediators Arrive in Iran to Keep Peace Talks Alive",
       "link": "https://www.nytimes.com/live/2026/04/15/world/iran-war-trump-us-israel",
-      "date": "Thu, 16 Apr 2026 01:34:18 +0000",
+      "date": "Thu, 16 Apr 2026 07:12:36 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Israeli demolitions levelling towns in south Lebanon, satellite images show",
+      "link": "https://www.bbc.com/news/articles/cdxkk1vnp57o?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 16 Apr 2026 06:25:14 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "UAC-0247 Targets Ukrainian Clinics and Government in Data-Theft Malware Campaign",
+      "link": "https://thehackernews.com/2026/04/uac-0247-targets-ukrainian-clinics-and.html",
+      "date": "Thu, 16 Apr 2026 11:50:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -98,18 +122,6 @@
       "lng": 0
     },
     {
-      "title": "Prominent Palestinian prisoner Marwan Barghouti assaulted three times in a month, family says",
-      "link": "https://www.bbc.com/news/articles/czreedn4n7jo?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 15 Apr 2026 15:59:24 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "How China’s Weapons Transfers to Iran Have Evolved Over Decades",
       "link": "https://www.nytimes.com/2026/04/15/world/asia/china-iran-weapons-sales.html",
       "date": "Wed, 15 Apr 2026 14:13:34 +0000",
@@ -134,36 +146,12 @@
       "lng": 0
     },
     {
-      "title": "April Patch Tuesday Fixes Critical Flaws Across SAP, Adobe, Microsoft, Fortinet, and More",
-      "link": "https://thehackernews.com/2026/04/april-patch-tuesday-fixes-critical.html",
-      "date": "Wed, 15 Apr 2026 18:07:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Stocks making the biggest moves premarket: Bank of America, Morgan Stanley, Robinhood & more",
       "link": "https://www.cnbc.com/2026/04/15/stocks-making-the-biggest-moves-premarket-bac-avgo-hood.html",
       "date": "Wed, 15 Apr 2026 11:52:17 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Trump's rift with Pope is playing out in public - it's costing him valuable support",
-      "link": "https://www.bbc.com/news/articles/c070jxyjrmeo?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 15 Apr 2026 11:25:09 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
