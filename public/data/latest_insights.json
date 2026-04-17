@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-04-16T19:02:24.609Z",
+  "lastUpdated": "2026-04-17T01:52:33.177Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Israel Agrees to 10-Day Cease-Fire in Lebanon",
+      "title": "Live Updates: Lebanon-Israel Cease-Fire Goes Into Effect",
       "link": "https://www.nytimes.com/live/2026/04/16/world/iran-war-trump-lebanon-news",
-      "date": "Thu, 16 Apr 2026 18:51:21 +0000",
+      "date": "Fri, 17 Apr 2026 00:56:59 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Israel and Lebanon agree 10-day ceasefire, Trump says",
+      "link": "https://www.bbc.com/news/articles/c8x7w1w9gd2o?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 16 Apr 2026 21:18:31 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -86,18 +98,6 @@
       "lng": 0
     },
     {
-      "title": "Former Arsenal goalkeeper Alex Manninger dies after car hit by train",
-      "link": "https://www.bbc.com/sport/football/articles/c4g84l14e5eo?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 16 Apr 2026 13:53:25 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "ThreatsDay Bulletin: Defender 0-Day, SonicWall Brute-Force, 17-Year-Old Excel RCE and 15 More Stories",
       "link": "https://thehackernews.com/2026/04/threatsday-bulletin-17-year-old-excel.html",
       "date": "Thu, 16 Apr 2026 18:35:00 +0530",
@@ -134,32 +134,32 @@
       "lng": 0
     },
     {
+      "title": "AVEVA Pipeline Simulation",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-106-04",
+      "date": "Thu, 16 Apr 26 12:00:00 +0000",
+      "source": "CISA Advisories",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/04/16/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "date": "Thu, 16 Apr 26 12:00:00 +0000",
+      "source": "CISA Advisories",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
       "title": "Horner Automation Cscape and XL4, XL7 PLC",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-106-02",
-      "date": "Thu, 16 Apr 26 12:00:00 +0000",
-      "source": "CISA Advisories",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Anviz Multiple Products",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-106-03",
-      "date": "Thu, 16 Apr 26 12:00:00 +0000",
-      "source": "CISA Advisories",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Delta Electronics ASDA-Soft",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-106-01",
       "date": "Thu, 16 Apr 26 12:00:00 +0000",
       "source": "CISA Advisories",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
