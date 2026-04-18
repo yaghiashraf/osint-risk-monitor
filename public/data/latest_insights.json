@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-17T18:47:53.942Z",
+  "lastUpdated": "2026-04-18T01:44:55.052Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Tehran Declares Strait ‘Open,’ but U.S. Blockade Remains",
-      "link": "https://www.nytimes.com/live/2026/04/17/world/iran-us-war-trump",
-      "date": "Fri, 17 Apr 2026 18:45:23 +0000",
+      "title": "Thousands of Lebanese Try to Head Home After Israel-Lebanon Truce",
+      "link": "https://www.nytimes.com/live/2026/04/17/world/israel-lebanon-ceasefire-hezbollah",
+      "date": "Sat, 18 Apr 2026 01:29:26 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,9 @@
       "lng": 0
     },
     {
-      "title": "Live Updates: Thousands of Lebanese Try to Head Home After Israel-Lebanon Truce",
-      "link": "https://www.nytimes.com/live/2026/04/17/world/israel-lebanon-ceasefire-hezbollah",
-      "date": "Fri, 17 Apr 2026 18:37:25 +0000",
+      "title": "Iran War Live Updates: Hopes for Peace Deal Rise After Iran Says Strait Is Open",
+      "link": "https://www.nytimes.com/live/2026/04/17/world/iran-us-war-trump",
+      "date": "Sat, 18 Apr 2026 01:03:38 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -28,7 +28,7 @@
     {
       "title": "Oil prices plunge as Iran says Strait 'open'",
       "link": "https://www.bbc.com/news/articles/ckg045z73z1o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 17 Apr 2026 18:32:21 GMT",
+      "date": "Fri, 17 Apr 2026 21:41:01 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -38,10 +38,10 @@
       "lng": 0
     },
     {
-      "title": "Kanye West concert in Poland cancelled over antisemitic comments",
-      "link": "https://www.bbc.com/news/articles/czx95rl4ek5o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 17 Apr 2026 18:19:10 GMT",
-      "source": "BBC World",
+      "title": "A moment of risk and opportunity: How two ceasefires could boost US-Iran talks",
+      "link": "https://www.bbc.com/news/articles/c0mjynzvw94o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 17 Apr 2026 19:59:30 GMT",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -52,7 +52,7 @@
     {
       "title": "Stocks making the biggest moves midday: Royal Caribbean, Exxon Mobil, Critical Metals, Netflix & more",
       "link": "https://www.cnbc.com/2026/04/17/stocks-making-the-biggest-moves-midday-rcl-xom-crml-nflx.html",
-      "date": "Fri, 17 Apr 2026 16:09:30 GMT",
+      "date": "Fri, 17 Apr 2026 18:57:14 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
@@ -62,10 +62,10 @@
       "lng": 0
     },
     {
-      "title": "How two ceasefires and 'opening' of Hormuz could boost Iran talks",
-      "link": "https://www.bbc.com/news/articles/c0mjynzvw94o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 17 Apr 2026 15:22:08 GMT",
-      "source": "BBC Middle East",
+      "title": "Kanye West concert in Poland cancelled over antisemitic comments",
+      "link": "https://www.bbc.com/news/articles/czx95rl4ek5o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 17 Apr 2026 18:19:10 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
