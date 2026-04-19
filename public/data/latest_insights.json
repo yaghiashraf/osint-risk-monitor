@@ -1,10 +1,46 @@
 {
-  "lastUpdated": "2026-04-18T18:37:06.726Z",
+  "lastUpdated": "2026-04-19T01:56:51.587Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Two Ships Are Fired On After Iran Reimposes ‘Strict Control’ of Strait of Hormuz",
+      "title": "Iran War Live Updates: Tensions Rise in Strait of Hormuz Over Ship Attacks and Iranian Threats",
       "link": "https://www.nytimes.com/live/2026/04/18/world/iran-us-war-trump-hormuz",
-      "date": "Sat, 18 Apr 2026 18:32:53 +0000",
+      "date": "Sat, 18 Apr 2026 23:51:55 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Strait of Hormuz closed again, Iran says, as ships attacked",
+      "link": "https://www.bbc.com/news/articles/cx2631x6nelo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 18 Apr 2026 21:19:46 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Kyiv Mass Shooting Kills 6 and Gunman Is Shot Dead After Taking Hostages in Grocery",
+      "link": "https://www.nytimes.com/2026/04/18/world/europe/kyiv-ukraine-mass-shooting-hostages.html",
+      "date": "Sat, 18 Apr 2026 20:43:28 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "U.S. Officials Visited Havana to Lay Out Proposals for Cuban Reforms",
+      "link": "https://www.nytimes.com/2026/04/18/world/americas/us-officials-cuba-trump.html",
+      "date": "Sat, 18 Apr 2026 20:17:14 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -38,22 +74,10 @@
       "lng": 0
     },
     {
-      "title": "Pope Says News Outlets Misread Some of His Remarks as Criticism of Trump",
-      "link": "https://www.nytimes.com/2026/04/18/world/africa/pope-news-media-trump-africa.html",
-      "date": "Sat, 18 Apr 2026 15:10:00 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "A Potent Threat in Strait of Hormuz: Iran’s ‘Mosquito Fleet’",
-      "link": "https://www.nytimes.com/2026/04/18/world/middleeast/iran-irgc-navy-strait-of-hormuz.html",
-      "date": "Sat, 18 Apr 2026 14:40:26 +0000",
-      "source": "NY Times World",
+      "title": "French peacekeeper killed in southern Lebanon",
+      "link": "https://www.bbc.com/news/articles/cvg4mrm2vm0o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 18 Apr 2026 14:53:17 GMT",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -68,18 +92,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Madonna joins Sabrina Carpenter to surprise Coachella",
-      "link": "https://www.bbc.com/news/articles/c77my6gnpy4o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 18 Apr 2026 10:32:54 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -122,18 +134,6 @@
       "lng": 0
     },
     {
-      "title": "Iran says Strait of Hormuz is 'open' but tracking shows few ships moving",
-      "link": "https://www.bbc.com/news/articles/cwydexp39ddo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 17 Apr 2026 22:26:00 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "A moment of risk and opportunity: How two ceasefires could boost US-Iran talks",
       "link": "https://www.bbc.com/news/articles/c0mjynzvw94o?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 17 Apr 2026 19:59:30 GMT",
@@ -152,18 +152,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Ceasefire with Israel brings respite to Lebanon, but obstacles to peace remain",
-      "link": "https://www.bbc.com/news/articles/crm10w4ynj1o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 17 Apr 2026 14:31:51 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
