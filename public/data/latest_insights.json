@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-19T01:56:51.587Z",
+  "lastUpdated": "2026-04-19T07:09:24.580Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Tensions Rise in Strait of Hormuz Over Ship Attacks and Iranian Threats",
+      "title": "Tensions Rise in Strait of Hormuz Over Ship Attacks and Iranian Threats",
       "link": "https://www.nytimes.com/live/2026/04/18/world/iran-us-war-trump-hormuz",
-      "date": "Sat, 18 Apr 2026 23:51:55 +0000",
+      "date": "Sun, 19 Apr 2026 06:27:52 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,9 @@
       "lng": 0
     },
     {
-      "title": "Strait of Hormuz closed again, Iran says, as ships attacked",
-      "link": "https://www.bbc.com/news/articles/cx2631x6nelo?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 18 Apr 2026 21:19:46 GMT",
+      "title": "Australia's most-decorated soldier vows to 'fight' war crime charges",
+      "link": "https://www.bbc.com/news/articles/cy91r7ww3weo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 19 Apr 2026 05:12:40 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,10 +26,22 @@
       "lng": 0
     },
     {
-      "title": "Kyiv Mass Shooting Kills 6 and Gunman Is Shot Dead After Taking Hostages in Grocery",
-      "link": "https://www.nytimes.com/2026/04/18/world/europe/kyiv-ukraine-mass-shooting-hostages.html",
-      "date": "Sat, 18 Apr 2026 20:43:28 +0000",
+      "title": "What to Know About the Bulgarian Election",
+      "link": "https://www.nytimes.com/2026/04/19/world/europe/bulgaria-elections-what-to-know.html",
+      "date": "Sun, 19 Apr 2026 04:01:06 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "French peacekeeper killed in southern Lebanon",
+      "link": "https://www.bbc.com/news/articles/cvg4mrm2vm0o?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 19 Apr 2026 03:14:45 GMT",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -40,7 +52,7 @@
     {
       "title": "U.S. Officials Visited Havana to Lay Out Proposals for Cuban Reforms",
       "link": "https://www.nytimes.com/2026/04/18/world/americas/us-officials-cuba-trump.html",
-      "date": "Sat, 18 Apr 2026 20:17:14 +0000",
+      "date": "Sat, 18 Apr 2026 20:17:15 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -66,18 +78,6 @@
       "link": "https://www.bbc.com/news/articles/ce84j261kj1o?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 18 Apr 2026 16:44:39 GMT",
       "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "French peacekeeper killed in southern Lebanon",
-      "link": "https://www.bbc.com/news/articles/cvg4mrm2vm0o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 18 Apr 2026 14:53:17 GMT",
-      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -152,6 +152,18 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Ceasefire with Israel brings respite to Lebanon, but obstacles to peace remain",
+      "link": "https://www.bbc.com/news/articles/crm10w4ynj1o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 17 Apr 2026 14:31:51 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
