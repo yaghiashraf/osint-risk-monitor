@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-20T01:58:16.210Z",
+  "lastUpdated": "2026-04-20T07:54:42.496Z",
   "articles": [
     {
-      "title": "US intercepts and seizes Iranian-flagged cargo ship, Trump says",
-      "link": "https://www.bbc.com/news/articles/c239500dx8ro?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 20 Apr 2026 01:38:17 GMT",
+      "title": "Oil prices rise after Trump says Iranian ship seized",
+      "link": "https://www.bbc.com/news/articles/c5yjzy35825o?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 20 Apr 2026 07:42:10 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,9 @@
       "lng": 0
     },
     {
-      "title": "Iran War Live Updates: U.S. Attacks Iranian Cargo Ship While Preparing for New Round of Talks",
+      "title": "U.S. Attacks Iranian Cargo Ship While Preparing for New Round of Talks",
       "link": "https://www.nytimes.com/live/2026/04/19/world/iran-us-war-trump-hormuz",
-      "date": "Mon, 20 Apr 2026 01:26:50 +0000",
+      "date": "Mon, 20 Apr 2026 06:20:22 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,12 +26,24 @@
       "lng": 0
     },
     {
-      "title": "Eight children killed in Louisiana shooting, police say ",
+      "title": "Man kills seven of his children, and an eighth child, in Louisiana mass shooting",
       "link": "https://www.bbc.com/news/articles/c0q9v1p2dd2o?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 19 Apr 2026 22:54:51 GMT",
+      "date": "Mon, 20 Apr 2026 04:10:40 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Vercel Breach Tied to Context AI Hack Exposes Limited Customer Credentials",
+      "link": "https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html",
+      "date": "Mon, 20 Apr 2026 09:05:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -137,18 +149,6 @@
       "title": "$13.74M Hack Shuts Down Sanctioned Grinex Exchange After Intelligence Claims",
       "link": "https://thehackernews.com/2026/04/1374m-hack-shuts-down-sanctioned-grinex.html",
       "date": "Sat, 18 Apr 2026 13:29:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Mirai Variant Nexcorium Exploits CVE-2024-3721 to Hijack TBK DVRs for DDoS Botnet",
-      "link": "https://thehackernews.com/2026/04/mirai-variant-nexcorium-exploits-cve.html",
-      "date": "Sat, 18 Apr 2026 11:31:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
