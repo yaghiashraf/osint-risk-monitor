@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-21T01:53:12.096Z",
+  "lastUpdated": "2026-04-21T07:24:46.633Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Tehran and Trump Send Mixed Signals Ahead of Potential Talks",
+      "title": "Tehran and Trump Send Mixed Signals Ahead of Potential Talks",
       "link": "https://www.nytimes.com/live/2026/04/20/world/iran-us-war-trump-hormuz",
-      "date": "Tue, 21 Apr 2026 01:43:54 +0000",
+      "date": "Tue, 21 Apr 2026 06:58:43 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,21 @@
       "lng": 0
     },
     {
-      "title": "Canadian killed in shooting at Mexico's ancient Teotihuacán pyramids",
-      "link": "https://www.bbc.com/news/articles/crm1rg3ydkvo?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 20 Apr 2026 23:22:17 GMT",
+      "title": "CISA Adds 8 Exploited Flaws to KEV, Sets April-May 2026 Federal Deadlines",
+      "link": "https://thehackernews.com/2026/04/cisa-adds-8-exploited-flaws-to-kev-sets.html",
+      "date": "Tue, 21 Apr 2026 11:53:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "New era as Apple names new boss to replace Tim Cook after 15 years",
+      "link": "https://www.bbc.com/news/articles/c1kr19lry18o?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 21 Apr 2026 05:57:56 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,9 +38,21 @@
       "lng": 0
     },
     {
-      "title": "Apple names new chief executive to replace Tim Cook",
-      "link": "https://www.bbc.com/news/articles/c1kr19lry18o?at_medium=RSS&at_campaign=rss",
-      "date": "Mon, 20 Apr 2026 22:55:39 GMT",
+      "title": "Stocks making the biggest moves after hours: Amazon, Apple, Steel Dynamics and more",
+      "link": "https://www.cnbc.com/2026/04/20/stocks-making-the-biggest-moves-after-hours-amzn-aapl-stld.html",
+      "date": "Tue, 21 Apr 2026 03:39:40 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Canadian killed in shooting at Mexico's ancient Teotihuacán pyramids",
+      "link": "https://www.bbc.com/news/articles/crm1rg3ydkvo?at_medium=RSS&at_campaign=rss",
+      "date": "Tue, 21 Apr 2026 03:33:05 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -44,18 +68,6 @@
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Stocks making the biggest moves after hours: Amazon, Apple, Steel Dynamics and more",
-      "link": "https://www.cnbc.com/2026/04/20/stocks-making-the-biggest-moves-after-hours-amzn-aapl-stld.html",
-      "date": "Mon, 20 Apr 2026 21:06:56 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -138,18 +150,6 @@
       "link": "https://www.cisa.gov/news-events/alerts/2026/04/20/cisa-adds-eight-known-exploited-vulnerabilities-catalog",
       "date": "Mon, 20 Apr 26 12:00:00 +0000",
       "source": "CISA Advisories",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Why Most AI Deployments Stall After the Demo",
-      "link": "https://thehackernews.com/2026/04/why-most-ai-deployments-stall-after-demo.html",
-      "date": "Mon, 20 Apr 2026 17:00:00 +0530",
-      "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
       "severity": "medium",
