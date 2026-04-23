@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-22T19:02:59.267Z",
+  "lastUpdated": "2026-04-23T01:56:42.249Z",
   "articles": [
     {
-      "title": "To Iran, Trump Blinked First by Extending the Cease-Fire",
-      "link": "https://www.nytimes.com/2026/04/22/world/middleeast/iran-trump-ceasefire.html",
-      "date": "Wed, 22 Apr 2026 19:00:11 +0000",
+      "title": "Iran War Live Updates: Reported Seizure of Ships Injects New Uncertainty Over Peace Talks",
+      "link": "https://www.nytimes.com/live/2026/04/22/world/iran-war-trump-ceasefire-talks",
+      "date": "Thu, 23 Apr 2026 01:36:50 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,21 @@
       "lng": 0
     },
     {
-      "title": "Iran War Live Updates: Reported Seizure of Ships Injects New Uncertainty Over Peace Talks",
-      "link": "https://www.nytimes.com/live/2026/04/22/world/iran-war-trump-ceasefire-talks",
-      "date": "Wed, 22 Apr 2026 18:58:25 +0000",
+      "title": "Stocks making the biggest moves after hours: Tesla, IBM, ServiceNow, Southwest Airlines and more",
+      "link": "https://www.cnbc.com/2026/04/22/stocks-making-the-biggest-moves-after-hours-tsla-ibm-now-luv.html",
+      "date": "Wed, 22 Apr 2026 22:43:35 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "To Iran, Trump Blinked First by Extending the Cease-Fire",
+      "link": "https://www.nytimes.com/2026/04/22/world/middleeast/iran-trump-ceasefire.html",
+      "date": "Wed, 22 Apr 2026 19:00:11 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -134,12 +146,12 @@
       "lng": 0
     },
     {
-      "title": "Stocks making the biggest moves premarket: GE Vernova, Vertiv, Best Buy & more",
-      "link": "https://www.cnbc.com/2026/04/22/stocks-making-the-biggest-moves-premarket-gev-vrt-bby.html",
-      "date": "Wed, 22 Apr 2026 11:43:39 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/04/22/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "date": "Wed, 22 Apr 26 12:00:00 +0000",
+      "source": "CISA Advisories",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -148,7 +160,7 @@
     {
       "title": "Threat of Evictions Darkens Russia’s Rosy Picture of Occupied Ukraine",
       "link": "https://www.nytimes.com/2026/04/22/world/europe/russia-occupied-territories-mariupol.html",
-      "date": "Wed, 22 Apr 2026 09:00:21 +0000",
+      "date": "Wed, 22 Apr 2026 09:00:22 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -208,18 +220,6 @@
     {
       "title": "Siemens RUGGEDCOM CROSSBOW Secure Access Manager Primary",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-02",
-      "date": "Tue, 21 Apr 26 12:00:00 +0000",
-      "source": "CISA Advisories",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Siemens TPM 2.0",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-111-01",
       "date": "Tue, 21 Apr 26 12:00:00 +0000",
       "source": "CISA Advisories",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
