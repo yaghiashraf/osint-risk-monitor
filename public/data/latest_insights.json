@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-04-24T18:40:11.404Z",
+  "lastUpdated": "2026-04-25T01:47:28.011Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Kushner and Witkoff to Talk With Iranian Officials in Pakistan",
+      "title": "Iran War Live Updates: Witkoff and Kushner to Go to Pakistan for Talks on Iran",
       "link": "https://www.nytimes.com/live/2026/04/24/world/iran-war-trump-hormuz",
-      "date": "Fri, 24 Apr 2026 18:38:46 +0000",
+      "date": "Sat, 25 Apr 2026 01:18:50 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,9 @@
       "lng": 0
     },
     {
-      "title": "No 10 says Falklands sovereignty rests with UK after report of US 'review'",
-      "link": "https://www.bbc.com/news/articles/cde51y0zgjyo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 24 Apr 2026 17:37:28 GMT",
+      "title": "Katya Adler: Europe's Nato allies push back at reported US threat to Spain",
+      "link": "https://www.bbc.com/news/articles/cj40r2gw24wo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 25 Apr 2026 00:10:51 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,9 +26,21 @@
       "lng": 0
     },
     {
-      "title": "Nuclear reactor company X-energy shares surge 26% as AI drives interest in its IPO",
+      "title": "Trump's envoys Witkoff and Kushner to fly to Pakistan for Iran talks",
+      "link": "https://www.bbc.com/news/articles/cy8103xklreo?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 24 Apr 2026 22:02:50 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Nuclear reactor company X-energy shares surge 27% as AI drives interest in its IPO",
       "link": "https://www.cnbc.com/2026/04/24/nuclear-reactor-company-x-energy-begins-trading-as-ai-drives-interest-in-the-industry.html",
-      "date": "Fri, 24 Apr 2026 17:29:10 GMT",
+      "date": "Fri, 24 Apr 2026 21:11:23 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
@@ -56,18 +68,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Who is making decisions in Iran?",
-      "link": "https://www.bbc.com/news/articles/cm29m732vgno?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 24 Apr 2026 16:38:51 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
