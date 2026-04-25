@@ -1,10 +1,22 @@
 {
-  "lastUpdated": "2026-04-25T12:44:38.301Z",
+  "lastUpdated": "2026-04-25T18:39:45.937Z",
   "articles": [
     {
-      "title": "Seven dead in major Russian attack on Ukraine",
-      "link": "https://www.bbc.com/news/articles/c0rxk4q0pj0o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 25 Apr 2026 12:29:37 GMT",
+      "title": "Iran War Live Updates: Trump Calls Off Witkoff and Kushner’s Travel to Pakistan for Peace Talks",
+      "link": "https://www.nytimes.com/live/2026/04/25/world/iran-war-us-talks-pakistan",
+      "date": "Sat, 25 Apr 2026 18:26:12 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Mexico says US agents killed in crash weren't permitted to operate there",
+      "link": "https://www.bbc.com/news/articles/cx2491we011o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 25 Apr 2026 17:40:51 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,10 +26,46 @@
       "lng": 0
     },
     {
-      "title": "Iran War Live Updates: Witkoff and Kushner to Travel to Pakistan for Talks on Iran",
-      "link": "https://www.nytimes.com/live/2026/04/25/world/iran-war-us-talks-pakistan",
-      "date": "Sat, 25 Apr 2026 11:58:53 +0000",
+      "title": "Palestinians in West Bank and some in Gaza vote in local elections",
+      "link": "https://www.bbc.com/news/articles/cn4vej3x0wxo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 25 Apr 2026 17:01:55 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Explosions and gunfire as armed groups launch co-ordinated attacks across Mali",
+      "link": "https://www.bbc.com/news/articles/clyx7nnrkqdo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 25 Apr 2026 15:32:50 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "The 85-Year-Old Widow Snagged by Trump’s Immigration Crackdown",
+      "link": "https://www.nytimes.com/2026/04/25/us/french-ross-mahe-ice-detention.html",
+      "date": "Sat, 25 Apr 2026 15:18:45 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Seven dead in major Russian attack on Ukraine",
+      "link": "https://www.bbc.com/news/articles/c0rxk4q0pj0o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 25 Apr 2026 12:29:37 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -38,45 +86,9 @@
       "lng": 0
     },
     {
-      "title": "Explosions and gunfire as armed groups launch coordinated attacks across Mali",
-      "link": "https://www.bbc.com/news/articles/clyx7nnrkqdo?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 25 Apr 2026 11:21:03 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Palestinians in West Bank and some in Gaza vote in local elections",
-      "link": "https://www.bbc.com/news/articles/cn4vej3x0wxo?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 25 Apr 2026 10:52:27 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "The Elite ‘Doctors’ Who Care for Mount Everest",
       "link": "https://www.nytimes.com/2026/04/25/world/asia/mount-everest-sherpa-icefall-doctor.html",
-      "date": "Sat, 25 Apr 2026 09:48:37 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "The 85-Year-Old Widow Snagged by Trump’s Immigration Crackdown",
-      "link": "https://www.nytimes.com/2026/04/25/us/french-ross-mahe-ice-detention.html",
-      "date": "Sat, 25 Apr 2026 09:32:18 +0000",
+      "date": "Sat, 25 Apr 2026 09:48:38 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
