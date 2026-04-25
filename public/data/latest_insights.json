@@ -1,13 +1,25 @@
 {
-  "lastUpdated": "2026-04-25T01:47:28.011Z",
+  "lastUpdated": "2026-04-25T07:05:11.109Z",
   "articles": [
     {
-      "title": "Iran War Live Updates: Witkoff and Kushner to Go to Pakistan for Talks on Iran",
+      "title": "Witkoff and Kushner to Go to Pakistan for Talks on Iran",
       "link": "https://www.nytimes.com/live/2026/04/24/world/iran-war-trump-hormuz",
-      "date": "Sat, 25 Apr 2026 01:18:50 +0000",
+      "date": "Sat, 25 Apr 2026 05:20:08 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline",
+      "link": "https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html",
+      "date": "Sat, 25 Apr 2026 10:38:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -26,9 +38,9 @@
       "lng": 0
     },
     {
-      "title": "Trump's envoys Witkoff and Kushner to fly to Pakistan for Iran talks",
-      "link": "https://www.bbc.com/news/articles/cy8103xklreo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 24 Apr 2026 22:02:50 GMT",
+      "title": "No 10 says Falklands sovereignty rests with UK after report of US 'review'",
+      "link": "https://www.bbc.com/news/articles/cde51y0zgjyo?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 24 Apr 2026 22:55:05 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -152,18 +164,6 @@
       "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Bridging the AI Agent Authority Gap: Continuous Observability as the Decision Engine",
-      "link": "https://thehackernews.com/2026/04/bridging-ai-agent-authority-gap.html",
-      "date": "Fri, 24 Apr 2026 17:19:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
