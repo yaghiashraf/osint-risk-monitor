@@ -1,11 +1,35 @@
 {
-  "lastUpdated": "2026-04-25T18:39:45.937Z",
+  "lastUpdated": "2026-04-26T01:59:56.017Z",
   "articles": [
     {
       "title": "Iran War Live Updates: Trump Calls Off Witkoff and Kushner’s Travel to Pakistan for Peace Talks",
       "link": "https://www.nytimes.com/live/2026/04/25/world/iran-war-us-talks-pakistan",
-      "date": "Sat, 25 Apr 2026 18:26:12 +0000",
+      "date": "Sun, 26 Apr 2026 00:33:41 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump cancels US envoys' trip to Pakistan for talks on Iran war",
+      "link": "https://www.bbc.com/news/articles/c4g6nyvl29po?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 25 Apr 2026 21:34:12 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Explosions and gunfire as armed groups launch co-ordinated attacks across Mali",
+      "link": "https://www.bbc.com/news/articles/clyx7nnrkqdo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 25 Apr 2026 21:13:49 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -38,34 +62,10 @@
       "lng": 0
     },
     {
-      "title": "Explosions and gunfire as armed groups launch co-ordinated attacks across Mali",
-      "link": "https://www.bbc.com/news/articles/clyx7nnrkqdo?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 25 Apr 2026 15:32:50 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "The 85-Year-Old Widow Snagged by Trump’s Immigration Crackdown",
       "link": "https://www.nytimes.com/2026/04/25/us/french-ross-mahe-ice-detention.html",
       "date": "Sat, 25 Apr 2026 15:18:45 +0000",
       "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Seven dead in major Russian attack on Ukraine",
-      "link": "https://www.bbc.com/news/articles/c0rxk4q0pj0o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 25 Apr 2026 12:29:37 GMT",
-      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -152,18 +152,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Israeli police investigate after officers 'cut Palestinian flag' from skullcap",
-      "link": "https://www.bbc.com/news/articles/cz67qjn48eqo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 24 Apr 2026 16:20:10 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
