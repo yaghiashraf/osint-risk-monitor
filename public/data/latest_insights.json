@@ -1,6 +1,78 @@
 {
-  "lastUpdated": "2026-04-30T19:08:23.061Z",
+  "lastUpdated": "2026-05-01T02:14:43.068Z",
   "articles": [
+    {
+      "title": "China’s self-driving truck leaders say AI breakthroughs won’t accelerate rollout — here’s why",
+      "link": "https://www.cnbc.com/2026/05/01/chinas-self-driving-truck-leaders-say-ai-breakthroughs-wont-accelerate-rollout-heres-why.html",
+      "date": "Fri, 01 May 2026 01:10:28 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Venice Biennale jury resigns days before start of exhibition",
+      "link": "https://www.bbc.com/news/articles/c78qdg4g80eo?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 30 Apr 2026 23:44:00 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Stocks making the biggest moves after hours: Apple, Roblox, Reddit, Roku & more",
+      "link": "https://www.cnbc.com/2026/04/30/stocks-making-the-biggest-moves-after-hours-aapl-rblx-rddt-roku.html",
+      "date": "Thu, 30 Apr 2026 23:24:58 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Violence in Australian town after arrest of man over girl's murder",
+      "link": "https://www.bbc.com/news/articles/cddp4j7p8pzo?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 30 Apr 2026 22:46:34 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Israel intercepts Gaza flotilla near Crete and detains 175 activists",
+      "link": "https://www.bbc.com/news/articles/c4g4lk9m77vo?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 30 Apr 2026 20:34:26 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Deadly Israeli strikes on southern Lebanon despite ceasefire",
+      "link": "https://www.bbc.com/news/articles/cq5pepj21g8o?at_medium=RSS&at_campaign=rss",
+      "date": "Thu, 30 Apr 2026 20:14:48 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
     {
       "title": "Iranians Live With Pain and Powerlessness, Beneath a Smooth Veneer",
       "link": "https://www.nytimes.com/2026/04/30/world/middleeast/iranian-mood-after-war.html",
@@ -26,33 +98,9 @@
       "lng": 0
     },
     {
-      "title": "Oil price hits highest since 2022 after report Trump to be briefed on new Iran options",
-      "link": "https://www.bbc.com/news/articles/cx21m88rd14o?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 30 Apr 2026 18:05:26 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Apple execs to talk China and tariffs, but will avoid discussing foldable iPhone, per traders on Kalshi",
       "link": "https://www.cnbc.com/2026/04/30/what-bettors-think-apple-will-talk-about-on-its-earnings-call.html",
       "date": "Thu, 30 Apr 2026 17:56:28 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Blue Owl shares surge after private credit firm cites 10X gains from SpaceX",
-      "link": "https://www.cnbc.com/2026/04/30/blue-owl-shares-private-credit-spacex-gains.html",
-      "date": "Thu, 30 Apr 2026 17:10:27 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
@@ -74,36 +122,12 @@
       "lng": 0
     },
     {
-      "title": "PyTorch Lightning Compromised in PyPI Supply Chain Attack to Steal Credentials",
+      "title": "PyTorch Lightning and Intercom-client Hit in Supply Chain Attacks to Steal Credentials",
       "link": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
       "date": "Thu, 30 Apr 2026 22:01:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Israel intercepts Gaza flotilla near Crete and detains 175 activists",
-      "link": "https://www.bbc.com/news/articles/c4g4lk9m77vo?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 30 Apr 2026 16:07:53 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "'How are we going to get back home?' Islamist group tightens blockade on Mali capital",
-      "link": "https://www.bbc.com/news/articles/cg4pq3zxnpqo?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 30 Apr 2026 14:32:23 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -182,18 +206,6 @@
       "lng": 0
     },
     {
-      "title": "Stocks making the biggest moves premarket: Meta, Eli Lilly, Caterpillar, Amazon & more",
-      "link": "https://www.cnbc.com/2026/04/30/stocks-making-the-biggest-moves-premarke-.html",
-      "date": "Thu, 30 Apr 2026 11:44:27 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Mother Runs for Office in India After Daughter Was Raped and Killed",
       "link": "https://www.nytimes.com/2026/04/30/world/asia/india-elections-bjp-ratna-debnath.html",
       "date": "Thu, 30 Apr 2026 05:57:36 +0000",
@@ -209,18 +221,6 @@
       "title": "Syria trial seen as first step on long road for Assad's victims",
       "link": "https://www.bbc.com/news/articles/cn5pzw4gn1no?at_medium=RSS&at_campaign=rss",
       "date": "Wed, 29 Apr 2026 20:11:04 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Israeli 'double-tap' strike kills three rescue workers in Lebanon, officials say",
-      "link": "https://www.bbc.com/news/articles/cvgz5rgv4n3o?at_medium=RSS&at_campaign=rss",
-      "date": "Wed, 29 Apr 2026 15:30:50 GMT",
       "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
