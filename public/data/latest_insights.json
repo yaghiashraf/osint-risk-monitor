@@ -1,6 +1,66 @@
 {
-  "lastUpdated": "2026-05-02T02:01:22.669Z",
+  "lastUpdated": "2026-05-02T07:21:59.160Z",
   "articles": [
+    {
+      "title": "Trellix Confirms Source Code Breach With Unauthorized Repository Access",
+      "link": "https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html",
+      "date": "Sat, 02 May 2026 12:11:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "'If we sleep they bite': Rats and weasels infest camps for displaced Gazans",
+      "link": "https://www.bbc.com/news/articles/c202m54xp0mo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 02 May 2026 05:02:14 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "South Korea’s Cherry Blossoms Attract a Connoisseur: The Japanese",
+      "link": "https://www.nytimes.com/2026/05/02/world/asia/south-koreas-cherry-blossoms-attract-a-connoisseur-the-japanese.html",
+      "date": "Sat, 02 May 2026 04:01:17 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Learning Muay Thai Can Allow Visitors to Stay in Thailand Longer",
+      "link": "https://www.nytimes.com/2026/05/02/world/asia/one-reason-to-learn-muay-thai-you-can-stay-in-thailand-longer.html",
+      "date": "Sat, 02 May 2026 04:01:09 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "A 5-Month Wait and a 50% Fail Rate: It’s Hard to Get a British Driving License",
+      "link": "https://www.nytimes.com/2026/05/02/world/europe/uk-driving-tests-backlog.html",
+      "date": "Sat, 02 May 2026 04:01:07 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
     {
       "title": "Trump tells Congress ceasefire means he does not need their approval for Iran war",
       "link": "https://www.bbc.com/news/articles/c4g4xexy4w7o?at_medium=RSS&at_campaign=rss",
@@ -44,18 +104,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "U.S. Indictment of Sinaloa’s Governor Is a Reckoning for Residents of the Mexican State",
-      "link": "https://www.nytimes.com/2026/05/01/world/americas/us-indictment-sinaloa-governor-cartels-drugs.html",
-      "date": "Fri, 01 May 2026 19:56:33 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -110,42 +158,6 @@
       "lng": 0
     },
     {
-      "title": "China-Linked Hackers Target Asian Governments, NATO State, Journalists, and Activists",
-      "link": "https://thehackernews.com/2026/05/china-linked-hackers-target-asian.html",
-      "date": "Fri, 01 May 2026 19:32:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Billions of meals at risk due to Iran war, says fertiliser boss ",
-      "link": "https://www.bbc.com/news/articles/cpwp50v4ye7o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 01 May 2026 13:12:10 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "As Israel Entrenches, Frustration With Hezbollah Turns to Support",
-      "link": "https://www.nytimes.com/2026/05/01/world/middleeast/lebanon-hezbollah-ceasefire-israel.html",
-      "date": "Fri, 01 May 2026 12:58:51 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "link": "https://www.cisa.gov/news-events/alerts/2026/05/01/cisa-adds-one-known-exploited-vulnerability-catalog",
       "date": "Fri, 01 May 26 12:00:00 +0000",
@@ -186,18 +198,6 @@
       "link": "https://www.bbc.com/news/articles/cq5pepj21g8o?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 01 May 2026 08:12:04 GMT",
       "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Lithuania Says It Broke Up Russian Sabotage and Murder Plots",
-      "link": "https://www.nytimes.com/2026/05/01/world/europe/russia-sabotage-lithuania.html",
-      "date": "Fri, 01 May 2026 04:01:05 +0000",
-      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
