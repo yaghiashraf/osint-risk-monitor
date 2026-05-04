@@ -1,6 +1,54 @@
 {
-  "lastUpdated": "2026-05-04T02:05:55.974Z",
+  "lastUpdated": "2026-05-04T08:20:39.586Z",
   "articles": [
+    {
+      "title": "World Cup prize pool nears $900 million as FIFA boosts payouts. Here’s who gets what",
+      "link": "https://www.cnbc.com/2026/05/04/fifa-world-cup-team-payouts-ticket-prices.html",
+      "date": "Mon, 04 May 2026 06:11:02 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Global Crackdown Arrests 276, Shuts 9 Crypto Scam Centers, Seizes $701M",
+      "link": "https://thehackernews.com/2026/05/global-crackdown-arrests-276-shuts-9.html",
+      "date": "Mon, 04 May 2026 11:29:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Three dead in suspected virus outbreak on Atlantic cruise ship",
+      "link": "https://www.bbc.com/news/articles/cy0294829ndo?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 04 May 2026 04:46:42 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "How the Kremlin Lures Africans Into Russia’s War in Ukraine",
+      "link": "https://www.nytimes.com/2026/05/04/world/africa/ukraine-russia-war-african-soldiers.html",
+      "date": "Mon, 04 May 2026 04:01:20 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
     {
       "title": "Crack Down? Close Ranks? U.S. Cartel Case Puts Mexican Leaders on the Spot.",
       "link": "https://www.nytimes.com/2026/05/03/world/americas/mexico-sinaloa-corruption.html",
@@ -14,22 +62,10 @@
       "lng": 0
     },
     {
-      "title": "Three dead in suspected virus outbreak on Atlantic cruise ship",
-      "link": "https://www.bbc.com/news/articles/cy0294829ndo?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 03 May 2026 22:13:36 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Iran says US has responded to its latest peace proposal",
-      "link": "https://www.bbc.com/news/articles/cn0px2x53k2o?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 03 May 2026 21:28:09 GMT",
-      "source": "BBC World",
+      "title": "Some Iranians fear the regime is now more entrenched - and ready for revenge",
+      "link": "https://www.bbc.com/news/articles/clyp6xxyvzyo?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 03 May 2026 23:19:57 GMT",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -62,6 +98,18 @@
       "lng": 0
     },
     {
+      "title": "Russian strikes kill 10 as Zelensky says Ukraine hits oil tankers and terminal",
+      "link": "https://www.bbc.com/news/articles/clyp41v1n1go?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 03 May 2026 13:43:20 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
       "title": "Chinese stocks are about to get a big AI boost, Morgan Stanley predicts",
       "link": "https://www.cnbc.com/2026/05/03/chinese-stocks-are-about-to-get-a-big-ai-boost-morgan-stanley-predicts.html",
       "date": "Sun, 03 May 2026 11:11:39 GMT",
@@ -74,36 +122,12 @@
       "lng": 0
     },
     {
-      "title": "What to Know About Elections in West Bengal and Other Indian States",
-      "link": "https://www.nytimes.com/2026/05/03/world/asia/india-elections-modi-bjp-what-to-know.html",
-      "date": "Sun, 03 May 2026 10:10:24 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "CISA Adds Actively Exploited Linux Root Access Bug CVE-2026-31431 to KEV",
       "link": "https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html",
       "date": "Sun, 03 May 2026 11:56:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "JPMorgan's Jamie Dimon issued vague credit recession warning, but the bond market has more pressing issues",
-      "link": "https://www.cnbc.com/2026/05/02/kevin-warsh-federal-reserve-interest-rates-bonds-fixed-income.html",
-      "date": "Sat, 02 May 2026 23:23:07 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -146,18 +170,6 @@
       "lng": 0
     },
     {
-      "title": "30,000 Facebook Accounts Hacked via Google AppSheet Phishing Campaign",
-      "link": "https://thehackernews.com/2026/05/30000-facebook-accounts-hacked-via.html",
-      "date": "Fri, 01 May 2026 23:39:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Israeli police arrest man after nun attacked in Jerusalem",
       "link": "https://www.bbc.com/news/articles/cy02gnzlvkko?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 01 May 2026 17:03:11 GMT",
@@ -188,18 +200,6 @@
       "source": "CISA Advisories",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Israel releases all but two activists in Greece after intercepting Gaza aid flotilla",
-      "link": "https://www.bbc.com/news/articles/c0m2z0k1gngo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 01 May 2026 10:12:57 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
