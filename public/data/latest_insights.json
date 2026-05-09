@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-05-09T07:46:43.059Z",
+  "lastUpdated": "2026-05-09T12:59:06.188Z",
   "articles": [
     {
-      "title": "Iran accuses US of 'reckless military adventure'",
-      "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 09 May 2026 06:13:30 GMT",
+      "title": "Putin denounces Nato at scaled back Victory Day parade",
+      "link": "https://www.bbc.com/news/articles/c626xjq0q0vo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 09 May 2026 12:18:58 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +14,9 @@
       "lng": 0
     },
     {
-      "title": "Punch, the Lonely Monkey Who Drew Crowds to a Small Japan Zoo, Is Growing Up. He’s Still a Star.",
-      "link": "https://www.nytimes.com/2026/05/09/world/asia/punch-baby-monkey-japan-zoo.html",
-      "date": "Sat, 09 May 2026 04:01:22 +0000",
+      "title": "A Less Muscular Victory Day Parade Shows Putin’s Growing Vulnerability",
+      "link": "https://www.nytimes.com/2026/05/09/world/europe/russia-victory-day-parade.html",
+      "date": "Sat, 09 May 2026 11:38:18 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,10 +26,34 @@
       "lng": 0
     },
     {
-      "title": "Why the Trump-Xi Summit Matters, Even if Little Seems to Come of It",
-      "link": "https://www.nytimes.com/2026/05/09/world/asia/trump-xi-china-us-summit.html",
-      "date": "Sat, 09 May 2026 04:01:19 +0000",
+      "title": "Long Overlooked, Caspian Sea Provides Strategic Trade Route for Iran",
+      "link": "https://www.nytimes.com/2026/05/09/world/middleeast/caspian-sea-iran-russia.html",
+      "date": "Sat, 09 May 2026 09:01:26 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now",
+      "link": "https://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html",
+      "date": "Sat, 09 May 2026 12:46:00 +0530",
+      "source": "The Hacker News",
+      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
+      "category": "Cyber Attack",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Iran accuses US of 'reckless military adventure'",
+      "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 09 May 2026 06:13:30 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -68,18 +92,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Trump says Russia and Ukraine to observe three-day ceasefire",
-      "link": "https://www.bbc.com/news/articles/c202zn5gg0lo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 08 May 2026 18:59:58 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -125,18 +137,6 @@
       "title": "Fake Call History Apps Stole Payments From Users After 7.3 Million Play Store Downloads",
       "link": "https://thehackernews.com/2026/05/fake-call-history-apps-stole-payments.html",
       "date": "Fri, 08 May 2026 20:38:00 +0530",
-      "source": "The Hacker News",
-      "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
-      "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "One Click, Total Shutdown: The \"Patient Zero\" Webinar on Killing Stealth Breaches",
-      "link": "https://thehackernews.com/2026/05/one-click-total-shutdown-patient-zero.html",
-      "date": "Fri, 08 May 2026 19:31:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
