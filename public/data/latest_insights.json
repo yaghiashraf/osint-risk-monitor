@@ -1,10 +1,34 @@
 {
-  "lastUpdated": "2026-05-08T19:06:54.248Z",
+  "lastUpdated": "2026-05-09T02:08:30.718Z",
   "articles": [
     {
-      "title": "Trump says Russia and Ukraine to observe three-day ceasefire",
-      "link": "https://www.bbc.com/news/articles/c202zn5gg0lo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 08 May 2026 18:59:58 GMT",
+      "title": "Starmer’s Party Suffers Stark Losses in U.K. Local Elections",
+      "link": "https://www.nytimes.com/live/2026/05/08/world/uk-local-elections-results",
+      "date": "Sat, 09 May 2026 02:02:55 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Latest on the Iran War: U.S. Fires on Tankers as Tehran Accuses Washington of ‘Reckless’ Attacks",
+      "link": "https://www.nytimes.com/live/2026/05/08/world/iran-strikes-trump-ceasefire-hormuz",
+      "date": "Sat, 09 May 2026 01:19:37 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Anger and resignation in Tenerife as hantavirus ship approaches",
+      "link": "https://www.bbc.com/news/articles/c5y0gkg038yo?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 09 May 2026 00:15:58 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,10 +38,22 @@
       "lng": 0
     },
     {
-      "title": "Iran War Live Updates: U.S. Fires on Tankers as Tehran Accuses Washington of ‘Reckless’ Attacks",
-      "link": "https://www.nytimes.com/live/2026/05/08/world/iran-strikes-trump-ceasefire-hormuz",
-      "date": "Fri, 08 May 2026 18:58:33 +0000",
-      "source": "NY Times World",
+      "title": "Anthropic's Mythos set off a cybersecurity 'hysteria.' Experts say the threat was already here",
+      "link": "https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html",
+      "date": "Fri, 08 May 2026 20:01:44 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump says Russia and Ukraine to observe three-day ceasefire",
+      "link": "https://www.bbc.com/news/articles/c202zn5gg0lo?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 08 May 2026 18:59:58 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -32,18 +68,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Live Updates: Starmer’s Party Suffers Stark Losses in U.K. Local Elections",
-      "link": "https://www.nytimes.com/live/2026/05/08/world/uk-local-elections-results",
-      "date": "Fri, 08 May 2026 18:52:52 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -74,18 +98,6 @@
       "lng": 0
     },
     {
-      "title": "Anthropic's Mythos set off a cybersecurity 'hysteria.' Experts say the threat was already here",
-      "link": "https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html",
-      "date": "Fri, 08 May 2026 16:39:16 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Iran accuses US of 'reckless military adventure'",
       "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 08 May 2026 16:11:06 GMT",
@@ -104,18 +116,6 @@
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Worldwide race to trace passengers from hantavirus-hit cruise ship",
-      "link": "https://www.bbc.com/news/articles/clyp1505p84o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 08 May 2026 14:47:31 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
