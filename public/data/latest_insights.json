@@ -1,10 +1,22 @@
 {
-  "lastUpdated": "2026-05-09T02:08:30.718Z",
+  "lastUpdated": "2026-05-09T07:46:43.059Z",
   "articles": [
     {
-      "title": "Starmer’s Party Suffers Stark Losses in U.K. Local Elections",
-      "link": "https://www.nytimes.com/live/2026/05/08/world/uk-local-elections-results",
-      "date": "Sat, 09 May 2026 02:02:55 +0000",
+      "title": "Iran accuses US of 'reckless military adventure'",
+      "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 09 May 2026 06:13:30 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Punch, the Lonely Monkey Who Drew Crowds to a Small Japan Zoo, Is Growing Up. He’s Still a Star.",
+      "link": "https://www.nytimes.com/2026/05/09/world/asia/punch-baby-monkey-japan-zoo.html",
+      "date": "Sat, 09 May 2026 04:01:22 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -14,9 +26,21 @@
       "lng": 0
     },
     {
-      "title": "Latest on the Iran War: U.S. Fires on Tankers as Tehran Accuses Washington of ‘Reckless’ Attacks",
-      "link": "https://www.nytimes.com/live/2026/05/08/world/iran-strikes-trump-ceasefire-hormuz",
-      "date": "Sat, 09 May 2026 01:19:37 +0000",
+      "title": "Why the Trump-Xi Summit Matters, Even if Little Seems to Come of It",
+      "link": "https://www.nytimes.com/2026/05/09/world/asia/trump-xi-china-us-summit.html",
+      "date": "Sat, 09 May 2026 04:01:19 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "How China’s Leader Lost Faith in His Generals",
+      "link": "https://www.nytimes.com/2026/05/09/world/asia/china-military-generals.html",
+      "date": "Sat, 09 May 2026 04:01:10 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -98,18 +122,6 @@
       "lng": 0
     },
     {
-      "title": "Iran accuses US of 'reckless military adventure'",
-      "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 08 May 2026 16:11:06 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Fake Call History Apps Stole Payments From Users After 7.3 Million Play Store Downloads",
       "link": "https://thehackernews.com/2026/05/fake-call-history-apps-stole-payments.html",
       "date": "Fri, 08 May 2026 20:38:00 +0530",
@@ -128,18 +140,6 @@
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "U.A.E. Expels Pakistani Workers, as Pakistan’s Peacemaking Creates a Rift",
-      "link": "https://www.nytimes.com/2026/05/08/world/asia/uae-pakistan-workers-deportations.html",
-      "date": "Fri, 08 May 2026 13:10:52 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
