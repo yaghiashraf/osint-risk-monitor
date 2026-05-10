@@ -1,11 +1,35 @@
 {
-  "lastUpdated": "2026-05-10T02:09:44.859Z",
+  "lastUpdated": "2026-05-10T07:59:31.369Z",
   "articles": [
     {
-      "title": "Tenerife medics poised for arrival of virus-hit cruise ship",
+      "title": "Virus-hit cruise ship arrives in Tenerife as medics await passengers",
       "link": "https://www.bbc.com/news/articles/cn7pzmg8zeno?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 10 May 2026 01:08:51 GMT",
+      "date": "Sun, 10 May 2026 06:42:04 GMT",
       "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Red Card or Black Card? The Conscription Lottery in Thailand.",
+      "link": "https://www.nytimes.com/2026/05/10/world/asia/thailand-conscription-lottery.html",
+      "date": "Sun, 10 May 2026 04:01:11 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "The Man Who Cuts the Perfect Slice of Ham",
+      "link": "https://www.nytimes.com/2026/05/10/world/europe/jamon-iberico-perfect-slice.html",
+      "date": "Sun, 10 May 2026 04:01:08 +0000",
+      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -50,18 +74,6 @@
       "lng": 0
     },
     {
-      "title": "Britain’s Electorate Is ‘Splintering.’ Can Its System Stand the Strain?",
-      "link": "https://www.nytimes.com/2026/05/09/world/europe/britain-elections-starmer-labour-reform.html",
-      "date": "Sat, 09 May 2026 12:26:01 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now",
       "link": "https://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html",
       "date": "Sat, 09 May 2026 12:46:00 +0530",
@@ -78,18 +90,6 @@
       "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss",
       "date": "Sat, 09 May 2026 06:13:30 GMT",
       "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Punch, the Lonely Monkey Who Drew Crowds to a Small Japan Zoo, Is Growing Up. He’s Still a Star.",
-      "link": "https://www.nytimes.com/2026/05/09/world/asia/punch-baby-monkey-japan-zoo.html",
-      "date": "Sat, 09 May 2026 04:01:23 +0000",
-      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
