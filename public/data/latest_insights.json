@@ -1,11 +1,35 @@
 {
-  "lastUpdated": "2026-05-10T18:50:45.916Z",
+  "lastUpdated": "2026-05-11T02:28:16.716Z",
   "articles": [
     {
-      "title": "Countries airlift nationals evacuated from virus-hit cruise ship",
-      "link": "https://www.bbc.com/news/articles/cn7pzmg8zeno?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 10 May 2026 18:07:48 GMT",
+      "title": "Trump calls Iran response to US proposal to end war 'totally unacceptable' ",
+      "link": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 11 May 2026 01:55:13 GMT",
       "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump Says Iran’s Response to Latest U.S. Proposal ‘Totally Unacceptable’",
+      "link": "https://www.nytimes.com/2026/05/10/us/politics/iran-war-us-peace-proposal-response.html",
+      "date": "Mon, 11 May 2026 00:48:30 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Ailing Iran Nobel laureate given bail and hospital transfer",
+      "link": "https://www.bbc.com/news/articles/c1j257w87neo?at_medium=RSS&at_campaign=rss",
+      "date": "Mon, 11 May 2026 00:40:45 GMT",
+      "source": "BBC Middle East",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -16,7 +40,7 @@
     {
       "title": "Keir Starmer Says No, He Won’t Resign",
       "link": "https://www.nytimes.com/2026/05/10/world/europe/starmer-west-resign.html",
-      "date": "Sun, 10 May 2026 18:05:44 +0000",
+      "date": "Sun, 10 May 2026 21:42:44 +0000",
       "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -26,9 +50,9 @@
       "lng": 0
     },
     {
-      "title": "Iran sends response to US proposals to end war",
-      "link": "https://www.bbc.com/news/articles/clypgz9e5pmo?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 10 May 2026 17:20:52 GMT",
+      "title": "His father had just been buried. Then West Bank settlers forced him to dig up the body",
+      "link": "https://www.bbc.com/news/articles/cjrpnjpl39po?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 10 May 2026 19:56:45 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -38,21 +62,9 @@
       "lng": 0
     },
     {
-      "title": "Iran Responds to Latest U.S. Plan to End War",
-      "link": "https://www.nytimes.com/2026/05/10/us/politics/iran-war-us-peace-proposal-response.html",
-      "date": "Sun, 10 May 2026 16:10:23 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Army parachutes onto remote island to help Briton with suspected hantavirus",
-      "link": "https://www.bbc.com/news/articles/cvgzv77ldpdo?at_medium=RSS&at_campaign=rss",
-      "date": "Sun, 10 May 2026 15:02:51 GMT",
+      "title": "French national shows symptoms on return from hantavirus-hit ship",
+      "link": "https://www.bbc.com/news/articles/c3r2p70jdy7o?at_medium=RSS&at_campaign=rss",
+      "date": "Sun, 10 May 2026 19:43:57 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
@@ -86,36 +98,12 @@
       "lng": 0
     },
     {
-      "title": "Lebanon says Israeli strikes killed 39 ",
-      "link": "https://www.bbc.com/news/articles/cn4pjegk358o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 09 May 2026 21:23:14 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now",
       "link": "https://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html",
       "date": "Sat, 09 May 2026 12:46:00 +0530",
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Iran accuses US of 'reckless military adventure'",
-      "link": "https://www.bbc.com/news/articles/c99lpn9ze8ro?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 09 May 2026 06:13:30 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
