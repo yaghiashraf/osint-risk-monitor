@@ -1,11 +1,23 @@
 {
-  "lastUpdated": "2026-05-14T19:29:33.574Z",
+  "lastUpdated": "2026-05-15T02:29:03.579Z",
   "articles": [
     {
       "title": "Trump Was Flattering, Xi Was Resolute. The Difference Spoke Volumes.",
       "link": "https://www.nytimes.com/2026/05/14/world/asia/trump-xi-jinping-us-china.html",
-      "date": "Thu, 14 May 2026 19:24:50 +0000",
+      "date": "Fri, 15 May 2026 01:59:11 +0000",
       "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Cuba says CIA chief visited Havana as energy crisis worsens",
+      "link": "https://www.bbc.com/news/articles/cd7pyrj0vx7o?at_medium=RSS&at_campaign=rss",
+      "date": "Fri, 15 May 2026 01:04:20 GMT",
+      "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -16,7 +28,7 @@
     {
       "title": "Fed Governor Miran submits resignation, throws support behind Warsh as new chair",
       "link": "https://www.cnbc.com/2026/05/14/fed-governor-miran-submits-resignation-throws-support-behind-warsh-as-new-chair.html",
-      "date": "Thu, 14 May 2026 18:50:31 GMT",
+      "date": "Thu, 14 May 2026 21:47:36 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
@@ -113,18 +125,6 @@
       "title": "'Floating armoury' ship reportedly seized by Iran",
       "link": "https://www.bbc.com/news/articles/cx219xwxg9no?at_medium=RSS&at_campaign=rss",
       "date": "Thu, 14 May 2026 13:33:20 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Ukraine rescuers pull dead from rubble of Kyiv flats after massive Russian strikes",
-      "link": "https://www.bbc.com/news/articles/cq5p8yygq94o?at_medium=RSS&at_campaign=rss",
-      "date": "Thu, 14 May 2026 13:16:32 GMT",
       "source": "BBC World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
