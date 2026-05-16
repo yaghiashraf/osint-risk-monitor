@@ -1,6 +1,78 @@
 {
-  "lastUpdated": "2026-05-16T02:11:06.691Z",
+  "lastUpdated": "2026-05-16T07:53:13.778Z",
   "articles": [
+    {
+      "title": "Trump's second meeting with China's Xi in a year steers the U.S. away from Taiwan again",
+      "link": "https://www.cnbc.com/2026/05/16/trumps-meeting-with-chinas-xi-steers-the-us-away-from-taiwan-again.html",
+      "date": "Sat, 16 May 2026 07:23:16 GMT",
+      "source": "CNBC Finance",
+      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
+      "category": "Supply Chain",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump Turns Taiwan Arms Sales Into Bargaining Chip With China",
+      "link": "https://www.nytimes.com/2026/05/16/world/asia/trump-taiwan-arms-bargaining-chip-china.html",
+      "date": "Sat, 16 May 2026 07:21:29 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump Says a Top ISIS Leader Was Killed in a U.S.-Nigerian Mission",
+      "link": "https://www.nytimes.com/2026/05/16/world/africa/trump-isis-nigeria-al-minuki.html",
+      "date": "Sat, 16 May 2026 07:10:45 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump says senior IS leader killed by US and Nigerian forces",
+      "link": "https://www.bbc.com/news/articles/cy72p2kpd03o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 16 May 2026 06:26:06 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Trump warns Taiwan against declaring independence, hours after summit with China's Xi",
+      "link": "https://www.bbc.com/news/articles/ce8p61v7l68o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 16 May 2026 05:53:41 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "It’s Been a Wild Week in British Politics. What Happens Next?",
+      "link": "https://www.nytimes.com/2026/05/16/world/europe/britain-politics-labour-whats-next.html",
+      "date": "Sat, 16 May 2026 04:01:06 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
     {
       "title": "Lebanon says six killed in Israeli strike as US announces ceasefire extension",
       "link": "https://www.bbc.com/news/articles/cqlpzzl0d67o?at_medium=RSS&at_campaign=rss",
@@ -38,30 +110,6 @@
       "lng": 0
     },
     {
-      "title": "Trump warns Taiwan against declaring independence, hours after summit with China's Xi",
-      "link": "https://www.bbc.com/news/articles/ce8p61v7l68o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 15 May 2026 21:28:25 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Trump says 20-year nuclear programme suspension by Iran would be enough",
-      "link": "https://www.bbc.com/news/articles/cgkpnnen5dzo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 15 May 2026 21:17:05 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Berkshire Hathaway returns to airlines with $2.6 billion stake in Delta Air Lines",
       "link": "https://www.cnbc.com/2026/05/15/berkshire-hathaway-returns-to-airlines-with-2point6-billion-stake-in-delta-air-lines.html",
       "date": "Fri, 15 May 2026 20:50:03 GMT",
@@ -74,34 +122,10 @@
       "lng": 0
     },
     {
-      "title": "Trump’s ‘Learning Curve’ on China Ends With Conciliation at Summit",
-      "link": "https://www.nytimes.com/2026/05/15/world/europe/trump-xi-china-summit.html",
-      "date": "Fri, 15 May 2026 19:59:29 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Israel says it has killed Hamas commander in Gaza air strike",
       "link": "https://www.bbc.com/news/articles/cx21jjwz1k1o?at_medium=RSS&at_campaign=rss",
       "date": "Fri, 15 May 2026 19:38:38 GMT",
       "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "How a Drug Cartel Made a Mexican State Its Tool",
-      "link": "https://www.nytimes.com/2026/05/15/world/americas/mexican-officials-protect-sinaloa-cartel.html",
-      "date": "Fri, 15 May 2026 17:30:02 +0000",
-      "source": "NY Times World",
       "summary": "Geopolitics event detected. Automated analysis pending manual review.",
       "category": "Geopolitics",
       "severity": "medium",
@@ -125,18 +149,6 @@
       "title": "'Biggest bottleneck in the AI buildup' fuels DRAM ETF to record",
       "link": "https://www.cnbc.com/2026/05/15/biggest-bottleneck-in-the-ai-buildup-fuels-dram-etf-to-record.html",
       "date": "Fri, 15 May 2026 17:02:06 GMT",
-      "source": "CNBC Finance",
-      "summary": "Supply Chain event detected. Automated analysis pending manual review.",
-      "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "NFL wants certain trading contracts banned from prediction markets like 'first play of game,' injuries",
-      "link": "https://www.cnbc.com/2026/05/15/prediction-markets-nfl-letter-wants-certain-betting-contracts-banned.html",
-      "date": "Fri, 15 May 2026 16:27:26 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
@@ -176,18 +188,6 @@
       "source": "The Hacker News",
       "summary": "Cyber Attack event detected. Automated analysis pending manual review.",
       "category": "Cyber Attack",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Inside the Congolese Hotel Where Trump Deported 15 U.S. Migrants",
-      "link": "https://www.nytimes.com/2026/05/15/world/africa/deportation-congo-migrants-trump.html",
-      "date": "Fri, 15 May 2026 04:01:14 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
