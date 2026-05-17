@@ -1,6 +1,54 @@
 {
-  "lastUpdated": "2026-05-16T18:54:01.026Z",
+  "lastUpdated": "2026-05-17T02:26:26.640Z",
   "articles": [
+    {
+      "title": "Venezuela Extradites Billionaire Tycoon Alex Saab to U.S.",
+      "link": "https://www.nytimes.com/2026/05/16/world/americas/venezuela-extradites-tycoon-alex-saab.html",
+      "date": "Sun, 17 May 2026 01:26:02 +0000",
+      "source": "NY Times World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Hezbollah drone strike videos show evolving tactics against Israel",
+      "link": "https://www.bbc.com/news/articles/c1j2zwe9g5no?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 16 May 2026 23:10:19 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Lebanon says six killed in Israeli strike as US announces ceasefire extension",
+      "link": "https://www.bbc.com/news/articles/cqlpzzl0d67o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 16 May 2026 22:27:44 GMT",
+      "source": "BBC Middle East",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
+    {
+      "title": "Man drives car into pedestrians in Italy, injuring eight",
+      "link": "https://www.bbc.com/news/articles/cyv28pd4n22o?at_medium=RSS&at_campaign=rss",
+      "date": "Sat, 16 May 2026 20:36:17 GMT",
+      "source": "BBC World",
+      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
+      "category": "Geopolitics",
+      "severity": "medium",
+      "region": "Global",
+      "lat": 0,
+      "lng": 0
+    },
     {
       "title": "Fears Grow That Iran May Be Using Proxy Groups Beyond Mideast",
       "link": "https://www.nytimes.com/2026/05/16/world/middleeast/iran-proxy-groups-us.html",
@@ -38,18 +86,6 @@
       "lng": 0
     },
     {
-      "title": "Rival Protests Take Place in London, With a Major Security Effort",
-      "link": "https://www.nytimes.com/2026/05/16/world/europe/london-rival-protests.html",
-      "date": "Sat, 16 May 2026 17:01:36 +0000",
-      "source": "NY Times World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Funnel Builder Flaw Under Active Exploitation Enables WooCommerce Checkout Skimming",
       "link": "https://thehackernews.com/2026/05/funnel-builder-flaw-under-active.html",
       "date": "Sat, 16 May 2026 20:50:48 +0530",
@@ -62,36 +98,12 @@
       "lng": 0
     },
     {
-      "title": "Rescue diver dies during search for bodies of Italians who drowned in Maldives caves",
-      "link": "https://www.bbc.com/news/articles/c1w2gv1gdnjo?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 16 May 2026 15:01:40 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
       "title": "Kevin Warsh comes into the Fed facing a big 'family fight' over cutting interest rates",
       "link": "https://www.cnbc.com/2026/05/16/kevin-warsh-comes-into-the-fed-facing-a-big-family-fight-over-cutting-interest-rates.html",
       "date": "Sat, 16 May 2026 13:41:29 GMT",
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Senior IS leader killed in joint operation, US and Nigeria say",
-      "link": "https://www.bbc.com/news/articles/cy72p2kpd03o?at_medium=RSS&at_campaign=rss",
-      "date": "Sat, 16 May 2026 11:44:54 GMT",
-      "source": "BBC World",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
@@ -116,30 +128,6 @@
       "source": "CNBC Finance",
       "summary": "Supply Chain event detected. Automated analysis pending manual review.",
       "category": "Supply Chain",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Lebanon says six killed in Israeli strike as US announces ceasefire extension",
-      "link": "https://www.bbc.com/news/articles/cqlpzzl0d67o?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 15 May 2026 23:59:07 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
-      "severity": "medium",
-      "region": "Global",
-      "lat": 0,
-      "lng": 0
-    },
-    {
-      "title": "Palestinian leaders hold rare party meeting as polls show rising discontent",
-      "link": "https://www.bbc.com/news/articles/clyp1lnp4ygo?at_medium=RSS&at_campaign=rss",
-      "date": "Fri, 15 May 2026 23:05:19 GMT",
-      "source": "BBC Middle East",
-      "summary": "Geopolitics event detected. Automated analysis pending manual review.",
-      "category": "Geopolitics",
       "severity": "medium",
       "region": "Global",
       "lat": 0,
