@@ -1,624 +1,203 @@
-"use client";
+import Link from "next/link";
 
-import { useEffect, useState, useMemo, useCallback } from "react";
-import dynamic from "next/dynamic";
-import {
-  ExternalLink,
-  Globe,
-  MapPin,
-  Search,
-  ShieldAlert,
-  Truck,
-  X,
-  Activity,
-  AlertTriangle,
-  Radio,
-  Clock,
-  ChevronRight,
-} from "lucide-react";
-import type { Article as MapArticle } from "../components/WorldMap";
-import { LiveTVPanel } from "../components/LiveTVPanel";
-import { MarketPanel } from "../components/MarketPanel";
-import { ThreatChart } from "../components/ThreatChart";
-
-const DEFAULT_COLOR = "#4b5563";
-
-const WorldMap = dynamic(() => import("../components/WorldMap"), {
-  ssr: false,
-  loading: () => (
-    <div
-      style={{
-        background: "var(--map-ocean)",
-        height: "min(52vh, 480px)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "var(--font-mono)",
-        fontSize: 11,
-        color: "var(--text-muted)",
-        letterSpacing: "0.12em",
-      }}
-    >
-      INITIALISING MAP ENGINE...
-    </div>
-  ),
-});
-
-interface Article {
-  title: string;
-  link: string;
-  date: string;
-  source: string;
-  summary: string;
-  category: string;
-  severity?: string;
-  region: unknown;
-  lat: number;
-  lng: number;
-}
-
-interface Data {
-  lastUpdated: string;
-  articles: Article[];
-}
-
-type CategoryFilter = "all" | "Cyber Attack" | "Supply Chain" | "Geopolitics";
-type SeverityFilter = "all" | "critical" | "high" | "medium";
-
-function regionStr(r: unknown): string {
-  if (typeof r === "string") return r;
-  return "Global";
-}
-
-const CATEGORY_COLOR: Record<string, string> = {
-  "Cyber Attack": "var(--cyber)",
-  "Supply Chain": "var(--supply)",
-  "Geopolitics":  "var(--geo)",
-};
-const SEVERITY_COLOR: Record<string, string> = {
-  critical: "#ef4444",
-  high:     "#f97316",
-  medium:   "#eab308",
-};
-
-function CategoryIcon({ cat, size = 13 }: { cat: string; size?: number }) {
-  const s = { width: size, height: size };
-  if (cat === "Cyber Attack") return <ShieldAlert style={s} />;
-  if (cat === "Supply Chain") return <Truck       style={s} />;
-  if (cat === "Geopolitics")  return <Globe       style={s} />;
-  return <AlertTriangle style={s} />;
-}
-
-function formatRelative(dateStr: string, now: number): string {
-  const diff = now - new Date(dateStr).getTime();
-  const m    = Math.floor(diff / 60000);
-  const h    = Math.floor(m / 60);
-  const d    = Math.floor(h / 24);
-  if (d > 0) return `${d}d ago`;
-  if (h > 0) return `${h}h ago`;
-  if (m > 0) return `${m}m ago`;
-  return "just now";
-}
-
-// ─── Ticker ──────────────────────────────────────────────────────────────────
-function Ticker({ articles }: { articles: Article[] }) {
-  if (articles.length === 0) return null;
-  const items = [...articles, ...articles];
+// Marketing page — public. Same dark, institutional design system.
+export default function Landing() {
   return (
-    <div style={{
-      height: 28,
-      borderBottom: "1px solid var(--border-subtle)",
-      background: "var(--bg-surface)",
-      overflow: "hidden",
-      display: "flex",
-      alignItems: "center",
-      position: "relative",
-    }}>
-      <div style={{
-        position: "absolute", left: 0, top: 0, bottom: 0,
-        width: 60, zIndex: 2,
-        background: "linear-gradient(to right, var(--bg-surface), transparent)",
-      }} />
-      <div className="ticker-inner">
-        {items.map((a, i) => {
-          const col = CATEGORY_COLOR[a.category] ?? "var(--text-muted)";
-          return (
-            <span key={i} style={{ display: "flex", alignItems: "center", gap: 8, paddingRight: 40, whiteSpace: "nowrap", fontSize: 10, color: "var(--text-secondary)" }}>
-              <span style={{ color: col, fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em" }}>{a.category}</span>
-              <span style={{ color: "var(--text-muted)" }}>›</span>
-              <span style={{ color: "var(--text-primary)" }}>{a.title}</span>
-              {regionStr(a.region) && (
-                <>
-                  <span style={{ color: "var(--text-muted)" }}>·</span>
-                  <span>{regionStr(a.region)}</span>
-                </>
-              )}
-            </span>
-          );
-        })}
-      </div>
-      <div style={{
-        position: "absolute", right: 0, top: 0, bottom: 0,
-        width: 40, zIndex: 2,
-        background: "linear-gradient(to left, var(--bg-surface), transparent)",
-      }} />
-    </div>
-  );
-}
-
-// ─── Stat Pill ────────────────────────────────────────────────────────────────
-function StatPill({
-  label, count, color, active, onClick,
-}: {
-  label: string; count: number; color: string; active: boolean; onClick: () => void;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      style={{
-        display: "flex", alignItems: "center", gap: 6,
-        padding: "3px 10px",
-        borderRadius: 2,
-        border: `1px solid ${active ? color : "var(--border)"}`,
-        background: active ? `${color}18` : "transparent",
-        cursor: "pointer",
-        fontFamily: "var(--font-mono)",
-        fontSize: 11,
-        transition: "all 0.15s",
-      }}
-    >
-      <span style={{ color, fontWeight: 600 }} className="tabular">{count}</span>
-      <span style={{ color: active ? "var(--text-primary)" : "var(--text-secondary)", textTransform: "uppercase", letterSpacing: "0.06em" }}>
-        {label}
-      </span>
-    </button>
-  );
-}
-
-// ─── Article Detail Drawer ────────────────────────────────────────────────────
-function ArticleDrawer({ article, now, onClose }: {
-  article: Article & { region: string };
-  now: number;
-  onClose: () => void;
-}) {
-  const catColor = CATEGORY_COLOR[article.category] ?? DEFAULT_COLOR;
-  const sevColor = SEVERITY_COLOR[article.severity ?? "medium"] ?? "var(--text-muted)";
-  return (
-    <div style={{
-      position: "fixed", right: 0, top: 40, bottom: 24,
-      width: "min(420px, 100vw)", zIndex: 100,
-      background: "var(--bg-surface)",
-      borderLeft: `3px solid ${catColor}`,
-      display: "flex", flexDirection: "column",
-      boxShadow: "-8px 0 32px rgba(0,0,0,0.6)",
-      animation: "slideIn 0.2s ease",
-    }}>
-      <div style={{
-        padding: "12px 14px",
-        borderBottom: "1px solid var(--border)",
-        display: "flex", alignItems: "center", justifyContent: "space-between",
-        flexShrink: 0,
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-          <span style={{ color: catColor }}><CategoryIcon cat={article.category} size={13} /></span>
-          <span style={{ color: catColor, fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>{article.category}</span>
-          {article.severity && (
-            <span style={{ color: sevColor, fontSize: 9, fontWeight: 700, textTransform: "uppercase", borderLeft: "1px solid var(--border)", paddingLeft: 6 }}>
-              {article.severity}
-            </span>
-          )}
-        </div>
-        <button onClick={onClose} style={{ background: "none", border: "none", cursor: "pointer", color: "var(--text-muted)", display: "flex" }}>
-          <X size={14} />
-        </button>
-      </div>
-      <div style={{ flex: 1, overflow: "auto", padding: "14px" }}>
-        <a
-          href={article.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ display: "flex", gap: 6, alignItems: "flex-start", textDecoration: "none", marginBottom: 12 }}
-        >
-          <span style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.5, color: "var(--text-primary)", flex: 1 }}>
-            {article.title}
-          </span>
-          <ExternalLink size={11} style={{ color: "var(--accent)", flexShrink: 0, marginTop: 2 }} />
-        </a>
-        <div style={{ display: "flex", gap: 10, marginBottom: 14, flexWrap: "wrap" }}>
-          <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
-            <Globe size={10} />{article.source}
-          </span>
-          <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
-            <MapPin size={10} />{article.region}
-          </span>
-          <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
-            <Clock size={10} />{formatRelative(article.date, now)}
-          </span>
-        </div>
-        <div style={{
-          background: "var(--bg)",
-          border: "1px solid var(--border-subtle)",
-          borderLeft: `2px solid ${catColor}`,
-          borderRadius: 2,
-          padding: "12px 14px",
-        }}>
-          <div style={{ fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: 6 }}>
-            AI RISK ANALYSIS
+    <div className="min-h-screen">
+      {/* Nav */}
+      <header className="border-b border-[var(--border)]">
+        <div className="mx-auto flex h-14 max-w-[1100px] items-center justify-between px-5">
+          <div className="flex items-center gap-2">
+            <span className="inline-block h-3.5 w-3.5" style={{ background: "var(--brand)" }} />
+            <span className="text-[16px] font-bold tracking-tight">WheelDesk</span>
           </div>
-          <p style={{ fontSize: 12, color: "var(--text-secondary)", lineHeight: 1.7, margin: 0 }}>
-            {article.summary}
-          </p>
-        </div>
-        {article.lat !== 0 && article.lng !== 0 && (
-          <div style={{ marginTop: 12, padding: "8px 10px", background: "var(--bg-elevated)", borderRadius: 2, fontSize: 10, color: "var(--text-muted)", display: "flex", gap: 12 }}>
-            <span>LAT {article.lat.toFixed(2)}°</span>
-            <span>LNG {article.lng.toFixed(2)}°</span>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-// ─── Main Page ─────────────────────────────────────────────────────────────────
-export default function Home() {
-  const [data,            setData]          = useState<Data | null>(null);
-  const [loading,         setLoading]       = useState(true);
-  const [categoryFilter,  setCategoryFilter] = useState<CategoryFilter>("all");
-  const [severityFilter,  setSeverityFilter] = useState<SeverityFilter>("all");
-  const [searchQuery,     setSearchQuery]   = useState("");
-  const [selected,        setSelected]      = useState<(Article & { region: string }) | null>(null);
-  const [now,             setNow]           = useState(() =>
-    typeof window !== "undefined" ? Date.now() : 0,
-  );
-
-  useEffect(() => {
-    const id = setInterval(() => setNow(Date.now()), 30000);
-    return () => clearInterval(id);
-  }, []);
-
-  useEffect(() => {
-    fetch("/data/latest_insights.json")
-      .then((r) => r.json())
-      .then((j: Data) => { setData(j); setLoading(false); })
-      .catch(() => setLoading(false));
-  }, []);
-
-  const articles = useMemo(() => {
-    if (!data?.articles) return [];
-    return data.articles.map((a) => ({ ...a, region: regionStr(a.region) }));
-  }, [data]);
-
-  const filtered = useMemo(() => {
-    return articles.filter((a) => {
-      if (categoryFilter !== "all" && a.category !== categoryFilter) return false;
-      if (severityFilter !== "all" && (a.severity ?? "medium") !== severityFilter) return false;
-      if (searchQuery) {
-        const q = searchQuery.toLowerCase();
-        return (
-          a.title.toLowerCase().includes(q) ||
-          a.summary.toLowerCase().includes(q) ||
-          a.region.toLowerCase().includes(q) ||
-          a.source.toLowerCase().includes(q)
-        );
-      }
-      return true;
-    });
-  }, [articles, categoryFilter, severityFilter, searchQuery]);
-
-  const stats = useMemo(() => ({
-    cyber:    articles.filter((a) => a.category === "Cyber Attack").length,
-    supply:   articles.filter((a) => a.category === "Supply Chain").length,
-    geo:      articles.filter((a) => a.category === "Geopolitics").length,
-    critical: articles.filter((a) => a.severity === "critical").length,
-  }), [articles]);
-
-  const handleMarkerClick = useCallback((article: MapArticle) => {
-    setSelected({ ...article, region: regionStr(article.region) });
-  }, []);
-
-  if (loading) {
-    return (
-      <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily: "var(--font-mono)", gap: 16 }}>
-        <Activity style={{ color: "var(--accent)", width: 22, height: 22 }} />
-        <div style={{ color: "var(--text-primary)", letterSpacing: "0.12em", fontSize: 12 }}>LOADING INTELLIGENCE FEED</div>
-        <div style={{ color: "var(--text-muted)", fontSize: 10 }}>Fetching threat data...</div>
-      </div>
-    );
-  }
-
-  const clearFilters = () => { setCategoryFilter("all"); setSeverityFilter("all"); setSearchQuery(""); };
-  const hasFilters   = categoryFilter !== "all" || severityFilter !== "all" || searchQuery !== "";
-
-  return (
-    <div style={{ minHeight: "100vh", background: "var(--bg)", display: "flex", flexDirection: "column" }}>
-
-      {/* ── HEADER ─────────────────────────────────────── */}
-      <header style={{
-        height: 40, flexShrink: 0,
-        background: "var(--bg-surface)",
-        borderBottom: "1px solid var(--border)",
-        display: "flex", alignItems: "center", justifyContent: "space-between",
-        padding: "0 14px",
-        position: "sticky", top: 0, zIndex: 50,
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div className="live-dot" />
-          <span style={{ fontWeight: 600, fontSize: 12, letterSpacing: "0.12em", color: "var(--text-primary)", textTransform: "uppercase" }}>
-            OSINT Risk Monitor
-          </span>
-          <span style={{ color: "var(--border)", userSelect: "none" }}>|</span>
-          <span style={{ fontSize: 10, color: "var(--text-muted)", letterSpacing: "0.06em" }}>
-            {data?.lastUpdated
-              ? `UPDATED ${formatRelative(data.lastUpdated, now).toUpperCase()}`
-              : "NO DATA"}
-          </span>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-          <StatPill label="Cyber"    count={stats.cyber}    color="var(--cyber)"   active={categoryFilter === "Cyber Attack"} onClick={() => setCategoryFilter(categoryFilter === "Cyber Attack" ? "all" : "Cyber Attack")} />
-          <StatPill label="Geo"      count={stats.geo}      color="var(--geo)"     active={categoryFilter === "Geopolitics"}  onClick={() => setCategoryFilter(categoryFilter === "Geopolitics"  ? "all" : "Geopolitics")} />
-          <StatPill label="Supply"   count={stats.supply}   color="var(--supply)"  active={categoryFilter === "Supply Chain"} onClick={() => setCategoryFilter(categoryFilter === "Supply Chain" ? "all" : "Supply Chain")} />
-          <StatPill label="Critical" count={stats.critical} color="#ef4444"        active={severityFilter === "critical"}     onClick={() => setSeverityFilter(severityFilter === "critical"     ? "all" : "critical")} />
-          <div style={{ display: "flex", alignItems: "center", gap: 5, marginLeft: 8, color: "var(--live)", fontSize: 10, fontWeight: 600, letterSpacing: "0.1em" }}>
-            <Radio size={11} />
-            LIVE
-          </div>
+          <nav className="flex items-center gap-4 text-[13px]">
+            <a href="#how" className="text-[var(--ink-muted)] hover:text-[var(--ink)]">
+              How it works
+            </a>
+            <a href="#pricing" className="text-[var(--ink-muted)] hover:text-[var(--ink)]">
+              Pricing
+            </a>
+            <Link
+              href="/desk"
+              className="rounded-sm border border-[var(--cyan)] px-3 py-1.5 text-[var(--cyan)] hover:opacity-90"
+            >
+              Open the desk →
+            </Link>
+          </nav>
         </div>
       </header>
 
-      {/* ── TICKER ─────────────────────────────────────── */}
-      <Ticker articles={articles} />
+      {/* Hero */}
+      <section className="mx-auto max-w-[1100px] px-5 py-20">
+        <p className="mb-3 text-[12px] font-semibold uppercase tracking-[0.2em] text-[var(--cyan)]">
+          Operations desk for wheel traders
+        </p>
+        <h1 className="max-w-3xl text-[44px] font-semibold leading-[1.05] tracking-tight sm:text-[56px]">
+          The wheel doesn&apos;t end at assignment.
+          <br />
+          <span className="text-[var(--ink-muted)]">Neither should your tools.</span>
+        </h1>
+        <hr className="brand-rule mt-6 max-w-[120px]" />
+        <p className="mt-6 max-w-xl text-[15px] text-[var(--ink-muted)]">
+          Not a screener with a table of options. A desk that manages the full lifecycle —
+          cash-secured puts, the 50%-profit Trap System, and the one thing nobody else handles:
+          what to do <span className="text-[var(--ink)]">after</span> you get assigned.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link
+            href="/desk"
+            className="rounded-sm bg-[var(--cyan)] px-5 py-2.5 text-[14px] font-medium text-black hover:opacity-90"
+          >
+            Load the demo desk
+          </Link>
+          <a
+            href="#how"
+            className="rounded-sm border border-[var(--border-strong)] px-5 py-2.5 text-[14px] text-[var(--ink)] hover:border-[var(--cyan)]"
+          >
+            See the three screens
+          </a>
+        </div>
+        <p className="mt-4 text-[12px] text-[var(--ink-faint)]">
+          Free tier · no card · demo positions load in one click.
+        </p>
+      </section>
 
-      {/* ── MAP SECTION ────────────────────────────────── */}
-      <div style={{ position: "relative", borderBottom: "1px solid var(--border)" }}>
-        {/* Map toolbar overlay */}
-        <div style={{
-          position: "absolute", top: 0, left: 0, right: 0, zIndex: 10,
-          height: 34,
-          background: "rgba(7,9,12,0.92)",
-          borderBottom: "1px solid var(--border-subtle)",
-          display: "flex", alignItems: "center",
-          padding: "0 12px", gap: 8,
-          backdropFilter: "blur(8px)",
-        }}>
-          <span style={{ fontSize: 10, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.1em", marginRight: 6 }}>Layer</span>
-          {(["all", "Cyber Attack", "Supply Chain", "Geopolitics"] as const).map((cat) => {
-            const label  = cat === "all" ? "All" : cat.replace(" ", "\u00A0");
-            const active = categoryFilter === cat;
-            const col    = cat === "all" ? "var(--text-secondary)" : CATEGORY_COLOR[cat];
-            return (
-              <button key={cat} onClick={() => setCategoryFilter(active && cat !== "all" ? "all" : cat)}
-                style={{
-                  padding: "2px 9px", borderRadius: 2, fontSize: 10, fontWeight: 500,
-                  fontFamily: "var(--font-mono)", cursor: "pointer",
-                  background: active ? `${col}22` : "transparent",
-                  border: `1px solid ${active ? col : "var(--border-subtle)"}`,
-                  color: active ? "var(--text-primary)" : "var(--text-muted)",
-                  letterSpacing: "0.05em", textTransform: "uppercase",
-                  transition: "all 0.15s",
-                }}
-              >
-                {label}
-              </button>
-            );
-          })}
-          <div style={{ marginLeft: "auto", display: "flex", gap: 6 }}>
-            <span style={{ fontSize: 10, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Severity</span>
-            {(["all", "critical", "high", "medium"] as SeverityFilter[]).map((sev) => {
-              const active = severityFilter === sev;
-              const col    = sev === "all" ? "var(--text-secondary)" : SEVERITY_COLOR[sev];
-              return (
-                <button key={sev} onClick={() => setSeverityFilter(active && sev !== "all" ? "all" : sev)}
-                  style={{
-                    padding: "2px 8px", borderRadius: 2, fontSize: 10, fontFamily: "var(--font-mono)", cursor: "pointer",
-                    background: active ? `${col}22` : "transparent",
-                    border: `1px solid ${active ? col : "var(--border-subtle)"}`,
-                    color: active ? (sev === "all" ? "var(--text-primary)" : col) : "var(--text-muted)",
-                    textTransform: "uppercase", letterSpacing: "0.05em",
-                    transition: "all 0.15s",
-                  }}
-                >
-                  {sev === "all" ? "All" : sev}
-                </button>
-              );
-            })}
+      {/* Three screens */}
+      <section id="how" className="border-t border-[var(--border)] bg-[var(--surface)]">
+        <div className="mx-auto max-w-[1100px] px-5 py-16">
+          <div className="grid gap-8 md:grid-cols-3">
+            <Feature
+              tone="var(--cyan)"
+              kicker="01 · Scanner"
+              title="Find the entry"
+              body="House Rules preset: 30–45 DTE, VIX-adjusted delta band, quality + earnings filters, min 3% ROC, real liquidity floors. Delayed Tradier sandbox chains — never faked as real-time."
+            />
+            <Feature
+              tone="var(--amber)"
+              kicker="02 · Desk"
+              title="Work the position"
+              body="Good Bank / Bad Bank split. The Trap System fires the moment an option can be closed at 50% of max profit. Earnings-collision, delta-drift, and 7-DTE alerts on every open leg."
+            />
+            <Feature
+              tone="var(--magenta)"
+              kicker="03 · Repair"
+              title="Fix the assignment"
+              body="The differentiator. An Adjusted-Basis Ladder that grinds your cost basis down without capping the recovery — with a Desk Pick and a shareable 6-cycle repair chart."
+            />
           </div>
         </div>
-        <div style={{ paddingTop: 34 }}>
-          <WorldMap
-            articles={filtered as MapArticle[]}
-            activeCategory={categoryFilter}
-            onMarkerClick={handleMarkerClick}
-          />
-        </div>
-      </div>
+      </section>
 
-      {/* ── THREE-PANEL ROW: TV | MARKET | ANALYTICS ───── */}
-      <div style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-        borderBottom: "1px solid var(--border)",
-        minHeight: 300,
-      }}>
-        {/* TV gets double width on wide screens */}
-        <div style={{ gridColumn: "span 2", minWidth: 0 }}>
-          <LiveTVPanel />
-        </div>
-        <MarketPanel />
-        <ThreatChart articles={articles} />
-      </div>
-
-      {/* ── FEED TOOLBAR ───────────────────────────────── */}
-      <div style={{
-        background: "var(--bg-surface)",
-        borderBottom: "1px solid var(--border)",
-        padding: "8px 14px",
-        display: "flex", alignItems: "center", gap: 10,
-        flexWrap: "wrap",
-        flexShrink: 0,
-      }}>
-        <div style={{ position: "relative", flex: 1, minWidth: 180, maxWidth: 320 }}>
-          <Search size={12} style={{ position: "absolute", left: 9, top: "50%", transform: "translateY(-50%)", color: "var(--text-muted)", pointerEvents: "none" }} />
-          <input
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search threats, regions, sources..."
-            style={{
-              width: "100%", paddingLeft: 28, paddingRight: searchQuery ? 28 : 10,
-              height: 28, background: "var(--bg)", border: "1px solid var(--border)",
-              borderRadius: 2, fontFamily: "var(--font-mono)", fontSize: 11,
-              color: "var(--text-primary)", outline: "none",
-            }}
-          />
-          {searchQuery && (
-            <button onClick={() => setSearchQuery("")} style={{ position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", cursor: "pointer", color: "var(--text-muted)", display: "flex" }}>
-              <X size={12} />
-            </button>
-          )}
-        </div>
-        <span style={{ fontSize: 10, color: "var(--text-muted)", letterSpacing: "0.06em" }}>
-          {filtered.length} <span style={{ textTransform: "uppercase" }}>REPORTS</span>
-        </span>
-        {hasFilters && (
-          <button onClick={clearFilters} style={{ display: "flex", alignItems: "center", gap: 4, padding: "3px 8px", border: "1px solid var(--border)", borderRadius: 2, background: "transparent", cursor: "pointer", fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--text-secondary)" }}>
-            <X size={10} /> Clear filters
-          </button>
-        )}
-      </div>
-
-      {/* ── INTELLIGENCE GRID ──────────────────────────── */}
-      <main style={{
-        flex: 1,
-        padding: "12px 14px",
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
-        gap: 8,
-        alignContent: "start",
-      }}>
-        {filtered.length === 0 ? (
-          <div style={{ gridColumn: "1 / -1", textAlign: "center", padding: "60px 20px", color: "var(--text-muted)", fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.08em" }}>
-            <AlertTriangle style={{ width: 22, height: 22, margin: "0 auto 12px", display: "block" }} />
-            NO REPORTS MATCH CURRENT FILTERS
+      {/* Repair callout */}
+      <section className="mx-auto max-w-[1100px] px-5 py-16">
+        <div className="border border-[var(--border)] p-6">
+          <h2 className="text-[22px] font-semibold tracking-tight">
+            The Assignment Repair Engine
+          </h2>
+          <hr className="brand-rule mt-3 max-w-[120px]" />
+          <p className="mt-4 max-w-2xl text-[14px] text-[var(--ink-muted)]">
+            Everyone shows you the entry. Nobody tells you what to do when a $30 put gets assigned
+            and the stock is at $21. WheelDesk auto-sums every premium you&apos;ve collected on the
+            lot, computes your true adjusted basis, and lays out the covered-call campaign that
+            repairs it — respecting the house rule: never cap below basis. Or flip to aggressive.
+          </p>
+          <div className="mt-6 grid gap-3 sm:grid-cols-3">
+            <MiniStat label="Adjusted basis" value="$24.00" tone="var(--cyan)" />
+            <MiniStat label="Desk pick" value="$25 call · 41% ann." tone="var(--teal)" />
+            <MiniStat label="Repair ETA" value="≈ 6.5 months" tone="var(--amber)" />
           </div>
-        ) : (
-          filtered.map((article, idx) => {
-            const catColor = CATEGORY_COLOR[article.category] ?? DEFAULT_COLOR;
-            const sevColor = SEVERITY_COLOR[article.severity ?? "medium"] ?? "var(--text-muted)";
-            const isSelected = selected?.title === article.title;
-            return (
-              <div
-                key={idx}
-                className="fade-in"
-                onClick={() => setSelected(isSelected ? null : article)}
-                style={{
-                  background: isSelected ? "var(--bg-elevated)" : "var(--bg-surface)",
-                  border: `1px solid ${isSelected ? catColor : "var(--border)"}`,
-                  borderLeft: `3px solid ${catColor}`,
-                  borderRadius: 3,
-                  padding: "12px 14px",
-                  animationDelay: `${idx * 30}ms`,
-                  transition: "border-color 0.15s, background 0.15s",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={(e) => {
-                  if (!isSelected) {
-                    (e.currentTarget as HTMLDivElement).style.background = "var(--bg-elevated)";
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (!isSelected) {
-                    (e.currentTarget as HTMLDivElement).style.background = "var(--bg-surface)";
-                  }
-                }}
-              >
-                {/* Card header */}
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 8 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                    <span style={{ color: catColor, display: "flex" }}>
-                      <CategoryIcon cat={article.category} size={12} />
-                    </span>
-                    <span style={{ color: catColor, fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em" }}>{article.category}</span>
-                    {article.severity && (
-                      <span style={{ color: sevColor, fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", borderLeft: "1px solid var(--border-subtle)", paddingLeft: 6, marginLeft: 2 }}>
-                        {article.severity}
-                      </span>
-                    )}
-                  </div>
-                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                    <div style={{ display: "flex", alignItems: "center", gap: 4, color: "var(--text-muted)", fontSize: 10 }}>
-                      <Clock size={10} />
-                      {formatRelative(article.date, now)}
-                    </div>
-                    <ChevronRight size={12} style={{ color: catColor, opacity: isSelected ? 1 : 0.4, transform: isSelected ? "rotate(90deg)" : "none", transition: "transform 0.15s" }} />
-                  </div>
-                </div>
-
-                {/* Title */}
-                <a href={article.link} target="_blank" rel="noopener noreferrer"
-                  style={{ display: "flex", alignItems: "flex-start", gap: 5, marginBottom: 8, textDecoration: "none" }}
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <span style={{ color: "var(--text-primary)", fontWeight: 500, fontSize: 12, lineHeight: 1.45, flex: 1, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
-                    {article.title}
-                  </span>
-                  <ExternalLink size={10} style={{ color: "var(--text-muted)", flexShrink: 0, marginTop: 2 }} />
-                </a>
-
-                {/* Meta */}
-                <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 10, flexWrap: "wrap" }}>
-                  <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
-                    <Globe size={10} />{article.source}
-                  </span>
-                  {article.region && (
-                    <span style={{ display: "flex", alignItems: "center", gap: 4, fontSize: 10, color: "var(--text-muted)" }}>
-                      <MapPin size={10} />{article.region}
-                    </span>
-                  )}
-                </div>
-
-                {/* AI Analysis */}
-                <div style={{ background: "var(--bg)", border: "1px solid var(--border-subtle)", borderRadius: 2, padding: "9px 11px" }}>
-                  <div style={{ fontSize: 9, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--text-muted)", marginBottom: 5 }}>
-                    AI RISK ANALYSIS
-                  </div>
-                  <p style={{ fontSize: 11, color: "var(--text-secondary)", lineHeight: 1.6, margin: 0 }}>
-                    {article.summary}
-                  </p>
-                </div>
-              </div>
-            );
-          })
-        )}
-      </main>
-
-      {/* ── STATUS BAR ─────────────────────────────────── */}
-      <footer style={{
-        height: 24, flexShrink: 0,
-        background: "var(--bg-surface)",
-        borderTop: "1px solid var(--border)",
-        display: "flex", alignItems: "center", justifyContent: "space-between",
-        padding: "0 14px",
-        fontSize: 10, color: "var(--text-muted)",
-        letterSpacing: "0.06em",
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <span>OSINT MONITOR v2.1</span>
-          <span style={{ color: "var(--border)" }}>|</span>
-          <span>SRC: BBC · CNBC · THN · CISA · KREBS · NYT</span>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <span>AI: LLAMA 3.2 · HuggingFace</span>
-          <span style={{ color: "var(--border)" }}>|</span>
-          <span>MARKET: CoinGecko</span>
-          <span style={{ color: "var(--border)" }}>|</span>
-          <span style={{ color: "var(--live)", fontWeight: 600 }}>● AUTO-UPDATE 6H</span>
+      </section>
+
+      {/* Pricing */}
+      <section id="pricing" className="border-t border-[var(--border)] bg-[var(--surface)]">
+        <div className="mx-auto max-w-[1100px] px-5 py-16">
+          <h2 className="text-[22px] font-semibold tracking-tight">Pricing</h2>
+          <hr className="brand-rule mt-3 max-w-[120px]" />
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:max-w-2xl">
+            <div className="border border-[var(--border)] p-6">
+              <h3 className="text-[16px] font-semibold">Free</h3>
+              <p className="mt-1 text-[28px] font-semibold tnum">$0</p>
+              <ul className="mt-4 space-y-1.5 text-[13px] text-[var(--ink-muted)]">
+                <li>· 3 tracked positions</li>
+                <li>· Scanner limited to 10 results</li>
+                <li>· Full Trap System + Repair Engine</li>
+              </ul>
+              <Link
+                href="/desk"
+                className="mt-6 inline-block rounded-sm border border-[var(--border-strong)] px-4 py-2 text-[13px] hover:border-[var(--cyan)]"
+              >
+                Start free
+              </Link>
+            </div>
+            <div className="border border-[var(--cyan)] p-6">
+              <h3 className="text-[16px] font-semibold text-[var(--cyan)]">Pro</h3>
+              <p className="mt-1 text-[28px] font-semibold tnum">
+                $39<span className="text-[14px] text-[var(--ink-muted)]">/mo</span>
+                <span className="ml-2 text-[14px] text-[var(--ink-muted)]">or $349/yr</span>
+              </p>
+              <ul className="mt-4 space-y-1.5 text-[13px] text-[var(--ink-muted)]">
+                <li>· Unlimited tracked positions</li>
+                <li>· Full scanner results</li>
+                <li>· Everything on Free</li>
+              </ul>
+              <Link
+                href="/settings"
+                className="mt-6 inline-block rounded-sm bg-[var(--cyan)] px-4 py-2 text-[13px] font-medium text-black hover:opacity-90"
+              >
+                Go Pro
+              </Link>
+            </div>
+          </div>
+          <p className="mt-4 text-[12px] text-[var(--ink-faint)]">
+            No trials — the free tier is the trial.
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-[var(--border)]">
+        <div className="mx-auto flex max-w-[1100px] flex-col items-start justify-between gap-2 px-5 py-8 text-[12px] text-[var(--ink-faint)] sm:flex-row sm:items-center">
+          <span>Built by a prop desk, not a dev shop.</span>
+          <span>Tracking only — execute at your broker. Not investment advice.</span>
         </div>
       </footer>
+    </div>
+  );
+}
 
-      {/* ── ARTICLE DETAIL DRAWER ──────────────────────── */}
-      {selected && (
-        <ArticleDrawer article={selected} now={now} onClose={() => setSelected(null)} />
-      )}
+function Feature({
+  tone,
+  kicker,
+  title,
+  body,
+}: {
+  tone: string;
+  kicker: string;
+  title: string;
+  body: string;
+}) {
+  return (
+    <div>
+      <p className="text-[11px] font-semibold uppercase tracking-[0.15em]" style={{ color: tone }}>
+        {kicker}
+      </p>
+      <h3 className="mt-2 text-[18px] font-semibold">{title}</h3>
+      <p className="mt-2 text-[13px] leading-relaxed text-[var(--ink-muted)]">{body}</p>
+    </div>
+  );
+}
+
+function MiniStat({ label, value, tone }: { label: string; value: string; tone: string }) {
+  return (
+    <div className="border border-[var(--border)] bg-[var(--bg)] px-3 py-2.5">
+      <div className="text-[10px] font-medium uppercase tracking-wider text-[var(--ink-muted)]">
+        {label}
+      </div>
+      <div className="mt-1 text-[15px] font-semibold tnum" style={{ color: tone }}>
+        {value}
+      </div>
     </div>
   );
 }

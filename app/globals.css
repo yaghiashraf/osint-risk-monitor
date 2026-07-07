@@ -1,129 +1,160 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap");
 @import "tailwindcss";
 
+/*
+  WheelDesk design system — dark, institutional, no SaaS-template look.
+  Pure black background, sharp corners, thin borders, tabular numbers.
+  Accent colors appear on DATA only, sparingly.
+*/
+
 @theme inline {
-  --font-mono: "JetBrains Mono", "SF Mono", "Cascadia Code", "Fira Code", monospace;
+  --font-sans: "Inter", "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+
+  --color-bg: #000000;
+  --color-surface: #0a0a0a;
+  --color-surface-2: #111111;
+  --color-border: #1f1f1f;
+  --color-border-strong: #2c2c2c;
+
+  --color-ink: #ededed;
+  --color-ink-muted: #8a8a8a;
+  --color-ink-faint: #5a5a5a;
+
+  --color-cyan: #00e5ff; /* primary / CSP */
+  --color-magenta: #ff2d95; /* warnings / CC */
+  --color-amber: #ffb300; /* alerts */
+  --color-coral: #ff6b57; /* losses */
+  --color-teal: #00c9a7; /* profits */
+  --color-brand: #e5484d; /* the red rule */
+
+  --color-profit: #00c9a7;
+  --color-loss: #ff6b57;
+  --color-neutral: #8a8a8a;
 }
 
 :root {
-  --bg: #07090c;
-  --bg-surface: #0d1117;
-  --bg-elevated: #131c25;
-  --bg-hover: #1a2636;
-  --border: #1c2836;
-  --border-subtle: #111924;
-  --text-primary: #cdd9e5;
-  --text-secondary: #627d8f;
-  --text-muted: #3a4f5c;
-  --accent: #2f81f7;
-  --live: #3fb950;
-  --cyber: #ef4444;
-  --supply: #f59e0b;
-  --geo: #3b82f6;
-  --map-ocean: #040810;
-  --map-land: #0c1520;
-  --map-border: #0f1e2b;
-  --map-graticule: #0a1320;
+  --bg: #000000;
+  --surface: #0a0a0a;
+  --surface-2: #111111;
+  --border: #1f1f1f;
+  --border-strong: #2c2c2c;
+  --ink: #ededed;
+  --ink-muted: #8a8a8a;
+  --ink-faint: #5a5a5a;
+  --cyan: #00e5ff;
+  --magenta: #ff2d95;
+  --amber: #ffb300;
+  --coral: #ff6b57;
+  --teal: #00c9a7;
+  --brand: #e5484d;
 }
 
 * {
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
+  scrollbar-color: var(--border-strong) transparent;
 }
 
-html, body {
+html,
+body {
   background: var(--bg);
-  color: var(--text-primary);
-  font-family: var(--font-mono);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "tnum" 1, "cv01" 1;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* The brand mark: a single red 2px rule under every page title. */
+.brand-rule {
+  height: 2px;
+  background: var(--brand);
+  border: 0;
+  margin: 0.5rem 0 0;
+}
+
+/* Data tables are dense — 13px, thin row borders, no card chrome. */
+.wd-table {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 13px;
-  line-height: 1.5;
-  overflow-x: hidden;
+  font-variant-numeric: tabular-nums;
+}
+.wd-table th {
+  text-align: right;
+  font-weight: 500;
+  color: var(--ink-muted);
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.wd-table th:first-child,
+.wd-table td:first-child {
+  text-align: left;
+}
+.wd-table td {
+  text-align: right;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.wd-table tbody tr:hover {
+  background: var(--surface-2);
 }
 
-/* Scanline overlay effect */
-.scanlines::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent,
-    transparent 3px,
-    rgba(0, 0, 0, 0.08) 3px,
-    rgba(0, 0, 0, 0.08) 4px
-  );
-  z-index: 1;
+/* Focus ring for a11y (contrast passes on pure black). */
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 1px;
 }
 
-/* Skeleton shimmer */
-@keyframes shimmer {
-  0% { background-position: -400px 0; }
-  100% { background-position: 400px 0; }
+@keyframes wd-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
 }
-.skeleton {
-  background: linear-gradient(90deg, var(--bg-surface) 25%, var(--bg-elevated) 50%, var(--bg-surface) 75%);
-  background-size: 800px 100%;
-  animation: shimmer 1.5s infinite;
-  border-radius: 2px;
-}
-
-/* Ticker animation */
-@keyframes ticker {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.ticker-inner {
-  animation: ticker 60s linear infinite;
-  display: flex;
-  width: max-content;
-}
-.ticker-inner:hover {
-  animation-play-state: paused;
-}
-
-/* Fade in */
-@keyframes fade-in {
-  from { opacity: 0; transform: translateY(4px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-.fade-in { animation: fade-in 0.3s ease both; }
-
-/* Pulse dot */
-@keyframes live-pulse {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.3; }
-}
-.live-dot {
-  width: 6px; height: 6px;
-  background: var(--live);
+.wd-live-dot {
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  animation: live-pulse 2s ease-in-out infinite;
+  background: var(--teal);
+  animation: wd-pulse 2s ease-in-out infinite;
+  display: inline-block;
 }
 
-/* Map marker SVG pulse */
-@keyframes marker-ring {
-  0%   { r: 6; opacity: 0.4; }
-  100% { r: 18; opacity: 0; }
+@keyframes wd-fade {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.wd-fade {
+  animation: wd-fade 0.25s ease both;
 }
 
-/* Card left border glow */
-.card-cyber  { border-left: 2px solid var(--cyber);  }
-.card-supply { border-left: 2px solid var(--supply); }
-.card-geo    { border-left: 2px solid var(--geo);    }
-
-/* Monospace number tabular alignment */
-.tabular { font-variant-numeric: tabular-nums; }
-
-/* Drawer slide-in */
-@keyframes slideIn {
-  from { transform: translateX(100%); opacity: 0; }
-  to   { transform: translateX(0);    opacity: 1; }
-}
-
-/* RefreshCw spin */
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+/* Recharts tooltip theming */
+.recharts-default-tooltip {
+  background: var(--surface) !important;
+  border: 1px solid var(--border-strong) !important;
+  border-radius: 2px;
 }
